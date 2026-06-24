@@ -1,0 +1,90 @@
+[
+  {
+    "id": "overview_1",
+    "category": "olimpiada",
+    "keywords": ["olimpiada popular", "1936", "barcelona", "jocs", "alternativa", "berlín", "antifeixista", "esport", "poble"],
+    "title": "Què va ser l'Olimpíada Popular?",
+    "text": "L'Olimpíada Popular de Barcelona de 1936 va ser una competició esportiva internacional organitzada com a alternativa antifeixista als Jocs Olímpics de Berlín, organitzats pel règim nazi d'Hitler. Estava prevista del 19 al 26 de juliol de 1936 a l'Estadi de Montjuïc de Barcelona. Uns 6.000 atletes de 20 a 23 delegacions nacionals i regionals s'havien inscrit per participar-hi.",
+    "sources": ["https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/", "https://es.wikipedia.org/wiki/Olimpiada_Popular"]
+  },
+  {
+    "id": "overview_2",
+    "category": "olimpiada",
+    "keywords": ["esperit olímpic", "pau", "solidaritat", "front popular", "república", "generalitat", "finançament", "pesetes"],
+    "title": "Objectius i finançament",
+    "text": "L'Olimpíada Popular volia 'recuperar el veritable esperit olímpic, la pau i la solidaritat entre les nacions' que Berlín negava amb la complicitat del COI. La va finançar el govern de la República Espanyola (250.000 pessetes), la Generalitat de Catalunya (100.000 pessetes) i el govern del Front Popular francès (600.000 pessetes). Era l'acte més important del moviment internacional contra la instrumentalització dels Jocs de Berlín pel règim nazi.",
+    "sources": ["https://patrimoni.gencat.cat/es/catalunyapaisdarxius/recurso-digital/recurso/document/programa-de-lolimpiada-popular-de-barcelona/", "https://noubarrisperlarepublica.org/cas/herramientas-republicanas/cultura-cas/la-olimpiada-popular-del-36/"]
+  },
+  {
+    "id": "organization_1",
+    "category": "olimpiada",
+    "keywords": ["comitè", "organització", "esquerra republicana", "companys", "lluis companys", "generalitat", "president"],
+    "title": "Organització i impulsors",
+    "text": "L'Olimpíada Popular va ser organitzada pel Comitè Català pro Esport Popular, amb un fort suport d'Esquerra Republicana de Catalunya. Lluís Companys, President de la Generalitat de Catalunya, en va ser el president honorari. L'Ajuntament de Barcelona i el govern de la República Espanyola també hi van participar activament en el suport i finançament.",
+    "sources": ["https://es.wikipedia.org/wiki/Olimpiada_Popular", "https://www.wanderer.es/barcelona-la-olimpiada-popular-que-quiso-derrotar-a-hitler/"]
+  },
+  {
+    "id": "athletes_1",
+    "category": "olimpiada",
+    "keywords": ["atletes", "delegacions", "països", "nacions", "alsàcia", "galicia", "euskadi", "algèria", "palestina", "exiliats", "alemanys", "italians"],
+    "title": "Atletes i delegacions participants",
+    "text": "Uns 6.000 atletes de 20 a 23 delegacions nacionals i regionals havien de participar. La competició tenia tres categories: nacional, regional i local, cosa que permetia que equips de territoris no estatals com Alsàcia, Galícia, Euskadi, Algèria o Palestina competissin al costat de delegacions nacionals. Hi havia delegacions d'exiliats alemanys i italians antifeixistes que no podien competir sota les seves banderes nacionals ocupades pel feixisme.",
+    "sources": ["https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/", "https://es.wikipedia.org/wiki/Olimpiada_Popular", "https://www.wanderer.es/barcelona-la-olimpiada-popular-que-quiso-derrotar-a-hitler/"]
+  },
+  {
+    "id": "sports_culture_1",
+    "category": "olimpiada",
+    "keywords": ["esports", "atletisme", "natació", "futbol", "boxa", "tennis", "escacs", "ciclisme", "rugbi", "bàsquet", "pelota basca", "folklore", "cultura", "concerts", "art"],
+    "title": "Esports i programa cultural",
+    "text": "L'Olimpíada Popular era coneguda també com la 'setmana popular de l'esport i el folklore', combinant competicions esportives amb un ampli programa cultural. Els esports previstos incloïen atletisme, natació, futbol, boxa, tennis, escacs, ciclisme, rugbi, bàsquet i pelota basca. El programa cultural incloïa concerts, exposicions d'art, teatre i conferències. Hi havia previst un paral·lel programa folklòric amb uns 3.000 participants addicionals, incloent-hi la Patum de Berga. Es va posar especial èmfasi en la participació femenina.",
+    "sources": ["https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/", "https://patrimoni.gencat.cat/es/catalunyapaisdarxius/recurso-digital/recurso/document/programa-de-lolimpiada-popular-de-barcelona/"]
+  },
+  {
+    "id": "casals_1",
+    "category": "olimpiada",
+    "keywords": ["pau casals", "beethoven", "novena simfonia", "montjuïc", "concert", "teatre grec", "assaig", "música"],
+    "title": "Pablo Casals i la Novena Simfonia",
+    "text": "El 18 de juliol de 1936 — la vespra de la inauguració prevista — es va celebrar a Montjuïc un assaig de la cerimònia d'obertura en el qual Pablo Casals va dirigir la Novena Simfonia de Beethoven al Teatre Grec. Aquella mateixa nit va arribar la notícia de l'aixecament militar. Casals va reflexionar sobre la ironia d'interpretar 'l'himne immortal de la fraternitat' mentre esclatava el conflicte a fora.",
+    "sources": ["https://vscw.ca/es/node/783", "https://www.wanderer.es/barcelona-la-olimpiada-popular-que-quiso-derrotar-a-hitler/"]
+  },
+  {
+    "id": "cancellation_1",
+    "category": "olimpiada",
+    "keywords": ["cop d'estat", "guerra civil", "cancel·lació", "juliol 1936", "18 juliol", "19 juliol", "canons", "paral·lel", "visitants"],
+    "title": "La cancel·lació: esclat de la Guerra Civil",
+    "text": "El 18 de juliol de 1936 va esclatar la Guerra Civil espanyola amb el cop d'estat militar. El matí del 19 de juliol — el dia en què havia de començar l'Olimpíada — els atletes i els uns 20.000 visitants ja presents a Barcelona es van despertar amb el so de les canonades que venien del barri del Paral·lel. La cancel·lació va ser un procés que va anar del 18 al 21 de juliol. Alguns actes perifèrics van continuar fins al 21 de juliol.",
+    "sources": ["https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/", "https://es.wikipedia.org/wiki/Olimpiada_Popular", "https://vscw.ca/es/node/783"]
+  },
+  {
+    "id": "cancellation_2",
+    "category": "olimpiada",
+    "keywords": ["atletes milícies", "brigades internacionals", "marsella", "vaixell", "clara thalmann", "maria ginesta", "dones", "voluntaris"],
+    "title": "Atletes que van quedar-se a lluitar",
+    "text": "Després de la cancel·lació, la majoria dels visitants i atletes van marxar a Marsella en un vaixell noliejat. Però entre 200 i 600 atletes — incloent-hi almenys dues dones — van decidir quedar-se a Espanya i s'uniren a les milícies obreres antifeixistes. Entre ells hi havia Clara Thalmann, nedadora suïssa que es va unir a la Columna Durruti anarquista, i María Ginestà, corredora espanyola que es va allistar a una milícia de les Joventuts Socialistes el 20 de juliol. Molts van acabar formant part de les Brigades Internacionals.",
+    "sources": ["https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/", "https://vscw.ca/es/node/783", "https://www.wanderer.es/barcelona-la-olimpiada-popular-que-quiso-derrotar-a-hitler/"]
+  },
+  {
+    "id": "legacy_1",
+    "category": "olimpiada",
+    "keywords": ["llegat", "símbol", "memòria", "resistència", "antifeixisme", "igualtat", "esport popular", "commemoració"],
+    "title": "Llegat i memòria",
+    "text": "L'Olimpíada Popular de Barcelona de 1936 ha quedat com un símbol de resistència antifeixista i de l'esport com a eina d'igualtat i solidaritat internacional. Va ser l'acte de protesta esportiva internacional més important contra els Jocs Olímpics de Berlín. El seu llegat ha inspirat iniciatives d'esport popular i inclusiu. La memòria dels atletes que van quedar-se per lluitar és un dels capítols més emocionants de la solidaritat internacional antifeixista.",
+    "sources": ["https://noubarrisperlarepublica.org/cas/herramientas-republicanas/cultura-cas/la-olimpiada-popular-del-36/", "https://es.wikipedia.org/wiki/Olimpiada_Popular"]
+  },
+  {
+    "id": "berlin_comparison_1",
+    "category": "olimpiada",
+    "keywords": ["berlín", "hitler", "nazi", "propaganda", "jesse owens", "raça ària", "coi", "boicot"],
+    "title": "El contrast amb els Jocs de Berlín",
+    "text": "Els Jocs Olímpics de Berlín de 1936 van ser una operació de propaganda del règim nazi d'Hitler, destinada a mostrar la suposada superioritat de la 'raça ària'. El COI va mantenir Berlín com a seu malgrat les protestes internacionals. L'1 d'agost de 1936 es van inaugurar els Jocs de Berlín, on l'atleta afroamericà Jesse Owens va guanyar 4 medalles d'or, contradicent la propaganda ària. L'Olimpíada Popular havia de ser la resposta a aquesta instrumentalització de l'esport.",
+    "sources": ["https://es.wikipedia.org/wiki/Olimpiada_Popular"]
+  },
+  {
+    "id": "cadci_1",
+    "category": "olimpiada",
+    "keywords": ["cadci", "centre autonomista", "dependents", "comerç", "indústria", "beteve", "organitzadors locals"],
+    "title": "El CADCI i l'organització local",
+    "text": "El Centre Autonomista de Dependents del Comerç i de la Indústria (CADCI) va tenir un paper clau en l'organització local de l'Olimpíada Popular. Entitats catalanistes i obreres van col·laborar per fer possible l'esdeveniment, donant-li un caràcter popular i de base que el distingia dels grans esdeveniments esportius oficials.",
+    "sources": ["https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/"]
+  }
+]
