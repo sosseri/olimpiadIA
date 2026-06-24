@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python3 -c ' *)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -m venv /tmp/testenv)",
+      "Bash(/tmp/testenv/bin/pip install *)",
+      "Bash(/tmp/testenv/bin/python -c ' *)",
+      "Workflow(deep-research)",
+      "WebFetch(domain:patrimoni.gencat.cat)",
+      "WebFetch(domain:noubarrisperlarepublica.org)",
+      "WebFetch(domain:catalegarxiumunicipal.bcn.cat)",
+      "WebFetch(domain:vscw.ca)",
+      "WebFetch(domain:www.wanderer.es)",
+      "WebFetch(domain:es.wikipedia.org)",
+      "WebFetch(domain:beteve.cat)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(curl -s \"https://en.wikipedia.org/wiki/1936_Summer_Olympics\")",
+      "Bash(mkdir -p /Users/ktzj534/Documents/others/OlimpiadaIA/assets/images)",
+      "Bash(mkdir -p /Users/ktzj534/Documents/others/OlimpiadaIA/data)",
+      "Bash(curl -sL \"https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/\")",
+      "Bash(curl -sL \"https://noubarrisperlarepublica.org/cas/herramientas-republicanas/cultura-cas/la-olimpiada-popular-del-36/\")",
+      "Bash(curl -sL \"https://www.wanderer.es/wp-content/uploads/2021/07/cartel_olimpiada.jpg\" -o \"cartel_olimpiada_popular_1936.jpg\" -w \"cartel_olimpiada_popular_1936.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"http://wanderer.es/wp-content/uploads/2021/07/Olimpiadas_berlin1936.jpg\" -o \"inauguracio_jocs_olimpics_berlin_1936.jpg\" -w \"inauguracio_jocs_olimpics_berlin_1936.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"http://wanderer.es/wp-content/uploads/2021/07/Opening_march_1931_Vienna.jpg\" -o \"desfile_esportistes_esquerres_viena_1931.jpg\" -w \"desfile_esportistes_esquerres_viena_1931.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"http://wanderer.es/wp-content/uploads/2021/07/Olimpiada_Popular2.jpg\" -o \"fullet_promocional_olimpiada_popular.jpg\" -w \"fullet_promocional_olimpiada_popular.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"http://wanderer.es/wp-content/uploads/2021/07/olympiade_populaire.jpg\" -o \"atletes_francesos_olimpiada_popular.jpg\" -w \"atletes_francesos_olimpiada_popular.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"http://wanderer.es/wp-content/uploads/2021/07/Olimpiada_Popular_BCN.jpg\" -o \"cartell_olimpiada_popular_bcn.jpg\" -w \"cartell_olimpiada_popular_bcn.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"http://wanderer.es/wp-content/uploads/2021/07/mundo_grafico_olimpiada.jpg\" -o \"revista_mundo_grafico_olimpiada.jpg\" -w \"revista_mundo_grafico_olimpiada.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"http://wanderer.es/wp-content/uploads/2021/07/Maria_Ginesta.jpg\" -o \"marina_ginesta_esportista_miliciana.jpg\" -w \"marina_ginesta_esportista_miliciana.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"http://wanderer.es/wp-content/uploads/2021/07/sept_athletes.jpg\" -o \"comic_sept_athletes_david_morancho.jpg\" -w \"comic_sept_athletes_david_morancho.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"https://img.beteve.cat/wp-content/uploads/2020/06/VPA-olimpiada-popular.jpg\" -o \"vpa_olimpiada_popular_beteve.jpg\" -w \"vpa_olimpiada_popular_beteve.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"https://noubarrisperlarepublica.org/wp-content/uploads/2021/07/Aurigues_Olimpics_Can_Drago_Nou_Barris-scaled.jpg\" -o \"aurigues_olimpics_can_drago_nou_barris.jpg\" -w \"aurigues_olimpics_can_drago_nou_barris.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"https://i0.wp.com/noubarrisperlarepublica.org/wp-content/uploads/2021/07/Olimpiada_Popular_1936_Nou_Barris.jpg?w=640&ssl=1\" -o \"olimpiada_popular_1936_nou_barris.jpg\" -w \"olimpiada_popular_1936_nou_barris.jpg: %{http_code}\\\\n\")",
+      "Bash(curl -sL \"https://catalunyapaisdarxius.cat/wp-content/uploads/2025/10/0521-CAT-AHCB-AHCB2-472-4.1_001-thumbnail.jpg\" -o \"programa_olimpiada_popular_barcelona_arxiu.jpg\" -w \"programa_olimpiada_popular_barcelona_arxiu.jpg: %{http_code}\\\\n\")",
+      "Bash(sort -k5 -h)",
+      "Bash(curl -sL \"https://vscw.ca/es/node/783\")",
+      "Bash(python3 -c \"import json; data=json.load\\(open\\('/Users/ktzj534/Documents/others/OlimpiadaIA/data/images_metadata.json'\\)\\); print\\(f'{len\\(data\\)} entries, all keys present:', all\\('file' in d and 'caption' in d and 'source_url' in d for d in data\\)\\)\")",
+      "Bash(python3 *)"
+    ]
+  }
+}

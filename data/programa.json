@@ -1,0 +1,376 @@
+{
+  "festa": {
+    "name": "Festa Major de Sants 2026",
+    "year": 2026,
+    "carrer": "Carrer Papin",
+    "theme": "L'Olimpíada Popular de Barcelona de 1936",
+    "dates": {
+      "start": "2026-08-22",
+      "end": "2026-08-30"
+    },
+    "patron_saint_day": "2026-08-24",
+    "description": "La Festa Major de Sants se celebra al barri de Sants (Barcelona) durant l'última setmana d'agost, amb carrers guarnits, concerts, activitats culturals i molt més."
+  },
+  "program": [
+    {
+      "date": "2026-08-22",
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "18:00",
+          "title": "Jocs de taula amb Sants–Niggurath",
+          "description": "Tarda de jocs de taula al carrer",
+          "type": "jocs",
+          "location": "Carrer Papin",
+          "for_kids": true,
+          "tags": ["jocs", "familiar"]
+        },
+        {
+          "time": "20:30",
+          "title": "Sopar popular i traca d'inici de Festa Major",
+          "description": "Sopar de germanor i inici oficial de la festa amb traca",
+          "type": "sopar",
+          "location": "Carrer Papin",
+          "for_kids": true,
+          "tags": ["sopar", "inauguració"]
+        },
+        {
+          "time": "22:00",
+          "title": "Música amb DJ",
+          "description": "Sessió musical per obrir la festa",
+          "type": "música",
+          "location": "Carrer Papin",
+          "for_kids": false,
+          "tags": ["música", "dj", "nit"]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Matinal de cultura popular",
+          "description": "Actuacions de cultura popular catalana al carrer",
+          "type": "cultura",
+          "location": "Carrer Papin",
+          "for_kids": true,
+          "tags": ["cultura popular", "matinal", "familiar"]
+        },
+        {
+          "time": "13:00",
+          "title": "Tast i vermut",
+          "description": "Tast de productes locals amb vermut",
+          "type": "gastronomia",
+          "location": "Carrer Papin",
+          "for_kids": false,
+          "tags": ["gastronomia", "vermut", "tast"]
+        },
+        {
+          "time": "18:00",
+          "title": "Activitat itinerant pels carrers",
+          "description": "Activitat conjunta amb altres carrers participants",
+          "type": "cultura",
+          "location": "Carrer Papin i altres",
+          "for_kids": true,
+          "tags": ["itinerant", "conjunta"]
+        },
+        {
+          "time": "22:00",
+          "title": "Cinema a la fresca",
+          "description": "Projecció d'una pel·lícula a l'aire lliure",
+          "type": "cinema",
+          "location": "Carrer Papin",
+          "for_kids": true,
+          "tags": ["cinema", "familiar"]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "day_label": "Dilluns 24 — Sant Bartomeu",
+      "events": [
+        {
+          "time": "19:00",
+          "title": "Entrega de premis del concurs de guarniment",
+          "description": "Lliurament dels premis al Parc de l'Espanya Industrial",
+          "type": "acte",
+          "location": "Parc de l'Espanya Industrial",
+          "for_kids": true,
+          "tags": ["premis", "concurs", "unitari"]
+        },
+        {
+          "time": "22:00",
+          "title": "Havaneres i rom cremat",
+          "description": "Concert d'havaneres amb rom cremat al descans",
+          "type": "concert",
+          "location": "Carrer Papin",
+          "for_kids": true,
+          "tags": ["havaneres", "concert", "tradició"]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "day_label": "Dimarts 25",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Actes unitaris a l'Espanya Industrial",
+          "description": "Totes les comissions de carrers fan actes conjunts: jocs infantils, concerts, rutes guiades",
+          "type": "acte",
+          "location": "Parc de l'Espanya Industrial",
+          "for_kids": true,
+          "tags": ["unitari", "jocs", "concerts"]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "day_label": "Dimecres 26 — Dia jove",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Batalla Ninja",
+          "description": "Batalla Ninja als jardins de Can Mantega, conjunta amb altres carrers",
+          "type": "jocs",
+          "location": "Jardins de Can Mantega",
+          "for_kids": true,
+          "tags": ["jocs", "joves", "batalla ninja"]
+        },
+        {
+          "time": "18:00",
+          "title": "Tallers per a joves",
+          "description": "Tallers creatius: graffiti, cianotipia i altres",
+          "type": "taller",
+          "location": "Carrer Papin",
+          "for_kids": true,
+          "tags": ["taller", "joves", "creatiu"]
+        },
+        {
+          "time": "22:00",
+          "title": "Concert nocturn",
+          "description": "Concert de nit al carrer",
+          "type": "concert",
+          "location": "Carrer Papin",
+          "for_kids": false,
+          "tags": ["concert", "nit", "joves"]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "18:00",
+          "title": "Taller temàtic sobre l'Olimpíada Popular",
+          "description": "Taller relacionat amb el tema del guarnit d'aquest any",
+          "type": "taller",
+          "location": "Carrer Papin",
+          "for_kids": true,
+          "tags": ["taller", "temàtica", "olimpíada"]
+        },
+        {
+          "time": "21:30",
+          "title": "Nit de monòlegs",
+          "description": "Sessió d'humor amb monologuistes",
+          "type": "espectacle",
+          "location": "Carrer Papin",
+          "for_kids": false,
+          "tags": ["monòlegs", "humor", "nit"]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Gimcana fotogràfica",
+          "description": "Gimcana conjunta amb altres carrers, inici al carrer Papin",
+          "type": "jocs",
+          "location": "Carrer Papin (inici)",
+          "for_kids": true,
+          "tags": ["gimcana", "fotografia", "conjunta"]
+        },
+        {
+          "time": "18:00",
+          "title": "Tarda de jocs tradicionals catalans",
+          "description": "Jocs tradicionals i activitats per a totes les edats",
+          "type": "jocs",
+          "location": "Carrer Papin",
+          "for_kids": true,
+          "tags": ["jocs", "tradicionals", "familiar"]
+        },
+        {
+          "time": "22:00",
+          "title": "Nit de concerts",
+          "description": "Concerts en directe al carrer",
+          "type": "concert",
+          "location": "Carrer Papin",
+          "for_kids": false,
+          "tags": ["concert", "nit", "directe"]
+        },
+        {
+          "time": "01:00",
+          "title": "DJ fins a la matinada",
+          "description": "Sessió de DJ per tancar la nit",
+          "type": "música",
+          "location": "Carrer Papin",
+          "for_kids": false,
+          "tags": ["dj", "nit", "festa"]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "22:00",
+          "title": "Concerts de tancament",
+          "description": "Última nit de concerts al carrer Papin",
+          "type": "concert",
+          "location": "Carrer Papin",
+          "for_kids": false,
+          "tags": ["concert", "nit", "tancament"]
+        },
+        {
+          "time": "01:00",
+          "title": "Concert final i festa de cloenda del carrer",
+          "description": "Últim concert i festa fins a la matinada",
+          "type": "concert",
+          "location": "Carrer Papin",
+          "for_kids": false,
+          "tags": ["concert", "final", "festa"]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "day_label": "Diumenge 30",
+      "events": [
+        {
+          "time": "09:00",
+          "title": "Desmuntatge del guarnit",
+          "description": "Els carrers treuen el guarnit pel matí",
+          "type": "acte",
+          "location": "Tots els carrers",
+          "for_kids": false,
+          "tags": ["desmuntatge", "fi"]
+        },
+        {
+          "time": "22:00",
+          "title": "Piromusical de cloenda",
+          "description": "Espectacle pirotècnic de tancament de la festa al Parc de l'Espanya Industrial",
+          "type": "acte",
+          "location": "Parc de l'Espanya Industrial",
+          "for_kids": true,
+          "tags": ["piromusical", "cloenda", "unitari"]
+        }
+      ]
+    }
+  ],
+  "other_streets": [
+    {
+      "name": "Carrer d'Alcolea de Baix",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Carrer d'Alcolea de Dalt",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Plaça de la Farga",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Carrer de Finlàndia",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Carrer de Galileu",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Carrer de Guadiana",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Carrer de Sagunt",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Carrer de Valladolid",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Carrer de Vallespir de Baix",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    },
+    {
+      "name": "Carrer de Vallespir de Dalt",
+      "theme": "Pendent de confirmar per 2026",
+      "highlights": []
+    }
+  ],
+  "unitari": [
+    {
+      "date": "2026-08-22",
+      "day_label": "Dissabte 22",
+      "events": [
+        {"time": "19:00", "title": "Cercavila de Festa Major"},
+        {"time": "20:00", "title": "Pregó de Festa Major (Parc de l'Espanya Industrial)"}
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "day_label": "Diumenge 23",
+      "events": [
+        {"time": "11:30", "title": "Repic manual de campanes (Església de Santa Maria de Sants)"},
+        {"time": "12:00", "title": "Ofrena floral a Sant Bartomeu"},
+        {"time": "13:00", "title": "Missa solemne en honor de Sant Bartomeu"}
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "day_label": "Dilluns 24 — Sant Bartomeu",
+      "events": [
+        {"time": "10:00", "title": "Jocs infantils i tradicionals (Parc de l'Espanya Industrial)"},
+        {"time": "17:30", "title": "Ballada de sardanes (Parc de l'Espanya Industrial)"},
+        {"time": "18:00", "title": "Passejada: La història de la Festa Major de Sants"},
+        {"time": "19:30", "title": "Lliurament de premis del concurs de guarniment"}
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "day_label": "Dissabte 29",
+      "events": [
+        {"time": "12:00", "title": "Lliurament dels Premis Populars de Guarniment"},
+        {"time": "18:00", "title": "Diada Castellera"},
+        {"time": "18:30", "title": "Correfoc infantil (Jardins de Can Mantega)"},
+        {"time": "21:30", "title": "Correfoc adult"}
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "day_label": "Diumenge 30",
+      "events": [
+        {"time": "09:00", "title": "Curses atlètiques i ciclistes de Festa Major"},
+        {"time": "22:00", "title": "Piromusical de cloenda (Parc de l'Espanya Industrial)"}
+      ]
+    }
+  ]
+}
