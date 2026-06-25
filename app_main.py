@@ -61,7 +61,7 @@ st.markdown("### Navega per l'aplicació")
 
 col1, col2 = st.columns(2)
 with col1:
-    st.page_link("pages/1_xat.py", label=("💬 **Xat amb PapinIA**")
+    st.page_link("pages/1_xat.py", label="💬 **Xat amb PapinIA**")
     st.caption("Parla amb la nostra intel·ligència artificial festiva")
 
     st.page_link("pages/2_programa.py", label="📅 **Programa**")
