@@ -71,7 +71,7 @@ with col1:
     st.caption("Orígens i història de la festa")
 
 with col2:
-    st.page_link("pages/3_olimpiada.py", label=""🏟️ **L'Olimpíada Popular**")
+    st.page_link("pages/3_olimpiada.py", label="🏟️ **L'Olimpíada Popular**")
     st.caption("La història de l'Olimpíada Popular de 1936")
 
     st.page_link("pages/4_arxiu.py", label="📸 **Arxiu fotogràfic**")
