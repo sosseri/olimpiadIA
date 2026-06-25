@@ -61,20 +61,20 @@ st.markdown("### Navega per l'aplicació")
 
 col1, col2 = st.columns(2)
 with col1:
-    st.page_link("pages/1_xat.py", label="💬 **Xat amb PapinIA**", icon="💬")
+    st.page_link("pages/1_xat.py", label=(**Xat amb PapinIA**", icon="💬")
     st.caption("Parla amb la nostra intel·ligència artificial festiva")
 
-    st.page_link("pages/2_programa.py", label="📅 **Programa**", icon="📅")
+    st.page_link("pages/2_programa.py", label="**Programa**", icon="📅")
     st.caption("Consulta el programa d'activitats dia a dia")
 
-    st.page_link("pages/5_festa_major.py", label="🎭 **Festa Major de Sants**", icon="🎭")
+    st.page_link("pages/5_festa_major.py", label="**Festa Major de Sants**", icon="🎭")
     st.caption("Orígens i història de la festa")
 
 with col2:
-    st.page_link("pages/3_olimpiada.py", label="🏟️ **L'Olimpíada Popular**", icon="🏟️")
+    st.page_link("pages/3_olimpiada.py", label="**L'Olimpíada Popular**", icon="🏟️")
     st.caption("La història de l'Olimpíada Popular de 1936")
 
-    st.page_link("pages/4_arxiu.py", label="📸 **Arxiu fotogràfic**", icon="📸")
+    st.page_link("pages/4_arxiu.py", label="**Arxiu fotogràfic**", icon="📸")
     st.caption("Imatges de la festa i el carrer")
 
 st.markdown("---")
