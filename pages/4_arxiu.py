@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import json
+import requests
 
 st.set_page_config(page_title="Arxiu fotogràfic", page_icon="📸", layout="centered")
 
@@ -41,6 +42,16 @@ st.markdown("""
 IMAGES_DIR = "assets/images"
 METADATA_PATH = "data/images_metadata.json"
 
+
+def _fetch_image_bytes(url: str):
+    try:
+        resp = requests.get(url, timeout=8)
+        if resp.status_code == 200:
+            return resp.content
+    except Exception:
+        return None
+    return None
+
 # Load historical images metadata
 historical_images = []
 if os.path.isfile(METADATA_PATH):
@@ -80,13 +91,16 @@ if historical_images:
                 source_url = SOURCE_URLS.get(source_site, meta.get("source_url", ""))
 
                 with col:
-                    # Prefer local image file; fall back to the original source URL if missing
+                    # Prefer local image file; fall back to the original source URL if missing.
+                    # Fetch remote images server-side to avoid browser mixed-content blocking
                     if os.path.isfile(fpath):
                         st.image(fpath, use_container_width=True)
                     elif meta.get("source_url"):
-                        st.image(meta["source_url"], use_container_width=True)
-                    else:
-                        st.markdown("*(Imatge no disponible)*")
+                        img_bytes = _fetch_image_bytes(meta.get("source_url"))
+                        if img_bytes:
+                            st.image(img_bytes, use_container_width=True)
+                        else:
+                            st.markdown("*(Imatge no disponible)*")
 
                     st.markdown(f"<div class='img-caption'>{meta['caption']}</div>", unsafe_allow_html=True)
                     st.markdown(f"<div class='img-source'>Font: <a href='{source_url}' target='_blank'>{source_label}</a></div>", unsafe_allow_html=True)

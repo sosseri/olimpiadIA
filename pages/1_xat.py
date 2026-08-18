@@ -4,6 +4,8 @@ import html
 import re
 import base64
 import os
+import json
+import requests
 from io import BytesIO
 from gtts import gTTS
 import streamlit.components.v1 as components
@@ -12,16 +14,65 @@ from lib.chatbot import load_program, generate_response
 
 IMAGES_DIR = "assets/images"
 
+
+_IMAGES_META = None
+
+
+def _load_images_meta():
+    global _IMAGES_META
+    if _IMAGES_META is None:
+        path = os.path.join(os.path.dirname(__file__), "..", "data", "images_metadata.json")
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                _IMAGES_META = json.load(f)
+        except Exception:
+            _IMAGES_META = []
+    return _IMAGES_META
+
+
+def _fetch_image_bytes(url: str, timeout: int = 8):
+    try:
+        r = requests.get(url, timeout=timeout)
+        if r.status_code == 200:
+            return r.content
+    except Exception:
+        return None
+    return None
+
+
+def _get_image_bytes_by_name(fname: str):
+    # Check local file first
+    fpath = os.path.join(IMAGES_DIR, fname)
+    if os.path.isfile(fpath):
+        try:
+            with open(fpath, "rb") as fh:
+                return fh.read()
+        except Exception:
+            return None
+
+    # Look up metadata for remote source_url
+    meta_list = _load_images_meta()
+    for meta in meta_list:
+        if meta.get("file") == fname:
+            url = meta.get("source_url")
+            if url:
+                return _fetch_image_bytes(url)
+    return None
+
+
 def _render_bot_message(content: str):
-    """Split bot content on [IMATGE:file] tags and render text + images."""
-    parts = re.split(r'(\[IMATGE:[^\]]+\])', content)
+    """Split bot content on image tags (IMATGE/IMAGE/IMAGEN) and render text + images."""
+    pattern = re.compile(r'(\[(?:IMATGE|IMAGE|IMAGEN):[^\]]+\])', flags=re.IGNORECASE)
+    parts = pattern.split(content)
     for part in parts:
-        m = re.match(r'\[IMATGE:([^\]]+)\]', part)
+        m = re.match(r'\[(?:IMATGE|IMAGE|IMAGEN):([^\]]+)\]', part, flags=re.IGNORECASE)
         if m:
             fname = m.group(1).strip()
-            fpath = os.path.join(IMAGES_DIR, fname)
-            if os.path.isfile(fpath):
-                st.image(fpath, use_container_width=True)
+            img_bytes = _get_image_bytes_by_name(fname)
+            if img_bytes:
+                st.image(img_bytes, use_container_width=True)
+            else:
+                st.markdown("*(Imatge no disponible)*")
         else:
             text = part.strip()
             if text:
