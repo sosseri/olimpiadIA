@@ -154,6 +154,7 @@ def _render_bot_message(content: str):
             )
 
 def _strip_image_tags(text: str) -> str:
+    # Remove image references from the spoken text so TTS does not read the raw tag.
     return re.sub(r'\[(?:IMATGE|IMAGE|IMAGEN):[^\]]+\]', '', text, flags=re.IGNORECASE).strip()
 
 st.set_page_config(page_title="Xat amb PapinIA", page_icon="💬", layout="centered")

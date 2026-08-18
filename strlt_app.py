@@ -175,8 +175,13 @@ if "user_input" not in st.session_state:
     st.session_state.user_input = ""
 
 # ---------- HELPER: TTS -> base64 ----------
+def _strip_image_tags(text: str) -> str:
+    return re.sub(r'\[(?:IMATGE|IMAGE|IMAGEN):[^\]]+\]', '', text, flags=re.IGNORECASE).strip()
+
+
 def generate_audio_base64(text: str) -> str:
-    tts = gTTS(text=text, lang='ca')
+    clean_text = _strip_image_tags(text)
+    tts = gTTS(text=clean_text, lang='ca')
     buf = BytesIO()
     tts.write_to_fp(buf)
     buf.seek(0)
@@ -341,7 +346,7 @@ if st.session_state.play_request:
         else:
             with st.spinner('Generating audio...'):
                 try:
-                    sanitized = target['content'].replace('*', '').replace('#', '')
+                    sanitized = _strip_image_tags(target['content']).replace('*', '').replace('#', '')
                     audio_b64 = generate_audio_base64(sanitized)
                     target['audio_b64'] = audio_b64
                 except Exception as e:
