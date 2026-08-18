@@ -39,8 +39,9 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-IMAGES_DIR = "assets/images"
-METADATA_PATH = "data/images_metadata.json"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+IMAGES_DIR = os.path.join(ROOT_DIR, "assets", "images")
+METADATA_PATH = os.path.join(ROOT_DIR, "data", "images_metadata.json")
 
 
 def _fetch_image_bytes(url: str):
@@ -110,7 +111,7 @@ section_accent(1)
 st.markdown('<div class="section-title">🎉 Festa Major de Sants — Carrer Papin</div>', unsafe_allow_html=True)
 
 festa_images = []
-FESTA_DIR = "assets/festa"
+FESTA_DIR = os.path.join(ROOT_DIR, "assets", "festa")
 if os.path.isdir(FESTA_DIR):
     festa_images = sorted([
         f for f in os.listdir(FESTA_DIR)

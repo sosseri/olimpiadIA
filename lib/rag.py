@@ -41,8 +41,11 @@ def _build_image_chunks():
             "category": "olimpiada",
             "keywords": keywords,
             "title": f"Imatge: {caption}",
-            "text": f"Hi ha una fotografia disponible: {caption} (Font: {source}). "
-                    f"Pots mostrar-la amb [IMATGE:{fname}]",
+            "text": (
+                f"Hi ha una fotografia disponible: {caption} (Font: {source}). "
+                f"SI US PLAU, si vols incloure aquesta fotografia a la teva resposta, INSEREIX EXACTAMENT la següent etiqueta COM UNA LÍNIA PER SEPARAT: [IMATGE:{fname}]. "
+                "No canviïs el nom ni escriguis text dins dels corxets. Inclou com a màxim una etiqueta d'imatge per resposta."
+            ),
             "image_file": fname,
             "is_image": True,
         })

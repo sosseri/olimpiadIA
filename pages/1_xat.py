@@ -12,7 +12,8 @@ import streamlit.components.v1 as components
 
 from lib.chatbot import load_program, generate_response
 
-IMAGES_DIR = "assets/images"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+IMAGES_DIR = os.path.join(ROOT_DIR, "assets", "images")
 
 
 _IMAGES_META = None
@@ -21,7 +22,7 @@ _IMAGES_META = None
 def _load_images_meta():
     global _IMAGES_META
     if _IMAGES_META is None:
-        path = os.path.join(os.path.dirname(__file__), "..", "data", "images_metadata.json")
+        path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "images_metadata.json"))
         try:
             with open(path, "r", encoding="utf-8") as f:
                 _IMAGES_META = json.load(f)
@@ -62,7 +63,8 @@ def _get_image_bytes_by_name(fname: str):
 
 def _find_best_image_filename(requested: str):
     """Try to find the best matching filename from metadata for a requested name."""
-    tokens_req = re.findall(r"\w+", os.path.splitext(requested)[0].lower())
+    # split on underscores and non-alphanumeric characters (avoid keeping underscores as part of tokens)
+    tokens_req = re.findall(r"[a-z0-9]+", os.path.splitext(requested)[0].lower())
     tokens_req = [t for t in tokens_req if len(t) > 2]
     if not tokens_req:
         return None
@@ -70,7 +72,7 @@ def _find_best_image_filename(requested: str):
     best_score = 0
     for meta in _load_images_meta():
         fname = meta.get("file", "")
-        tokens_meta = re.findall(r"\w+", os.path.splitext(fname)[0].lower())
+        tokens_meta = re.findall(r"[a-z0-9]+", os.path.splitext(fname)[0].lower())
         tokens_meta = [t for t in tokens_meta if len(t) > 2]
         if not tokens_meta:
             continue
