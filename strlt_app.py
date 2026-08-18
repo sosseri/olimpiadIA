@@ -400,6 +400,8 @@ if not st.session_state.messages:
     suggestions = [
         "Quin és el tema del carrer Papin?",
         "Què va ser l'Olimpíada Popular de 1936?",
+        "Quin era l'himne de l'Olimpíada Popular?",
+        "Qui era Marina Ginestà?",
         "Podries explicar-me el guarnit d’aquest any?",
         "Quins són els altres carrers de la festa?",
         "Què hi ha avui al carrer Papin?",
