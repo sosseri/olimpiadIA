@@ -60,6 +60,29 @@ def _get_image_bytes_by_name(fname: str):
     return None
 
 
+def _find_best_image_filename(requested: str):
+    """Try to find the best matching filename from metadata for a requested name."""
+    tokens_req = re.findall(r"\w+", os.path.splitext(requested)[0].lower())
+    tokens_req = [t for t in tokens_req if len(t) > 2]
+    if not tokens_req:
+        return None
+    best = None
+    best_score = 0
+    for meta in _load_images_meta():
+        fname = meta.get("file", "")
+        tokens_meta = re.findall(r"\w+", os.path.splitext(fname)[0].lower())
+        tokens_meta = [t for t in tokens_meta if len(t) > 2]
+        if not tokens_meta:
+            continue
+        # count token overlap
+        overlap = len(set(tokens_req) & set(tokens_meta))
+        if overlap > best_score:
+            best_score = overlap
+            best = fname
+    # require at least one overlapping token
+    return best if best_score > 0 else None
+
+
 def _render_bot_message(content: str):
     """Split bot content on image tags (IMATGE/IMAGE/IMAGEN) and render text + images."""
     pattern = re.compile(r'(\[(?:IMATGE|IMAGE|IMAGEN):[^\]]+\])', flags=re.IGNORECASE)
@@ -69,8 +92,18 @@ def _render_bot_message(content: str):
         if m:
             fname = m.group(1).strip()
             img_bytes = _get_image_bytes_by_name(fname)
+            used_fname = fname
+            if not img_bytes:
+                # try fuzzy match against metadata filenames
+                candidate = _find_best_image_filename(fname)
+                if candidate:
+                    used_fname = candidate
+                    img_bytes = _get_image_bytes_by_name(candidate)
+
             if img_bytes:
                 st.image(img_bytes, use_container_width=True)
+                if used_fname != fname:
+                    st.caption(f"Mostrat: {used_fname}")
             else:
                 st.markdown("*(Imatge no disponible)*")
         else:
