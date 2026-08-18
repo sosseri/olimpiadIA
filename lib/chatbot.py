@@ -618,6 +618,24 @@ Adapta-ho al context de la seva pregunta, però sempre de forma curta i acollido
         reply = re.sub(
             r"<think.*?>.*?</think>", "", reply, flags=re.DOTALL | re.IGNORECASE
         )
-        return reply.strip()
+        reply = reply.strip()
+
+        if category == "olimpiada":
+            image_files = []
+            try:
+                image_files = [
+                    c.get("image_file")
+                    for c in retrieve_with_image(user_input, top_k=3)
+                    if c.get("is_image") and c.get("image_file")
+                ]
+            except Exception:
+                image_files = []
+
+            if image_files and not re.search(
+                r"\[(?:IMATGE|IMAGE|IMAGEN):[^\]]+\]", reply, flags=re.IGNORECASE
+            ):
+                reply = reply.rstrip() + f"\n[IMATGE:{image_files[0]}]"
+
+        return reply
     except Exception as e:
         return f"Hi ha hagut un problema, intenta-ho de nou més tard. ({e})"

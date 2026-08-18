@@ -103,6 +103,13 @@ def retrieve_with_image(query, top_k=3):
 
     result = top_texts
     if best_image is not None:
+        best_image = dict(best_image)
+        img_ref = f"[IMATGE:{best_image.get('image_file', '')}]"
+        best_image["text"] = (
+            f"{best_image.get('text', '').rstrip()}\n\n{img_ref}"
+            if best_image.get('image_file')
+            else best_image.get('text', '')
+        )
         result = result + [best_image]
     return result
 
@@ -112,5 +119,8 @@ def format_context(chunks):
         return ""
     lines = []
     for c in chunks:
-        lines.append(f"### {c['title']}\n{c['text']}")
+        text = c.get("text", "")
+        if c.get("is_image") and c.get("image_file"):
+            text = text.rstrip() + f"\n[IMATGE:{c['image_file']}]"
+        lines.append(f"### {c['title']}\n{text}")
     return "\n\n".join(lines)
