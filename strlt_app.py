@@ -3,11 +3,138 @@ from gtts import gTTS
 from io import BytesIO
 import base64
 import re
+import json
+import os
+import requests
 import streamlit.components.v1 as components
 import uuid
 import html
 
 from lib.chatbot import generate_response, load_program
+
+ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
+IMAGES_DIR = os.path.join(ROOT_DIR, "assets", "images")
+_IMAGES_META = None
+
+
+def _load_images_meta():
+    global _IMAGES_META
+    if _IMAGES_META is None:
+        path = os.path.join(ROOT_DIR, "data", "images_metadata.json")
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                _IMAGES_META = json.load(f)
+        except Exception:
+            _IMAGES_META = []
+    return _IMAGES_META
+
+
+def _fetch_image_bytes(url: str, timeout: int = 8):
+    try:
+        r = requests.get(url, timeout=timeout)
+        if r.status_code == 200:
+            return r.content
+    except Exception:
+        return None
+    return None
+
+
+def _get_image_bytes_by_name(fname: str):
+    fpath = os.path.join(IMAGES_DIR, fname)
+    if os.path.isfile(fpath):
+        try:
+            with open(fpath, "rb") as fh:
+                return fh.read()
+        except Exception:
+            return None
+    for meta in _load_images_meta():
+        if meta.get("file") == fname:
+            url = meta.get("source_url")
+            if url:
+                return _fetch_image_bytes(url)
+    return None
+
+
+def _find_best_image_filename(requested: str):
+    tokens_req = re.findall(r"[a-z0-9]+", os.path.splitext(requested)[0].lower())
+    tokens_req = [t for t in tokens_req if len(t) > 2]
+    if not tokens_req:
+        return None
+    best = None
+    best_score = 0
+    for meta in _load_images_meta():
+        fname = meta.get("file", "")
+        tokens_meta = re.findall(r"[a-z0-9]+", os.path.splitext(fname)[0].lower())
+        tokens_meta = [t for t in tokens_meta if len(t) > 2]
+        if not tokens_meta:
+            continue
+        overlap = len(set(tokens_req) & set(tokens_meta))
+        if overlap > best_score:
+            best_score = overlap
+            best = fname
+    return best if best_score > 0 else None
+
+
+def _resolve_image_bytes(ref: str):
+    fname = ref.strip().strip("\"'[]() ")
+    if not fname:
+        return None, None
+    img_bytes = _get_image_bytes_by_name(fname)
+    used_fname = fname
+    if not img_bytes:
+        candidate = _find_best_image_filename(fname)
+        if candidate:
+            used_fname = candidate
+            img_bytes = _get_image_bytes_by_name(candidate)
+    return img_bytes, used_fname
+
+
+def _extract_image_references(text: str):
+    refs = []
+    seen = set()
+    tag_pattern = re.compile(r'\[(?:IMATGE|IMAGE|IMAGEN):([^\]]+)\]', flags=re.IGNORECASE)
+    for match in tag_pattern.finditer(text):
+        ref = match.group(1).strip().strip("\"'[]() ")
+        if ref and ref not in seen:
+            refs.append(ref)
+            seen.add(ref)
+    bare_pattern = re.compile(
+        r'(?i)(?:\b(?:imatge|image|imagen|foto|photo|imatges|images)\s*[:\-]?\s*|\b)'
+        r'([A-Za-z0-9_./ -]+?\.(?:jpe?g|png|gif|webp|bmp|svg))'
+    )
+    for match in bare_pattern.finditer(text):
+        ref = match.group(1).strip().strip("\"'[]() ")
+        if ref and ref not in seen:
+            refs.append(ref)
+            seen.add(ref)
+    return refs
+
+
+def _render_bot_message(content: str):
+    pattern = re.compile(r'(\[(?:IMATGE|IMAGE|IMAGEN):[^\]]+\])', flags=re.IGNORECASE)
+    parts = pattern.split(content)
+    rendered_image_refs = set()
+
+    for part in parts:
+        image_refs = _extract_image_references(part)
+        for ref in image_refs:
+            if ref in rendered_image_refs:
+                continue
+            rendered_image_refs.add(ref)
+            img_bytes, used_fname = _resolve_image_bytes(ref)
+            if img_bytes:
+                st.image(img_bytes, use_container_width=True)
+                if used_fname != ref:
+                    st.caption(f"Mostrat: {used_fname}")
+                continue
+            st.markdown("*(Imatge no disponible)*")
+
+        if re.match(r'\[(?:IMATGE|IMAGE|IMAGEN):([^\]]+)\]', part, flags=re.IGNORECASE):
+            continue
+
+        text = part.strip()
+        if text:
+            st.markdown(f"<div class='chat-bubble-bot'>🤖 {html.escape(text)}</div>", unsafe_allow_html=True)
 
 
 @st.cache_resource
@@ -188,7 +315,7 @@ for i, msg in enumerate(st.session_state.messages):
     else:
         cols = st.columns([0.95, 0.05])
         with cols[0]:
-            st.markdown(f"<div class='chat-bubble-bot'>🤖 {html.escape(msg['content'])}</div>", unsafe_allow_html=True)
+            _render_bot_message(msg["content"])
         with cols[1]:
             def make_on_click(mid=msg['id']):
                 def _cb():
