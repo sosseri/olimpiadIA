@@ -80,8 +80,14 @@ if historical_images:
                 source_url = SOURCE_URLS.get(source_site, meta.get("source_url", ""))
 
                 with col:
+                    # Prefer local image file; fall back to the original source URL if missing
                     if os.path.isfile(fpath):
                         st.image(fpath, use_container_width=True)
+                    elif meta.get("source_url"):
+                        st.image(meta["source_url"], use_container_width=True)
+                    else:
+                        st.markdown("*(Imatge no disponible)*")
+
                     st.markdown(f"<div class='img-caption'>{meta['caption']}</div>", unsafe_allow_html=True)
                     st.markdown(f"<div class='img-source'>Font: <a href='{source_url}' target='_blank'>{source_label}</a></div>", unsafe_allow_html=True)
 
