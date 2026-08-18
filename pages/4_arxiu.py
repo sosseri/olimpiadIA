@@ -1,8 +1,11 @@
 import streamlit as st
 import os
 import json
+import requests
 
 st.set_page_config(page_title="Arxiu fotogràfic", page_icon="📸", layout="centered")
+
+from lib.decor import section_accent
 
 st.markdown("""
 <style>
@@ -36,8 +39,19 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-IMAGES_DIR = "assets/images"
-METADATA_PATH = "data/images_metadata.json"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+IMAGES_DIR = os.path.join(ROOT_DIR, "assets", "images")
+METADATA_PATH = os.path.join(ROOT_DIR, "data", "images_metadata.json")
+
+
+def _fetch_image_bytes(url: str):
+    try:
+        resp = requests.get(url, timeout=8)
+        if resp.status_code == 200:
+            return resp.content
+    except Exception:
+        return None
+    return None
 
 # Load historical images metadata
 historical_images = []
@@ -61,6 +75,7 @@ SOURCE_URLS = {
 
 # --- Historical images section ---
 if historical_images:
+    section_accent(0)
     st.markdown('<div class="section-title">🏟️ L\'Olimpíada Popular de Barcelona, 1936</div>', unsafe_allow_html=True)
     st.markdown("Imatges històriques relacionades amb l'Olimpíada Popular i el seu context. Fes clic a la font per veure l'article original.")
 
@@ -77,16 +92,26 @@ if historical_images:
                 source_url = SOURCE_URLS.get(source_site, meta.get("source_url", ""))
 
                 with col:
+                    # Prefer local image file; fall back to the original source URL if missing.
+                    # Fetch remote images server-side to avoid browser mixed-content blocking
                     if os.path.isfile(fpath):
                         st.image(fpath, use_container_width=True)
+                    elif meta.get("source_url"):
+                        img_bytes = _fetch_image_bytes(meta.get("source_url"))
+                        if img_bytes:
+                            st.image(img_bytes, use_container_width=True)
+                        else:
+                            st.markdown("*(Imatge no disponible)*")
+
                     st.markdown(f"<div class='img-caption'>{meta['caption']}</div>", unsafe_allow_html=True)
                     st.markdown(f"<div class='img-source'>Font: <a href='{source_url}' target='_blank'>{source_label}</a></div>", unsafe_allow_html=True)
 
 # --- Festa Major / Carrer Papin section ---
+section_accent(1)
 st.markdown('<div class="section-title">🎉 Festa Major de Sants — Carrer Papin</div>', unsafe_allow_html=True)
 
 festa_images = []
-FESTA_DIR = "assets/festa"
+FESTA_DIR = os.path.join(ROOT_DIR, "assets", "festa")
 if os.path.isdir(FESTA_DIR):
     festa_images = sorted([
         f for f in os.listdir(FESTA_DIR)

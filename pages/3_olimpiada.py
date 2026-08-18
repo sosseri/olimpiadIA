@@ -2,6 +2,8 @@ import streamlit as st
 
 st.set_page_config(page_title="L'Olimpíada Popular de Barcelona 1936", page_icon="🏟️", layout="centered")
 
+from lib.decor import section_accent
+
 st.markdown("""
 <style>
     .olimp-header {
@@ -34,6 +36,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+section_accent(0)
 st.markdown("""
 ## L'alternativa antifeixista als Jocs de Hitler
 
@@ -42,6 +45,7 @@ L'any 1936, el règim nazi d'Adolf Hitler va organitzar els **Jocs Olímpics de 
 Davant d'aquesta instrumentalització de l'esport, van sorgir **moviments de boicot** arreu del món. Organitzacions obreres, partits d'esquerres i esportistes van demanar que no es participés als Jocs de Berlín. La resposta va prendre forma a Barcelona.
 """)
 
+section_accent(1)
 st.markdown("""
 ## L'Olimpíada Popular: l'esport del poble
 
@@ -63,6 +67,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+section_accent(2)
 st.markdown("""
 ## Un projecte que anava més enllà de l'esport
 
@@ -71,6 +76,7 @@ L'Olimpíada incloïa un **programa cultural ampli**: concerts, exposicions d'ar
 Les delegacions incloïen França, Regne Unit, Estats Units, Bèlgica, Holanda, Suïssa, Noruega, Suècia, Dinamarca, Txecoslovàquia, Canadà, Algèria i Palestina. Destacaven especialment les delegacions d'**exiliats alemanys i italians antifeixistes**, que no podien competir sota les seves banderes nacionals.
 """)
 
+section_accent(3)
 st.markdown("## Cronologia")
 
 events = [
@@ -93,6 +99,7 @@ for ev_date, ev_desc in events:
     </div>
     """, unsafe_allow_html=True)
 
+section_accent(4)
 st.markdown("""
 ## La Guerra Civil i la fi d'un somni
 
@@ -108,6 +115,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+section_accent(5)
 st.markdown("""
 ## Llegat
 
@@ -118,20 +126,28 @@ El Carrer Papin li dedica el guarnit de 2026 — 90 anys després.
 
 st.markdown("---")
 
+section_accent(6)
 st.markdown("""
 ## Per saber-ne més
 
 **Fonts documentals:**
 - [Arxiu Patrimonial de la Generalitat de Catalunya](https://patrimoni.gencat.cat/es/catalunyapaisdarxius/recurso-digital/recurso/document/programa-de-lolimpiada-popular-de-barcelona/) — Programa oficial de l'Olimpíada Popular (AHCB)
 - [Betevé — Va Passar Aquí](https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/) — L'Olimpíada Popular i el CADCI
+- [L'Olimpíada Popular de Barcelona que la Guerra Civil va aturar — betevé](https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/?fbclid=PAb21jcATWs7NleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAac_NfcA88Op9CJ9uF5RRDIJ66rQzxb715mg2IaUUrhGEAfpajbFFOQFy2jQ9w_aem_KDy-zxeG7bmH1dGMA_8Z9Q)
 - [Nou Barris per la República](https://noubarrisperlarepublica.org/cas/herramientas-republicanas/cultura-cas/la-olimpiada-popular-del-36/) — La Olimpiada Popular del 36
 - [VSCW.ca — Volunteers for the Spanish Civil War](https://vscw.ca/es/node/783) — Atletes que van quedar-se a lluitar
 - [Wanderer.es](https://www.wanderer.es/barcelona-la-olimpiada-popular-que-quiso-derrotar-a-hitler/) — Barcelona, la Olimpiada Popular que quiso derrotar a Hitler
 - [Wikipedia — Olimpiada Popular](https://es.wikipedia.org/wiki/Olimpiada_Popular)
+- [Instagram — Imatge relacionada amb l'Olimpíada Popular](https://www.instagram.com/p/Da78mX8jR8J/?igsh=MWNuczdqem95aHl1YQ==)
+- [Telenotícies — L'Olimpíada Popular, els jocs que mai no es van fer (3Cat)](https://youtu.be/CPvydj6eHcc?is=BcgVcpfRBpC86Rca)
+- [Noranta anys d'un somni. L'Olimpíada Popular — L'Avenç](https://www.lavenc.cat/noticia/667/noranta-anys-somni-olimpiada-popular)
 
 **Llibres:**
 - *L'Olimpíada Popular de Barcelona* — Xavier Pujadas i Carles Santacana (estudi acadèmic de referència)
 - *Homenatge a Catalunya* — George Orwell (testimoni de primera mà de la Guerra Civil)
+
+**Audiovisuals:**
+- [Telenotícies — L'Olimpíada Popular, els jocs que mai no es van fer (3Cat)](https://youtu.be/CPvydj6eHcc?is=BcgVcpfRBpC86Rca)
 
 **Pel·lícules:**
 - *Tierra y Libertad* (1995, Ken Loach) — voluntari britànic a la Guerra Civil

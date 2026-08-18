@@ -1,0 +1,83 @@
+import base64
+import os
+
+import streamlit as st
+
+ESPORTS_DIR = "assets/esports"
+# Sport illustration -> corner it decorates. Each appears once, low-opacity,
+# fixed to the viewport so it reads as a light background accent.
+_SPORTS = ["Ciclisme.png", "Natacio.png", "Boxa.png", "Gimnastica.png", "Escacs.png"]
+_POSITIONS = [
+    ("bottom: 2%; right: 1%;", "rotate(0deg)"),
+    ("top: 30%; left: -2%;", "rotate(0deg)"),
+    ("bottom: 30%; right: -1%;", "scaleX(-1)"),
+    ("top: 55%; right: 2%;", "rotate(0deg)"),
+    ("bottom: 3%; left: 1%;", "scaleX(-1)"),
+]
+
+
+@st.cache_data
+def _encoded():
+    out = []
+    for fname in _SPORTS:
+        fpath = os.path.join(ESPORTS_DIR, fname)
+        if os.path.isfile(fpath):
+            with open(fpath, "rb") as fh:
+                out.append(base64.b64encode(fh.read()).decode())
+        else:
+            out.append(None)
+    return out
+
+
+def add_background(count=3, opacity=0.08, size="150px"):
+    """Scatter `count` sport PNGs as fixed, faint background accents."""
+    encoded = _encoded()
+    layers = []
+    for i in range(min(count, len(_SPORTS))):
+        b64 = encoded[i]
+        if not b64:
+            continue
+        pos, transform = _POSITIONS[i]
+        layers.append(
+            f"""
+            <div style="position: fixed; {pos} z-index: 0; pointer-events: none;
+                        opacity: {opacity}; transform: {transform};
+                        width: {size}; height: {size};
+                        background-image: url('data:image/png;base64,{b64}');
+                        background-size: contain; background-repeat: no-repeat;">
+            </div>"""
+        )
+    if layers:
+        st.markdown("".join(layers), unsafe_allow_html=True)
+
+
+# Sides alternate so consecutive sections don't stack their accents.
+_SIDES = [
+    ("right: -10px;", "scaleX(-1)"),
+    ("left: -10px;", "rotate(0deg)"),
+]
+
+
+def section_accent(index, opacity=0.10, size="130px"):
+    """Anchor one faint sport PNG behind the next content section.
+
+    The image scrolls with the section it precedes. `index` selects which
+    sport (cycled) and which side, so call once per section with i=0,1,2,...
+    """
+    encoded = _encoded()
+    b64 = encoded[index % len(_SPORTS)]
+    if not b64:
+        return
+    side, transform = _SIDES[index % len(_SIDES)]
+    st.markdown(
+        f"""
+        <div style="position: relative; height: 0; overflow: visible; z-index: 0;">
+            <div style="position: absolute; top: -10px; {side}
+                        pointer-events: none; opacity: {opacity}; transform: {transform};
+                        width: {size}; height: {size};
+                        background-image: url('data:image/png;base64,{b64}');
+                        background-size: contain; background-repeat: no-repeat;">
+            </div>
+        </div>""",
+        unsafe_allow_html=True,
+    )

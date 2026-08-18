@@ -1,8 +1,13 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import json
-from datetime import date
+import html as html_lib
+
+MAP_EMBED_URL = "https://www.google.com/maps/d/embed?mid=1Mm-g7z6ukfmLSi5zEH3uvXwQ2secCTER&ll=41.3766953765755%2C2.134091757378447&z=15"
 
 st.set_page_config(page_title="Programa — Festa Major de Sants 2026", page_icon="📅", layout="centered")
+
+from lib.decor import section_accent
 
 @st.cache_data
 def load_program():
@@ -11,6 +16,40 @@ def load_program():
 
 program = load_program()
 festa = program["festa"]
+streets = program["streets"]
+
+# Ordered list of streets for the dropdown (papin first, then alphabetical, unitari last)
+STREET_ORDER = [
+    ("papin", "🟠 Carrer Papin"),
+    ("alcolea_baix", "Carrer d'Alcolea de Baix"),
+    ("alcolea_dalt", "Carrer d'Alcolea de Dalt"),
+    ("farga", "Plaça de la Farga"),
+    ("finlandia", "Carrer de Finlàndia"),
+    ("galileu", "Carrer de Galileu"),
+    ("guadiana", "Carrer de Guadiana"),
+    ("sagunt", "Carrer de Sagunt"),
+    ("valladolid", "Carrer de Valladolid"),
+    ("vallespir_baix", "Carrer de Vallespir de Baix"),
+    ("vallespir_dalt", "Carrer de Vallespir de Dalt"),
+    ("unitari", "🔵 Actes Unitaris"),
+]
+# Only show streets that exist in the data
+available_streets = [(k, label) for k, label in STREET_ORDER if k in streets]
+
+# All days across all streets, deduped and sorted
+all_dates = sorted({
+    date_key
+    for s in streets.values()
+    for date_key in s["days"].keys()
+})
+DAY_LABELS = {
+    date_key: next(
+        (day_data["day_label"] for s in streets.values()
+         for dk, day_data in s["days"].items() if dk == date_key),
+        date_key
+    )
+    for date_key in all_dates
+}
 
 st.markdown("""
 <style>
@@ -33,9 +72,9 @@ st.markdown("""
         display: inline-block; background: #e3f2fd; color: #1565c0;
         padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; margin-right: 4px;
     }
-    .event-tag-kids {
-        display: inline-block; background: #e8f5e9; color: #2e7d32;
-        padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; margin-right: 4px;
+    .street-header {
+        background: #f5f5f5; border-radius: 8px; padding: 0.5rem 1rem;
+        margin: 1rem 0 0.5rem; font-weight: 700;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -47,99 +86,104 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-# --- Map image ---
-st.markdown("### 🗺️ Mapa dels carrers guarnits")
-st.markdown(
-    "Consulta el [mapa interactiu dels carrers guarnits]"
-    "(https://beteve.cat/cultura/mapa-festes-sants-2024-planol-carrers-guarnits-foto-pdf/) "
-    "per trobar tots els carrers participants."
-)
-
-st.markdown("---")
-
-# --- Filters ---
 st.markdown("### Filtra el programa")
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
-all_days = [(d["date"], d["day_label"]) for d in program["program"]]
-day_options = ["Tots els dies"] + [f"{label}" for _, label in all_days]
-
-all_types = sorted(set(
-    ev["type"] for d in program["program"] for ev in d["events"]
-))
-type_options = ["Tots els tipus"] + all_types
+day_options = ["Tots els dies"] + [DAY_LABELS[d] for d in all_dates]
+street_dropdown_options = ["Tots els carrers"] + [label for _, label in available_streets]
 
 with col1:
-    selected_day = st.selectbox("Dia", day_options)
+    selected_day_label = st.selectbox("Dia", day_options)
 with col2:
-    selected_type = st.selectbox("Tipus d'activitat", type_options)
-with col3:
-    only_kids = st.checkbox("Només activitats familiars", value=False)
+    selected_street_label = st.selectbox("Carrer", street_dropdown_options)
+
+# Resolve selected date key
+selected_date = None
+if selected_day_label != "Tots els dies":
+    for dk, lbl in DAY_LABELS.items():
+        if lbl == selected_day_label:
+            selected_date = dk
+            break
+
+# Resolve selected street keys
+if selected_street_label == "Tots els carrers":
+    selected_keys = [k for k, _ in available_streets]
+else:
+    selected_keys = [k for k, label in available_streets if label == selected_street_label]
 
 st.markdown("---")
 
-# --- Carrer Papin program ---
-st.markdown("### 🟠 Programa del Carrer Papin")
 
-shown = 0
-for day in program["program"]:
-    if selected_day != "Tots els dies" and day["day_label"] != selected_day:
-        continue
+def render_events(street_key, accent_color="#1565c0"):
+    street_data = streets[street_key]
+    days_to_show = sorted(street_data["days"].keys())
+    if selected_date:
+        days_to_show = [d for d in days_to_show if d == selected_date]
 
-    events = day["events"]
-    if selected_type != "Tots els tipus":
-        events = [e for e in events if e["type"] == selected_type]
-    if only_kids:
-        events = [e for e in events if e.get("for_kids")]
-
-    if not events:
-        continue
-
-    st.markdown(f"#### 📅 {day['day_label']}")
-    for ev in events:
-        kids_tag = '<span class="event-tag-kids">👨‍👩‍👧 Familiar</span>' if ev.get("for_kids") else ""
-        tags_html = "".join(f'<span class="event-tag">{t}</span>' for t in ev.get("tags", [])[:3])
-        loc = f" — {ev['location']}" if ev.get("location") and ev["location"] != "Carrer Papin" else ""
-
-        st.markdown(f"""
-        <div class="event-card">
-            <div class="event-time">{ev['time']}{loc}</div>
-            <div class="event-title">{ev['title']}</div>
-            <div class="event-desc">{ev.get('description', '')}</div>
-            <div class="event-tags">{kids_tag} {tags_html}</div>
-        </div>
-        """, unsafe_allow_html=True)
-        shown += 1
-
-if shown == 0:
-    st.info("No hi ha activitats amb els filtres seleccionats.")
-
-# --- Unitari program ---
-st.markdown("---")
-st.markdown("### 🔵 Actes Unitaris (tots els carrers)")
-
-for day in program.get("unitari", []):
-    if selected_day != "Tots els dies":
-        matching_label = day["day_label"]
-        if selected_day != matching_label:
+    shown = 0
+    for dk in days_to_show:
+        day_data = street_data["days"][dk]
+        events = day_data["events"]
+        if not events:
             continue
 
-    st.markdown(f"#### 📅 {day['day_label']}")
-    for ev in day["events"]:
-        st.markdown(f"""
-        <div class="event-card" style="border-left-color: #0277bd;">
-            <div class="event-time">{ev['time']}</div>
-            <div class="event-title">{ev['title']}</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(f"#### 📅 {day_data['day_label']}")
+        for ev in events:
+            tags_html = "".join(f'<span class="event-tag">{t}</span>' for t in ev.get("tags", [])[:3])
+            time_str = ev.get("time") or "—"
+            title = html_lib.escape(ev.get("title", ""))
+            desc = html_lib.escape(ev.get("description", ""))
+            st.markdown(f"""
+            <div class="event-card" style="border-left-color:{accent_color};">
+                <div class="event-time" style="color:{accent_color};">{time_str}</div>
+                <div class="event-title">{title}</div>
+                <div class="event-desc">{desc}</div>
+                <div class="event-tags">{tags_html}</div>
+            </div>
+            """, unsafe_allow_html=True)
+            shown += 1
+    return shown
 
-# --- Other streets ---
-st.markdown("---")
-st.markdown("### 🏘️ Altres carrers participants")
 
-for street in program.get("other_streets", []):
-    st.markdown(f"- **{street['name']}**: {street.get('theme', '')}")
+ACCENT_COLORS = {
+    "papin": "#e65100",
+    "unitari": "#0277bd",
+    "alcolea_baix": "#6a1b9a",
+    "alcolea_dalt": "#ad1457",
+    "farga": "#2e7d32",
+    "finlandia": "#00695c",
+    "galileu": "#1565c0",
+    "guadiana": "#4527a0",
+    "sagunt": "#c62828",
+    "valladolid": "#558b2f",
+    "vallespir_baix": "#4e342e",
+    "vallespir_dalt": "#37474f",
+}
+
+accent_i = 0
+for key in selected_keys:
+    if key not in streets:
+        continue
+    street_data = streets[key]
+    label = next((lbl for k, lbl in available_streets if k == key), street_data["name"])
+    color = ACCENT_COLORS.get(key, "#1565c0")
+
+    section_accent(accent_i)
+    accent_i += 1
+    st.markdown(f'<div class="street-header" style="border-left: 4px solid {color}; padding-left:1rem;">{label} — <em>{street_data.get("theme","")}</em></div>', unsafe_allow_html=True)
+
+    shown = render_events(key, accent_color=color)
+    if shown == 0:
+        st.info(f"No hi ha activitats a {street_data['name']} amb els filtres seleccionats.")
 
 st.markdown("---")
 st.caption("El programa és provisional i pot canviar. Consulteu amb la comissió per confirmacions.")
+
+section_accent(accent_i)
+st.markdown("### 🗺️ Mapa dels carrers guarnits")
+st.markdown(
+    "Explora el mapa interactiu per trobar tots els carrers participants "
+    "amb la seva ubicació i temàtica."
+)
+components.iframe(MAP_EMBED_URL, height=480)

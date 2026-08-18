@@ -1,0 +1,540 @@
+{
+  "key": "sagunt",
+  "name": "Carrer de Sagunt",
+  "theme": "El Metro de Barcelona",
+  "decoration_description": "Commemoració del centenari del metro de Barcelona. El carrer es transforma en una estació de metro amb senyalització, mapes i elements ferroviaris recreant l'ambient subterrani.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "21:00",
+          "title": "Sopar de germanor",
+          "description": "Porta el teu millor plat i comparteix!",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "germanor",
+            "compartir"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "La Cara B Dj",
+          "description": "Salsa amb vinils",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "salsa",
+            "vinils"
+          ]
+        },
+        {
+          "time": "01:30",
+          "title": "Concert de Katta Lana & Brauer",
+          "description": "Música de club berlinès en català",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "club",
+            "berlín",
+            "català"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "11:30",
+          "title": "Traca d'inici de Festa Major",
+          "description": "Traca d'inici de la Festa Major",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "traca",
+            "inici",
+            "festa major"
+          ]
+        },
+        {
+          "time": "11:30",
+          "title": "Xaranga amb Banda Patilla",
+          "description": "Xaranga amb Banda Patilla pels carrers",
+          "type": "música",
+          "for_kids": true,
+          "tags": [
+            "xaranga",
+            "banda",
+            "música"
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Vermut de les sòcies",
+          "description": "Vermut de les sòcies de l'associació",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "vermut",
+            "socis"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "CorreDrags",
+          "description": "Festa itinerant pels carrers Guadiana, Sagunt i Papin amb 3 xous de Ben Alfons, Frida la Ter i Dissident.cia. Places limitades, inscripció a ja.cat/corredragssagunt",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "drags",
+            "itinerant",
+            "espectacle",
+            "inscripció",
+            "Guadiana",
+            "Papin"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar de pizzes",
+          "description": "Porta la teva i comparteix!",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "pizzes",
+            "compartir"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Nit de concert amb Xana Blue",
+          "description": "La primera diva pop catalana",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "pop",
+            "català"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Final de nit amb Ferran Lonou Dj Set",
+          "description": "La millor sessió de Dj amb un dels membres de Fades",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "sessió",
+            "Fades"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "18:00",
+          "title": "Els Follets rondallaires",
+          "description": "Espectacle infantil de poesia i música a càrrec del Col·lectiu d'Artistes de Sants (al carrer de Sagunt, 99)",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "infantil",
+            "poesia",
+            "música",
+            "Col·lectiu d'Artistes de Sants"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Quedem a la Comissió per anar plegades als Premis",
+          "description": "Anem plegades als Premis, al parc de l'Espanya Industrial",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "premis",
+            "Espanya Industrial"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar de truites",
+          "description": "Porta la teva i comparteix!",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "truites",
+            "compartir"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Nit de Karaoke amb banda en directe Vàlius",
+          "description": "Karaoke amb banda en directe Vàlius",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "karaoke",
+            "banda",
+            "directe"
+          ]
+        }
+      ]
+    },
+    "2026-08-25": {
+      "day_label": "Dimarts 25",
+      "events": [
+        {
+          "time": "18:00",
+          "title": "Poemes dibuixats amb Júlia Badal",
+          "description": "A càrrec del Col·lectiu d'Artistes de Sants (al carrer de Sagunt, 99)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "poesia",
+            "dibuix",
+            "Col·lectiu d'Artistes de Sants"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Sopar de germanor",
+          "description": "Porta el teu tàper i vine a menjar al carrer plegades!",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "germanor",
+            "compartir"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Espectacle de màgia xixaraxera!",
+          "description": "Espectacle de màgia xixaraxera",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "màgia",
+            "espectacle",
+            "infantil"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Concurs de dolços",
+          "description": "Fes i porta el teu millor dolç i participa!",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "concurs",
+            "dolços",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "'Tinc un projecte… Anar de pájaro a l'ocell' amb Natàlia Carrasco",
+          "description": "A càrrec del Col·lectiu d'Artistes de Sants (al carrer de Sagunt, 99)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "Col·lectiu d'Artistes de Sants",
+            "art",
+            "projecte"
+          ]
+        },
+        {
+          "time": "19:15",
+          "title": "Taller de Sardana satànica",
+          "description": "A càrrec dels Joves Sardanistes de l'Agrupa de Molins de Rei",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "sardana",
+            "taller",
+            "ball",
+            "Molins de Rei"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Botifarrada popular",
+          "description": "Compra el teu tiquet i vine!",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "botifarrada",
+            "sopar",
+            "popular"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Nit de Pòdcasts: La recambra",
+          "description": "La recambra (Onada Feminista)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "pòdcast",
+            "feminisme"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Nit de Pòdcasts: La sida dels gossos",
+          "description": "Nit de pòdcasts: La sida dels gossos",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "pòdcast"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Taller infantil de fang",
+          "description": "Taller infantil de fang",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "fang",
+            "infantil"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "'Bohèmia de París' amb Col·lectiu d'Artistes de Sants",
+          "description": "Amb Soledat Gascó, Júlia Badal, Montse Molins, Natàlia Carrasco, Glòria Bosch i Morera, a càrrec del Col·lectiu d'Artistes de Sants (al carrer de Sagunt, 99)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "Col·lectiu d'Artistes de Sants",
+            "art",
+            "París"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Havaneres amb el grup Barca de Mitjana",
+          "description": "Havaneres amb el grup Barca de Mitjana. A la mitja part, rom cremat",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "havaneres",
+            "rom cremat",
+            "música"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Botifarrada popular",
+          "description": "Compra el teu tiquet i vine!",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "botifarrada",
+            "sopar",
+            "popular"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Nit de concert amb Garrafa Nadal",
+          "description": "Pop-rock",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "pop-rock"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Nit de concert amb Gatefold",
+          "description": "Pop-rock",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "pop-rock"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Gimcana fotogràfica",
+          "description": "Activitat conjunta amb els carrers Papin i Guadiana. Fes un grup de màxim 4 persones i vine a recórrer el barri càmera en mà. Punt d'inici: c. Papin",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "gimcana",
+            "fotografia",
+            "Papin",
+            "Guadiana"
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "Taller de guarnit",
+          "description": "Fes una part de la decoració del carrer i emporta-te-la a casa!",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "decoració",
+            "manualitats"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Jocs de taula amb l'Associació lúdica Sants-Niggurath",
+          "description": "Jocs de taula amb l'Associació lúdica Sants-Niggurath",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "jocs de taula",
+            "lúdic"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar intercultural",
+          "description": "Porta el plat més típic del teu lloc d'origen i compartim cultures!",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "intercultural",
+            "compartir"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "PD Xarxacat",
+          "description": "Dives i patxanga!",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "patxanga",
+            "dives"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Festa amb Allioli Olé!",
+          "description": "Balla amb barretina els millors hits en català i més!",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "festa",
+            "català",
+            "barretina",
+            "ball"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "11:30",
+          "title": "Ping-pong lúdic casolà",
+          "description": "Tenim taules 'artesanals' i raquetes. Vine a jugar tinguis el nivell que tinguis!",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "ping-pong",
+            "esport",
+            "lúdic"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Concert de folk i ball amb Calcetes Tradis",
+          "description": "Concert de folk i ball amb Calcetes Tradis",
+          "type": "concert",
+          "for_kids": true,
+          "tags": [
+            "folk",
+            "ball",
+            "concert"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar de final de festa",
+          "description": "Porta el teu millor plat i comparteix!",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "final de festa",
+            "compartir"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Nit de Festes amb Joan Colomo i la Radiofórmula",
+          "description": "Versions inversemblants!",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "versions",
+            "Joan Colomo"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Final de Festes amb PD Sagunt i Punt",
+          "description": "De les veïnes per les veïnes",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "final",
+            "veïnes"
+          ]
+        },
+        {
+          "time": "03:00",
+          "title": "Traca fi de Festa Major",
+          "description": "Traca de fi de la Festa Major",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "fi",
+            "festa major"
+          ]
+        }
+      ]
+    }
+  }
+}

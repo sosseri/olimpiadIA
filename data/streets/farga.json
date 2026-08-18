@@ -1,0 +1,520 @@
+{
+  "key": "farga",
+  "name": "Plaça de la Farga",
+  "theme": "2a Mostra artesana farguera",
+  "decoration_description": "Artesania farguera i cultura del barri. La plaça acull la 2a Mostra artesana farguera amb exposició i venda d'artesania local, combinant tradició i creativitat popular.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "20:00",
+          "title": "Traca d'inici de la Festa Major amb Batucada",
+          "description": "Traca d'inici de la Festa Major amb Batucada a càrrec de Bloco Sambara",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "batucada",
+            "inici",
+            "festa major",
+            "Bloco Sambara"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Concert de Mind Trick",
+          "description": "Concert de Mind Trick",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Mind Trick"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Dj Eneko Veintiuno",
+          "description": "Sessió de Dj Eneko Veintiuno",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Eneko Veintiuno"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "10:30",
+          "title": "Guerra d'aigua per a totes les edats",
+          "description": "Guerra d'aigua per a totes les edats",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "guerra d'aigua",
+            "totes les edats"
+          ]
+        },
+        {
+          "time": "12:30",
+          "title": "Jocs de socis i sòcies del carrer",
+          "description": "Jocs de socis i sòcies del carrer",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "jocs",
+            "socis"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Concert de Rocking Horse",
+          "description": "Concert de Rocking Horse",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Rocking Horse"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Dj Rafa Mendoza",
+          "description": "Sessió de Dj Rafa Mendoza",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Rafa Mendoza"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Concurs de fang i dibuix per a infants",
+          "description": "Concurs de fang i dibuix per a infants de totes les edats",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "concurs",
+            "fang",
+            "dibuix",
+            "infants"
+          ]
+        },
+        {
+          "time": "14:00",
+          "title": "Botifarrada Farguera",
+          "description": "Botifarrada Farguera. Venda de tiquets al local de la comissió",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "botifarrada",
+            "gastronomia",
+            "farguera"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Jocs de taula farguers",
+          "description": "Jocs de taula farguers",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "jocs de taula",
+            "farguers"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Concert de Trambólicos",
+          "description": "Concert de Trambólicos",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Trambólicos"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Dj Picantillo",
+          "description": "Sessió de Dj Picantillo",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Picantillo"
+          ]
+        }
+      ]
+    },
+    "2026-08-25": {
+      "day_label": "Dimarts 25",
+      "events": [
+        {
+          "time": "20:00",
+          "title": "Sopar de germanor",
+          "description": "Sopar de germanor",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "germanor"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Jocs de taula farguers",
+          "description": "Jocs de taula farguers",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "jocs de taula",
+            "farguers"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Improshow a càrrec de La Casa de la Impro",
+          "description": "Improshow a càrrec de La Casa de la Impro",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "improshow",
+            "La Casa de la Impro",
+            "teatre"
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Vermut per als socis i sòcies",
+          "description": "Vermut per als socis i sòcies",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "vermut",
+            "socis"
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Berenar d'avis i àvies amenitzat per La Montecarlo",
+          "description": "Berenar d'avis i àvies amenitzat per La Montecarlo",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "berenar",
+            "avis",
+            "La Montecarlo"
+          ]
+        },
+        {
+          "time": "19:45",
+          "title": "Masterclass de salsa de la mà de Xavier Badiella",
+          "description": "Masterclass de salsa de la mà de Xavier Badiella",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "masterclass",
+            "salsa",
+            "Xavier Badiella",
+            "ball"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Concert de La Montecarlo",
+          "description": "Concert de La Montecarlo",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "La Montecarlo"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Dj Rafa Mendoza",
+          "description": "Sessió de Dj Rafa Mendoza",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Rafa Mendoza"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Fira de la Festa del Benestar Animal",
+          "description": "Fira de la Festa del Benestar Animal. Mostra d'entitats animalistes, passarel·les d'animals en adopció, activitats per a tots els públics i xerrades i tallers per conèixer l'educació canina en positiu",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "animals",
+            "adopció",
+            "benestar animal",
+            "tallers",
+            "xerrades"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Masterclass de salsa a càrrec de Ritmos Barcelona",
+          "description": "Masterclass de salsa a càrrec de Ritmos Barcelona",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "masterclass",
+            "salsa",
+            "Ritmos Barcelona",
+            "ball"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Shows de ball de Ritmos Barcelona i Sonido Bestial",
+          "description": "Shows de ball de Ritmos Barcelona i Sonido Bestial",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "ball",
+            "Ritmos Barcelona",
+            "Sonido Bestial",
+            "show"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Ball social de salsa i bachata",
+          "description": "Ball social de salsa i bachata",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "ball",
+            "salsa",
+            "bachata",
+            "social"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Concert de salsa de Guaracheando Latin Group",
+          "description": "Concert de salsa de Guaracheando Latin Group",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "salsa",
+            "Guaracheando Latin Group",
+            "llatí"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Contacontes 'El farcell de contes de la Momo'",
+          "description": "Contacontes 'El farcell de contes de la Momo'",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "contacontes",
+            "infants",
+            "Momo",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Xocolatada infantil i actuació màgica amb el Mag Xurret",
+          "description": "Xocolatada infantil i actuació màgica amb el Mag Xurret",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "xocolatada",
+            "màgia",
+            "infants",
+            "Mag Xurret",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Concert d'Etèria",
+          "description": "Concert d'Etèria",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Etèria",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Discomòbil amb Dj Eugeni Carrió",
+          "description": "Discomòbil amb Dj Eugeni Carrió",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "discomòbil",
+            "dj",
+            "Eugeni Carrió",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Remember MaKina amb Dj Eneko Veintiuno",
+          "description": "Remember MaKina amb Dj Eneko Veintiuno",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "remember",
+            "makina",
+            "dj",
+            "Eneko Veintiuno",
+            "2a Mostra artesana farguera"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "Cursa La Farga amb Corresolidaris",
+          "description": "Cursa La Farga amb Corresolidaris",
+          "type": "esport",
+          "for_kids": false,
+          "tags": [
+            "cursa",
+            "running",
+            "Corresolidaris",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "Jocs de taula de la mà de Sants Niggurath",
+          "description": "Jocs de taula de la mà de Sants Niggurath",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "jocs de taula",
+            "Sants Niggurath",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "14:00",
+          "title": "Paella popular farguera amb Paelles Papitu",
+          "description": "Paella popular farguera amb Paelles Papitu",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "paella",
+            "gastronomia",
+            "Paelles Papitu",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Jocs de taula farguers",
+          "description": "Jocs de taula farguers",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "jocs de taula",
+            "farguers",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Jocs de taula musicals",
+          "description": "Jocs de taula musicals",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "jocs de taula",
+            "musicals",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Tardeig musical",
+          "description": "Tardeig musical",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "tardeig",
+            "música",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Concert de Mala Vida",
+          "description": "Concert de Mala Vida",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Mala Vida",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Dj Picantillo",
+          "description": "Sessió de Dj Picantillo",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Picantillo",
+            "2a Mostra artesana farguera"
+          ]
+        },
+        {
+          "time": "03:00",
+          "title": "Traca final de la Festa Major",
+          "description": "Traca final de la Festa Major",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "traca",
+            "final",
+            "festa major",
+            "2a Mostra artesana farguera"
+          ]
+        }
+      ]
+    }
+  }
+}

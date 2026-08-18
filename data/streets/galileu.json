@@ -1,0 +1,374 @@
+{
+  "key": "galileu",
+  "name": "Carrer de Galileu",
+  "theme": "Remember '70 '80 '90",
+  "decoration_description": "Decoració evocadora de les dècades dels 70, 80 i 90. El carrer es vesteix de nostàlgia musical amb elements visuals de l'època: vinils, cassettes, cartells de concerts i colors retro.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "20:00",
+          "title": "Traca d'inici de la Festa Major",
+          "description": "Traca d'inici que dóna el tret de sortida a la Festa Major de Galileu",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "inici",
+            "festa major"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Remember '70 '80 '90 amb Dj Sayol",
+          "description": "Sessió de música remember amb els millors èxits de les dècades dels 70, 80 i 90 a càrrec de Dj Sayol",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "remember",
+            "dj",
+            "70s",
+            "80s",
+            "90s",
+            "Dj Sayol"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Fira artesanal",
+          "description": "Fira artesanal oberta tot el dia amb productes i creacions d'artesans locals",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "fira",
+            "artesania",
+            "tot el dia"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Fakers Trio amb Nacho Romero",
+          "description": "Concert de Fakers Trio amb la participació de Nacho Romero",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Fakers Trio",
+            "Nacho Romero",
+            "música en directe"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Música amb la Comi de Galileu",
+          "description": "Sessió musical a càrrec de la Comissió de Galileu per tancar la nit",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "música",
+            "comissió",
+            "Galileu"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Ofrena floral a Sant Bartomeu",
+          "description": "Ofrena floral en honor a Sant Bartomeu, patró de Sants",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "ofrena floral",
+            "Sant Bartomeu",
+            "tradició"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Màgia clàssica",
+          "description": "Espectacle de màgia clàssica per a tots els públics",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "màgia",
+            "espectacle",
+            "família"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Xocolatada",
+          "description": "Xocolatada popular per als veïns i veïnes de Galileu",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "xocolatada",
+            "popular",
+            "família"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Sopar de germanor",
+          "description": "Sopar de germanor per als veïns i participantes de la festa",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "germanor",
+            "veïns"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Show amb Juan Reina, Platanito Bello i Chantal Bijoux",
+          "description": "Gran show d'entreteniment amb Juan Reina, Platanito Bello i Chantal Bijoux",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "show",
+            "Juan Reina",
+            "Platanito Bello",
+            "Chantal Bijoux",
+            "entreteniment"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "events": [
+        {
+          "time": "19:00",
+          "title": "Havaneres Montjuïc",
+          "description": "Concert d'havaneres en homenatge a la tradició marinera catalana",
+          "type": "concert",
+          "for_kids": true,
+          "tags": [
+            "havaneres",
+            "Montjuïc",
+            "tradició",
+            "música catalana"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Primperan Show",
+          "description": "Espectacle Primperan Show",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "show",
+            "Primperan"
+          ]
+        },
+        {
+          "time": "23:10",
+          "title": "The Colour Flour",
+          "description": "Actuació de The Colour Flour",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "The Colour Flour",
+            "música en directe"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Concurs de truites i vermut a la barra de la Comissió",
+          "description": "Concurs de truites de patata acompanyat de vermut a la barra de la Comissió de Galileu",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "concurs",
+            "truites",
+            "vermut",
+            "comissió"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Sardinada popular",
+          "description": "Sardinada popular oberta a tots els veïns i veïnes",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "sardinada",
+            "popular",
+            "sopar"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Sabor latino",
+          "description": "Nit de música i ball amb ritmes llatins",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "sabor latino",
+            "ritmes llatins",
+            "ball"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Música amb Dj Sayol",
+          "description": "Sessió de música a càrrec de Dj Sayol per tancar la nit",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Dj Sayol",
+            "sessió musical"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Taller infantil",
+          "description": "Taller infantil per als més petits de la festa",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "infantil",
+            "nens"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Batalla de galls amb Ona de Sants",
+          "description": "Batalla de galls de rap amb la participació d'Ona de Sants",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "batalla de galls",
+            "rap",
+            "Ona de Sants",
+            "hip-hop"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Show de Doble Cara",
+          "description": "Espectacle Show de Doble Cara",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "show",
+            "Doble Cara"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Festa de l'espuma infantil",
+          "description": "Festa de l'espuma per als nens i nenes de la festa",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "espuma",
+            "infantil",
+            "nens",
+            "diversió"
+          ]
+        },
+        {
+          "time": "15:00",
+          "title": "Fideuà popular",
+          "description": "Fideuà popular per a tots els participants de la festa",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "fideuà",
+            "popular",
+            "dinar"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Remenem les boles",
+          "description": "Activitat Remenem les boles",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "jocs",
+            "activitat",
+            "popular"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Tardeig amb Ritmos Barcelona",
+          "description": "Tarda musical amb Ritmos Barcelona per amenitzar la tarda de festa",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "tardeig",
+            "Ritmos Barcelona",
+            "música"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Disco Cocodrilo",
+          "description": "Nit de discoteca amb Disco Cocodrilo",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "disco",
+            "Disco Cocodrilo",
+            "ball",
+            "nit"
+          ]
+        },
+        {
+          "time": "02:50",
+          "title": "Batukada i fi de festa",
+          "description": "Batucada per acomiadar la Festa Major de Galileu",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "batucada",
+            "fi de festa"
+          ]
+        },
+        {
+          "time": "03:00",
+          "title": "Traca de fi de Festa Major",
+          "description": "Traca final que tanca oficialment la Festa Major de Galileu 2026",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "fi de festa",
+            "festa major"
+          ]
+        }
+      ]
+    }
+  }
+}

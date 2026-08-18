@@ -1,0 +1,479 @@
+{
+  "key": "vallespir_dalt",
+  "name": "Carrer de Vallespir de Dalt",
+  "theme": "Nits de versions, rock i tradicions",
+  "decoration_description": "El carrer explica la feina que fan els veïns per fer possible la Festa Major de Sants: bastidors, materials de decoració, eines i el procés creatiu darrere de cada guarnit.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "subtheme": "Nit de versions",
+      "events": [
+        {
+          "time": "21:00",
+          "title": "Batukada a càrrec de Batalà Barcelona",
+          "description": "Actuació de batukada a càrrec del grup Batalà Barcelona",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "batukada",
+            "percussió",
+            "batalà barcelona"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Nit de tribut Queen for a day",
+          "description": "Concert tribut a Queen",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "tribut",
+            "queen",
+            "rock",
+            "versions"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Nit de festa amb Dj Txanga",
+          "description": "Sessió de Dj per tancar la nit de versions",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "festa",
+            "txanga"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "subtheme": "Nit de grups emergents",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Vermut musical a càrrec de la comissió",
+          "description": "Vermut musical organitzat per la comissió del carrer",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "vermut",
+            "musical",
+            "comissió"
+          ]
+        },
+        {
+          "time": "14:00",
+          "title": "Botifarrada popular patrocinada per Bon Àrea",
+          "description": "Botifarrada popular patrocinada per Bon Àrea. Reserva prèvia necessària.",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "botifarrada",
+            "popular",
+            "bon àrea",
+            "reserva prèvia"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Bingo musical",
+          "description": "Sessió de bingo musical",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "bingo",
+            "musical",
+            "joc"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Nit de rock amb Los Mals Menors",
+          "description": "Concert de rock amb el grup Los Mals Menors",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "los mals menors",
+            "grups emergents"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Nit de rock amb les Rates Locals",
+          "description": "Concert de rock amb el grup les Rates Locals",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "rates locals",
+            "grups emergents"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Acabem la nit amb Marc Ferriz i el seu Show amb violí elèctric",
+          "description": "Espectacle de clausura amb Marc Ferriz i el seu show de violí elèctric",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "violí elèctric",
+            "marc ferriz",
+            "show"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "subtheme": "Nit de tradicions i versions",
+      "events": [
+        {
+          "time": "09:00",
+          "title": "Festa del Benestar Animal",
+          "description": "Festa del Benestar Animal. Activitat durant tot el dia.",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "animals",
+            "benestar animal",
+            "tot el dia"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Passejada conjunta pels carrers guarnits",
+          "description": "Passejada conjunta per visitar els carrers guarnits de la Festa Major de Sants",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "passejada",
+            "carrers guarnits",
+            "festa major"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Havaneres amb el Grup Montjuïc i rom cremat",
+          "description": "Concert d'havaneres amb el Grup Montjuïc acompanyat de rom cremat",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "havaneres",
+            "grup montjuïc",
+            "rom cremat",
+            "tradicions"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Nit de versions amb Lactik",
+          "description": "Concert de versions amb el grup Lactik",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "versions",
+            "lactik"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "subtheme": "Nit de salsa",
+      "events": [
+        {
+          "time": "09:00",
+          "title": "Mercat al carrer",
+          "description": "Mercat al carrer durant tot el dia",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "mercat",
+            "carrer",
+            "tot el dia"
+          ]
+        },
+        {
+          "time": "11:30",
+          "title": "Animació infantil DiverShow Fiesta",
+          "description": "Espectacle d'animació infantil DiverShow Fiesta",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "infantil",
+            "animació",
+            "divershow fiesta"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Taller de capoeira patrocinat per l'Institut de les desigualtats",
+          "description": "Taller de capoeira patrocinat per l'Institut de les desigualtats",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "capoeira",
+            "taller",
+            "institut de les desigualtats"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Taller i exhibició de salsa amb Ritmos Barcelona",
+          "description": "Taller i exhibició de salsa a càrrec de Ritmos Barcelona",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "salsa",
+            "taller",
+            "exhibició",
+            "ritmos barcelona"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Dj Naño E-Cuba",
+          "description": "Sessió de Dj Naño E-Cuba",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "naño e-cuba",
+            "salsa",
+            "cuba"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Acabem la nit amb el Sonido de Veldá",
+          "description": "Sessió de clausura amb el Sonido de Veldá (Dj, música Afro-Llatina)",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "sonido de veldá",
+            "afro-llatina",
+            "música llatina"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Jocs de fusta tradicionals amb Els jocs de Ca la Padrina",
+          "description": "Jocs de fusta tradicionals a càrrec d'Els jocs de Ca la Padrina. Activitat durant tot el dia.",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "jocs de fusta",
+            "tradicionals",
+            "ca la padrina",
+            "tot el dia"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Berenar pels avis i àvies amb 3 dramatúrgies 'Veus contra l'odi'",
+          "description": "Berenar pels avis i àvies amb 3 dramatúrgies 'Veus contra l'odi', patrocinat per Despensa García Lozano i l'Institut de les desigualtats. Amb invitació.",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "veus contra l'odi",
+            "dramatúrgia",
+            "avis",
+            "berenar",
+            "invitació",
+            "garcía lozano",
+            "institut de les desigualtats"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar de germanor a la fresca",
+          "description": "Sopar de germanor a la fresca. Amb reserva prèvia.",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "germanor",
+            "fresca",
+            "reserva prèvia"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Nit de música afroamericana amb Powafunk",
+          "description": "Concert de música afroamericana amb Powafunk",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "afroamericana",
+            "funk",
+            "powafunk"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Nit de versions amb The Unicornios Lokos",
+          "description": "Concert de versions amb The Unicornios Lokos",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "versions",
+            "the unicornios lokos"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "subtheme": "Nit de festa",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Taller 'Decora el teu davantal'",
+          "description": "Taller per decorar el propi davantal",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "davantal",
+            "manualitats"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Vespre de versions amb Two Much Covers",
+          "description": "Concert de versions amb Two Much Covers",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "versions",
+            "two much covers"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Nit de rumba amb Alma de Boquerón",
+          "description": "Concert de rumba amb Alma de Boquerón",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "alma de boquerón"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Nit de festa amb PD Pachas & The Mamas",
+          "description": "Sessió de festa amb PD Pachas & The Mamas",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "festa",
+            "pd pachas",
+            "the mamas",
+            "dj"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "subtheme": "Nit de rock",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Lliurament de premis de la Votació Popular de la Festa Major de Sants",
+          "description": "Lliurament de premis de la Votació Popular de la Festa Major de Sants, organitzat per Sants 3 Ràdio",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "premis",
+            "votació popular",
+            "sants 3 ràdio",
+            "festa major de sants"
+          ]
+        },
+        {
+          "time": "14:00",
+          "title": "Arrossada popular feta amb Papito Paelles",
+          "description": "Arrossada popular feta amb Papito Paelles. Amb reserva prèvia.",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "arrossada",
+            "popular",
+            "papito paelles",
+            "reserva prèvia"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Remenem les boles",
+          "description": "Activitat Remenem les boles",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "remenem les boles",
+            "jocs",
+            "activitat"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Vespre a ritme de Rock amb Peter Fields",
+          "description": "Concert de rock amb Peter Fields",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "peter fields"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Nit de rock amb Robin Surf",
+          "description": "Concert de rock amb Robin Surf",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "robin surf"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Nit de rock amb Rock the Night",
+          "description": "Sessió Rock the Night per tancar la nit",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "rock the night",
+            "festa"
+          ]
+        },
+        {
+          "time": "03:00",
+          "title": "Traca final de Festa Major",
+          "description": "Traca final que tanca la Festa Major de Sants 2026",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "final",
+            "festa major",
+            "cloenda"
+          ]
+        }
+      ]
+    }
+  }
+}
