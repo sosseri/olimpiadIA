@@ -85,39 +85,76 @@ def _find_best_image_filename(requested: str):
     return best if best_score > 0 else None
 
 
+def _resolve_image_bytes(ref: str):
+    fname = ref.strip().strip("\"'[]() ")
+    if not fname:
+        return None, None
+    img_bytes = _get_image_bytes_by_name(fname)
+    used_fname = fname
+    if not img_bytes:
+        candidate = _find_best_image_filename(fname)
+        if candidate:
+            used_fname = candidate
+            img_bytes = _get_image_bytes_by_name(candidate)
+    return img_bytes, used_fname
+
+
+def _extract_image_references(text: str):
+    """Return image filenames from exact tags or plain filename mentions."""
+    refs = []
+    seen = set()
+
+    tag_pattern = re.compile(r'\[(?:IMATGE|IMAGE|IMAGEN):([^\]]+)\]', flags=re.IGNORECASE)
+    for match in tag_pattern.finditer(text):
+        ref = match.group(1).strip().strip("\"'[]() ")
+        if ref and ref not in seen:
+            refs.append(ref)
+            seen.add(ref)
+
+    bare_pattern = re.compile(
+        r'(?i)(?:\b(?:imatge|image|imagen|foto|photo|imatges|images)\s*[:\-]?\s*|\b)'
+        r'([A-Za-z0-9_./ -]+?\.(?:jpe?g|png|gif|webp|bmp|svg))'
+    )
+    for match in bare_pattern.finditer(text):
+        ref = match.group(1).strip().strip("\"'[]() ")
+        if ref and ref not in seen:
+            refs.append(ref)
+            seen.add(ref)
+    return refs
+
+
 def _render_bot_message(content: str):
-    """Split bot content on image tags (IMATGE/IMAGE/IMAGEN) and render text + images."""
+    """Split bot content on image tags and render actual images instead of raw filenames."""
     pattern = re.compile(r'(\[(?:IMATGE|IMAGE|IMAGEN):[^\]]+\])', flags=re.IGNORECASE)
     parts = pattern.split(content)
-    for part in parts:
-        m = re.match(r'\[(?:IMATGE|IMAGE|IMAGEN):([^\]]+)\]', part, flags=re.IGNORECASE)
-        if m:
-            fname = m.group(1).strip()
-            img_bytes = _get_image_bytes_by_name(fname)
-            used_fname = fname
-            if not img_bytes:
-                # try fuzzy match against metadata filenames
-                candidate = _find_best_image_filename(fname)
-                if candidate:
-                    used_fname = candidate
-                    img_bytes = _get_image_bytes_by_name(candidate)
 
+    rendered_image_refs = set()
+    for part in parts:
+        image_refs = _extract_image_references(part)
+        for ref in image_refs:
+            if ref in rendered_image_refs:
+                continue
+            rendered_image_refs.add(ref)
+            img_bytes, used_fname = _resolve_image_bytes(ref)
             if img_bytes:
                 st.image(img_bytes, use_container_width=True)
-                if used_fname != fname:
+                if used_fname != ref:
                     st.caption(f"Mostrat: {used_fname}")
-            else:
-                st.markdown("*(Imatge no disponible)*")
-        else:
-            text = part.strip()
-            if text:
-                st.markdown(
-                    f"<div class='chat-bubble-bot'>🤖 {html.escape(text)}</div>",
-                    unsafe_allow_html=True,
-                )
+                continue
+            st.markdown("*(Imatge no disponible)*")
+
+        if re.match(r'\[(?:IMATGE|IMAGE|IMAGEN):([^\]]+)\]', part, flags=re.IGNORECASE):
+            continue
+
+        text = part.strip()
+        if text:
+            st.markdown(
+                f"<div class='chat-bubble-bot'>🤖 {html.escape(text)}</div>",
+                unsafe_allow_html=True,
+            )
 
 def _strip_image_tags(text: str) -> str:
-    return re.sub(r'\[IMATGE:[^\]]+\]', '', text).strip()
+    return re.sub(r'\[(?:IMATGE|IMAGE|IMAGEN):[^\]]+\]', '', text, flags=re.IGNORECASE).strip()
 
 st.set_page_config(page_title="Xat amb PapinIA", page_icon="💬", layout="centered")
 
