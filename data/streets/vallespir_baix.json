@@ -1,0 +1,295 @@
+{
+  "key": "vallespir_baix",
+  "name": "Carrer de Vallespir de Baix",
+  "theme": "Skate i cultura urbana",
+  "decoration_description": "Reivindicació de l'espai pels patinadors planificat a la plaça dels Països Catalans. El guarnit barreja cultura urbana del skate amb estètica street art i música alternativa.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "21:00",
+          "title": "Impro Barcelona",
+          "description": "Espectacle d'improvisació teatral",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "improvisació",
+            "teatre"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Luiz Washington & Orquestra + PD",
+          "description": "Concert amb orquestra i posterior sessió de DJ",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "orquestra",
+            "dj",
+            "ball"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "22:00",
+          "title": "Mogambo",
+          "description": "Concert de Mogambo",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "música en directe"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Muniats",
+          "description": "Concert de Muniats",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "música en directe"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24 (Nit de tradicions i versions)",
+      "events": [
+        {
+          "time": "18:00",
+          "title": "Mostra de Ball del Casal de gent gran de les Cotxeres de Sants",
+          "description": "Exhibició de ball a càrrec del casal de gent gran de les Cotxeres de Sants",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "ball",
+            "gent gran",
+            "tradició"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Rumbeta bona",
+          "description": "Concert de rumba",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "música en directe"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "La Perra i el Cari",
+          "description": "Concert de La Perra i el Cari",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "música en directe"
+          ]
+        }
+      ]
+    },
+    "2026-08-25": {
+      "day_label": "Dimarts 25",
+      "events": [
+        {
+          "time": "20:00",
+          "title": "Sopar de germanor",
+          "description": "Sopar popular de germanor",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "popular",
+            "germanor"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "events": [
+        {
+          "time": "12:30",
+          "title": "Vermutet musical amb Copla la Principal del Llobregat",
+          "description": "Vermut musical amb l'actuació de Copla la Principal del Llobregat",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "vermut",
+            "música",
+            "copla"
+          ]
+        },
+        {
+          "time": "14:00",
+          "title": "Dinar Popular (botifarrada)",
+          "description": "Dinar popular de botifarrada",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "dinar",
+            "popular",
+            "botifarrada"
+          ]
+        },
+        {
+          "time": "17:30",
+          "title": "Sardanes",
+          "description": "Ball de sardanes",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "sardanes",
+            "ball",
+            "tradició"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "The Red Tide",
+          "description": "Concert de The Red Tide",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "música en directe"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "The Cabrians (concert aniversari) + PD",
+          "description": "Concert aniversari de The Cabrians amb posterior sessió de DJ",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "música en directe",
+            "aniversari",
+            "dj"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "17:00",
+          "title": "Fira d'artesania i alimentació amb Sants4EverParty",
+          "description": "Fira d'artesania i alimentació durant la tarda-vespre amb Sants4EverParty",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "fira",
+            "artesania",
+            "alimentació"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "21:30",
+          "title": "Nit de Punk amb Insershow",
+          "description": "Nit de punk amb el col·lectiu Insershow",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "punk",
+            "música en directe"
+          ]
+        },
+        {
+          "time": "23:15",
+          "title": "Ratpenat",
+          "description": "Concert de Ratpenat",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "punk",
+            "música en directe"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Mean Machine + P.D. Ignacid",
+          "description": "Concert de Mean Machine amb posterior sessió de DJ Ignacid",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "música en directe",
+            "dj"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Dinar popular (arrossada) i música amb Finlàndia Club",
+          "description": "Dinar popular amb arrossada i música en directe amb Finlàndia Club, de 12:00 a 18:00 amb descans per dinar",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "dinar",
+            "popular",
+            "arrossada",
+            "música"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Tarda de jocs infantils",
+          "description": "Tarda de jocs per als més petits",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "infantil",
+            "jocs"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Nit de rumba",
+          "description": "Nit de rumba",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "música en directe"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "PD Pol Moya",
+          "description": "Sessió de DJ amb Pol Moya",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Wiwi Rock Band",
+          "description": "Concert de Wiwi Rock Band",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "música en directe"
+          ]
+        }
+      ]
+    }
+  }
+}

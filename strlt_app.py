@@ -1,5 +1,4 @@
 import streamlit as st
-import requests
 from gtts import gTTS
 from io import BytesIO
 import base64
@@ -7,21 +6,20 @@ import re
 import streamlit.components.v1 as components
 import uuid
 import html
-import requests
+
+from lib.chatbot import generate_response, load_program
+
+
+@st.cache_resource
+def get_program():
+    return load_program("data/programa.json")
+
 
 # -------------------------------
 # Reset function (safe callback)
 # -------------------------------
 def reset_conversation():
-    conv_id = st.session_state.get("conversation_id")
-    if conv_id:
-        try:
-            requests.delete(f"https://batllori-chat.onrender.com/conversations/{conv_id}", timeout=5)
-        except Exception:
-            pass
-
     st.session_state["messages"] = []
-    st.session_state["conversation_id"] = None
     st.session_state["processing"] = False
     st.session_state["user_input"] = ""
     st.rerun()
@@ -35,12 +33,13 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
+from lib.decor import add_background
+add_background(count=3)
+
 
 # ---------- SESSION STATE INIT ----------
 if "messages" not in st.session_state:
     st.session_state.messages = []
-if "conversation_id" not in st.session_state:
-    st.session_state.conversation_id = None
 if "processing" not in st.session_state:
     st.session_state.processing = False
 if "play_request" not in st.session_state:
@@ -69,28 +68,18 @@ def process_message(user_message: str):
         "content": user_message.strip()
     })
 
+    program_data = get_program()
+    history = [
+        {"role": "assistant" if m["role"] == "bot" else m["role"], "content": m["content"]}
+        for m in st.session_state.messages[:-1]
+    ]
+
     bot_response = "❌ Error: no response"
     try:
-        # create a space to place the waiting message
-        spinner_placeholder = st.empty()
-        with st.spinner("⏳ ❗La primera interacció pot trigar fins a 1 minut❗️ Perdona l'espera!"):
-            response = requests.post(
-                "https://batllori-chat.onrender.com/chat",
-                json={
-                    "message": user_message.strip(),
-                    "conversation_id": st.session_state.conversation_id
-                },
-                timeout=120  # wait up to 2 minutes
-            )
-        data = response.json()
-        bot_response = data.get("response", "❌ Error de connexió")
-        st.session_state.conversation_id = data.get("conversation_id")
-        bot_response = re.sub(r"<think.*?>.*?</Thinking>", "", bot_response, flags=re.DOTALL | re.IGNORECASE)
+        with st.spinner("⏳ Processant..."):
+            bot_response = generate_response(user_message.strip(), history, program_data)
     except Exception as e:
         bot_response = f"❌ Error: {str(e)}"
-    finally: 
-        # 👇 clear spinner when done 
-        spinner_placeholder.empty()
 
     st.session_state.messages.append({
         "id": uuid.uuid4().hex,
@@ -114,42 +103,78 @@ def send_suggested(q: str):
     process_message(q)
 
 # ---------- UI: Header and CSS ----------
+# Palette taken from the Olimpíada Popular sport illustrations (assets/esports):
+#   blau olímpic, vermell, groc, granat fosc, crema
 st.markdown("""
 <style>
-    body { background-color: #fafafa; font-family: 'Helvetica Neue', sans-serif; }
-    .main-header { background: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Azulejo_pattern.svg'); background-size: cover; background-position: center; border-radius: 16px; padding: 2rem; text-align: center; color: #222; margin-bottom: 1.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    .main-header h1 { margin: 0; font-size: 1.8rem; }
-    .main-header h2 { margin-top: 0.5rem; font-weight: 400; color: #444; }
-    .badge { display: inline-block; margin-top: 0.8rem; padding: 0.3rem 0.8rem; background: #ffeed9; color: #d35400; border-radius: 12px; font-size: 0.9rem; font-weight: 600; }
-    .chat-bubble-user { background: #e1f5fe; padding: 0.7rem 1rem; border-radius: 16px; margin: 0.4rem 0; max-width: 80%; align-self: flex-end; margin-left: auto; }
-    .chat-bubble-bot { background: #fff3e0; padding: 0.7rem 1rem; border-radius: 16px; margin: 0.4rem 0; max-width: 80%; align-self: flex-start; margin-right: auto; }
+    :root {
+        --op-blue: #1E3FD0;
+        --op-red: #F0281E;
+        --op-yellow: #F5CE18;
+        --op-maroon: #3B0D0D;
+        --op-cream: #FBF7EC;
+    }
+    body { background-color: var(--op-cream); font-family: 'Helvetica Neue', sans-serif; }
+    .stApp { background-color: var(--op-cream); }
+    .main-header {
+        background: linear-gradient(135deg, var(--op-blue) 0%, var(--op-red) 100%);
+        border-radius: 16px; padding: 2rem 1.5rem; text-align: center; color: #fff;
+        margin-bottom: 1.5rem; box-shadow: 0 4px 16px rgba(30,63,208,0.25);
+        border-bottom: 6px solid var(--op-yellow);
+    }
+    .main-header h1 { margin: 0; font-size: 1.9rem; letter-spacing: 0.5px; }
+    .main-header h2 { margin-top: 0.4rem; font-weight: 400; color: #ffe; opacity: 0.95; font-size: 1.05rem; }
+    .badge { display: inline-block; margin-top: 0.9rem; padding: 0.35rem 0.9rem; background: var(--op-yellow); color: var(--op-maroon); border-radius: 12px; font-size: 0.9rem; font-weight: 700; }
+    .sport-strip { display:flex; justify-content:center; gap:6px; margin: -0.5rem 0 1.2rem; }
+    .sport-strip img { height: 74px; width:auto; }
+    .chat-bubble-user { background: #dbe4ff; color: var(--op-maroon); padding: 0.7rem 1rem; border-radius: 16px 16px 4px 16px; margin: 0.4rem 0; max-width: 80%; align-self: flex-end; margin-left: auto; border-right: 4px solid var(--op-blue); }
+    .chat-bubble-bot { background: #fff; color: var(--op-maroon); padding: 0.7rem 1rem; border-radius: 16px 16px 16px 4px; margin: 0.4rem 0; max-width: 80%; align-self: flex-start; margin-right: auto; border-left: 4px solid var(--op-red); box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
     .small-note { color: #666; font-size: 0.9rem; }
     .play-button { border: none; background: transparent; cursor: pointer; font-size: 1.1rem; }
     .input-row { display:flex; gap:8px; align-items:center; }
     .send-btn { padding:8px 12px; border-radius:8px; }
     .suggestions { margin-top: 0.6rem; display:flex; flex-wrap:wrap; gap:0.4rem; }
-    .suggestion-btn { background:#f1f1f1; border:none; padding:6px 12px; border-radius:12px; cursor:pointer; font-size:0.9rem; }
-    .suggestion-btn:hover { background:#e1e1e1; }
+    .stButton>button { border-radius: 12px; border: 1.5px solid var(--op-blue); color: var(--op-blue); font-weight: 600; }
+    .stButton>button:hover { background: var(--op-blue); color: #fff; border-color: var(--op-blue); }
 </style>
 """, unsafe_allow_html=True)
 
+import base64 as _b64
+import os as _os
+
+@st.cache_data
+def _sport_strip_html():
+    sports = ["Ciclisme.png", "Natacio.png", "Boxa.png", "Gimnastica.png", "Escacs.png"]
+    imgs = []
+    for fname in sports:
+        fpath = _os.path.join("assets/esports", fname)
+        if _os.path.isfile(fpath):
+            with open(fpath, "rb") as fh:
+                enc = _b64.b64encode(fh.read()).decode()
+            imgs.append(f'<img src="data:image/png;base64,{enc}" alt="{fname}">')
+    if not imgs:
+        return ""
+    return '<div class="sport-strip">' + "".join(imgs) + "</div>"
+
 st.markdown("""
 <div class="main-header">
-    <h1>💬 Xat amb OlimpiadIA</h1>
+    <h1>🏟️ Xat amb OlimpiadIA</h1>
     <h2>La Intel·ligència Artificial del Carrer Papin</h2>
-    <div class="badge">🎉 Festa Major de Sants 2025 🎉</div>
+    <div class="badge">🎉 Festa Major de Sants 2026 · L'Olimpíada Popular de 1936 🎉</div>
 </div>
 """, unsafe_allow_html=True)
+
+st.markdown(_sport_strip_html(), unsafe_allow_html=True)
 
 # ---------- WELCOME ----------
 if not st.session_state.messages:
 #    st.markdown("<small>❗La primera interacció pot trigar fins a 1 minut❗️</small>", unsafe_allow_html=True)
 #    st.markdown("### 🎭 Benvingut a la Festa de Sants! ")
 #    st.markdown("Pregunta'm qualsevol cosa sobre la festa major del barri.")
-    st.markdown("### 🎭 Benvingudes a la Festa Major de Sants!")
+    st.markdown("### 🏟️ Benvingudes a la Festa Major de Sants!")
     st.markdown("Podeu preguntar-me sobre:\n"
+            "- 🏟️ El **tema** del carrer Papin: l'**Olimpíada Popular** de 1936.\n"
             "- 🎨 El **guarnit** del carrer Papin i com està fet.\n"
-            "- 👨‍👩‍👧‍👦 La família **Batllori** i la seva història.\n"
             "- 🏠 Els altres **carrers** que participen i les seves decoracions.\n"
             "- 📅 El **programa** d’activitats del carrer Papin i d'altres carrers.\n"
             "- 🙋‍♂️ Com **participar** a la comissió de festa major del Carrer Papin.\n"
@@ -242,8 +267,8 @@ if not st.session_state.messages:
     st.markdown("<div class='suggestions'>", unsafe_allow_html=True)
     suggestions = [
         "Quin és el tema del carrer Papin?",
+        "Què va ser l'Olimpíada Popular de 1936?",
         "Podries explicar-me el guarnit d’aquest any?",
-        "Qui és la família Batllori?",
         "Quins són els altres carrers de la festa?",
         "Què hi ha avui al carrer Papin?",
         "Què hi ha demà al carrer Papin?",
@@ -332,5 +357,4 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown("🇵🇸 **La Comissió del carrer Papin** és fermament contrària al genocidi a Palestina — aturem el genocidi. 🍉")
 

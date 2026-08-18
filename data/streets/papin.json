@@ -1,0 +1,363 @@
+{
+  "key": "papin",
+  "name": "Carrer Papin",
+  "theme": "L'Olimpíada Popular de Barcelona de 1936",
+  "decoration_description": "El guarnit recrea l'ambient de l'Olimpíada Popular de Barcelona de 1936: portalada amb l'entrada a l'Estadi de Montjuïc, cartells originals de l'Olimpíada, figures d'atletes de l'època, colors republicans i elements de les delegacions internacionals antifeixistes.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "18:00",
+          "title": "Jocs de taula amb Sants-Niggurath",
+          "description": "Jocs de taula organitzats per Sants-Niggurath",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "jocs de taula",
+            "Sants-Niggurath"
+          ]
+        },
+        {
+          "time": "20:30",
+          "title": "Sopar de germanor",
+          "description": "Sopar de germanor de la comissió i totes les veïnes que vulguin sumar-s'hi",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "germanor",
+            "veïnes"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Música amb el grup papinero de The Mamins & the Papins",
+          "description": "Música amb el grup papinero de The Mamins & the Papins",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "música",
+            "The Mamins & the Papins",
+            "grup local"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Karaoke en directe",
+          "description": "Karaoke en directe obert a tothom, vine a sentir-te l'estrella al nostre escenari",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "karaoke",
+            "obert a tothom",
+            "escenari"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Traca d'inici de la Festa Major",
+          "description": "Traca d'inici de la festa major",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "inici",
+            "festa major"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Matinal de cultura popular",
+          "description": "Matinal de cultura popular. Amb la Colla Bastonera de Sants i la Colla Nova Gegantera de Sants",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "cultura popular",
+            "Colla Bastonera de Sants",
+            "Colla Nova Gegantera de Sants",
+            "bastons",
+            "gegants"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "18:30",
+          "title": "Lliurament de premis al parc de l'Espanya Industrial",
+          "description": "Acompanyament a la Comissió al Lliurament de premis al parc de l'Espanya Industrial",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "lliurament de premis",
+            "parc de l'Espanya Industrial",
+            "comissió"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Havaneres amb Barcarola",
+          "description": "Havaneres amb el grup Barcarola. Al descans hi haurà rom cremat",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "havaneres",
+            "Barcarola",
+            "rom cremat"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Cinema a la fresca: L'heroi de Berlín",
+          "description": "Cinema a la fresca \"L'heroi de Berlín\" (versió doblada al català)",
+          "type": "cinema",
+          "for_kids": false,
+          "tags": [
+            "cinema",
+            "L'heroi de Berlín",
+            "doblat al català",
+            "a la fresca"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26 (Dia jove)",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "11a edició de la Batalla Ninja",
+          "description": "11a edició de la Batalla Ninja. Activitat familiar oberta als jardins de Can Mantega, organitzada pels carrers Papin i Guadiana",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "Batalla Ninja",
+            "familiar",
+            "jardins de Can Mantega",
+            "Papin",
+            "Guadiana"
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Olimpíades populars santsenques",
+          "description": "Olimpíades populars santsenques als jardins de Can Mantega",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "olimpíades populars",
+            "jardins de Can Mantega",
+            "Sants"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Tallers de jocs per a joves",
+          "description": "Durant la tarda hi haurà tallers de jocs per a joves",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "jocs",
+            "joves"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Concert de Babia",
+          "description": "Concert del grup Babia",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Babia"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Concert de Whitehole",
+          "description": "Concert del grup Whitehole",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Whitehole"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "11:30",
+          "title": "Passejada 'La història de l'esport popular a Sants'",
+          "description": "Passejada 'La història de l'esport popular a Sants' a càrrec de Memòria en moviment. Activitat gratuïta amb inscripció prèvia a ja.cat/passejadaesportsants",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "passejada",
+            "esport popular",
+            "Sants",
+            "Memòria en moviment",
+            "gratuïta",
+            "inscripció prèvia"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Taller de danses populars i concert de folk",
+          "description": "Taller de danses populars i concert de folk per ballar amb Trobadors del punt",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "danses populars",
+            "folk",
+            "Trobadors del punt",
+            "ball"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Nit de monòlegs",
+          "description": "Nit de monòlegs amb Bad Funny, Irene Sango, David Arnau, Núria Soler i Marc Llinas. Activitat amb intèrpret de Llengua de Signes Catalana",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "monòlegs",
+            "Bad Funny",
+            "Irene Sango",
+            "David Arnau",
+            "Núria Soler",
+            "Marc Llinas",
+            "LSC",
+            "accessibilitat"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Gimcana fotogràfica al barri",
+          "description": "Gimcana fotogràfica al barri. Activitat conjunta amb les comissions de Guadiana i Sagunt amb sortida des del carrer Papin",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "gimcana",
+            "fotografia",
+            "barri",
+            "Guadiana",
+            "Sagunt",
+            "conjunta"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Tarda de jocs tradicionals catalans i malabars",
+          "description": "Tarda de jocs tradicionals catalans i malabars a càrrec de la companyia La Gralla. Pintacares a càrrec de la companyia Clan Carakol",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "jocs tradicionals",
+            "malabars",
+            "La Gralla",
+            "pintacares",
+            "Clan Carakol",
+            "familiar"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Concert de Tifus",
+          "description": "Concert amb Tifus (punk de proximitat)",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Tifus",
+            "punk"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Concert de Pascual & els Desnatats",
+          "description": "Concert de Pascual & els Desnatats. Versions desenfadades a càrrec de membres de la Terrasseta de Preixens",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Pascual & els Desnatats",
+            "versions",
+            "Terrasseta de Preixens"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "DJ Strangelove",
+          "description": "DJ Strangelove. Èxits de tots els temps per acabar ballant",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "DJ",
+            "Strangelove",
+            "ball",
+            "èxits"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "22:00",
+          "title": "Concert de Femme Versions",
+          "description": "Concert de Femme Versions. Repertori 100% en femení i 100% música en directe",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Femme Versions",
+            "femení",
+            "en directe"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Final de festa amb PD Pànic",
+          "description": "Final de festa amb PD Pànic, per ballar fins que no pugueu més!",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "final de festa",
+            "PD Pànic",
+            "ball"
+          ]
+        },
+        {
+          "time": "02:00",
+          "title": "Traca de fi de Festa Major",
+          "description": "Traca de fi de Festa Major",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "fi de festa",
+            "festa major"
+          ]
+        }
+      ]
+    }
+  }
+}

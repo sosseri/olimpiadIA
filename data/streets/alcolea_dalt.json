@@ -1,0 +1,402 @@
+{
+  "key": "alcolea_dalt",
+  "name": "Carrer d'Alcolea de Dalt",
+  "theme": "Circ Alcolea",
+  "decoration_description": "Espectacle i arts circenses. El carrer es transforma en un gran circ amb carpa, equilibristes, malabaristes i tota la màgia del circ tradicional.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "20:00",
+          "title": "Traca d'inici",
+          "description": "Tret de sortida oficial de la festa amb traca",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "traca",
+            "inici",
+            "festa major"
+          ]
+        },
+        {
+          "time": "20:30",
+          "title": "Batukada",
+          "description": "Actuació de batukada per animar els carrers",
+          "type": "música",
+          "for_kids": true,
+          "tags": [
+            "batukada",
+            "percussió",
+            "cercavila"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Dj Metxes",
+          "description": "Sessió de DJ per tancar la nit",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "música electrònica",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "09:00",
+          "title": "Fira Artesanal",
+          "description": "Fira d'artesania durant tot el dia fins a les 22:00",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "fira",
+            "artesania",
+            "mercat"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "La Trinxera",
+          "description": "Actuació del grup musical La Trinxera",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "grup musical",
+            "directe",
+            "rock"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Las Jaranas",
+          "description": "Actuació de rumba amb Las Jaranas",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "directe",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "14:00",
+          "title": "Botifarrada",
+          "description": "Dinar popular de botifarrada. Compra el teu tiquet prèviament",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "botifarrada",
+            "dinar popular",
+            "tiquet"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar de la gent amb encant",
+          "description": "Sopar popular per a la gent amb encant del carrer",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar popular",
+            "comunitat",
+            "veïns"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Dj Metxes",
+          "description": "Sessió de DJ per tancar la nit",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "música electrònica",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-25": {
+      "day_label": "Dimarts 25",
+      "events": [
+        {
+          "time": "21:00",
+          "title": "Sopar de germanor",
+          "description": "Sopar popular de germanor per als veïns i veïnes del carrer",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar popular",
+            "germanor",
+            "veïns"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Guerra d'aigua",
+          "description": "Joc popular de guerra d'aigua per refrescar-se",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "guerra d'aigua",
+            "jocs",
+            "estiu",
+            "infants"
+          ]
+        },
+        {
+          "time": "14:00",
+          "title": "Sardinada",
+          "description": "Dinar popular de sardinada. Compra el teu tiquet prèviament",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "sardinada",
+            "dinar popular",
+            "tiquet"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Taller de bastons",
+          "description": "Taller per aprendre a ballar i manegar bastons",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "bastons",
+            "taller",
+            "cultura popular",
+            "infants"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Actuació de la Colla Bastonera",
+          "description": "Exhibició i actuació de la Colla Bastonera",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "bastons",
+            "colla bastonera",
+            "cultura popular",
+            "cercavila"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Albert Nieto i David Miullon",
+          "description": "Actuació de rumba amb Albert Nieto i David Miullon",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "directe",
+            "nit"
+          ]
+        },
+        {
+          "time": "02:00",
+          "title": "Dj Metxes",
+          "description": "Sessió de DJ per tancar la nit",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "música electrònica",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "14:00",
+          "title": "Fideuà",
+          "description": "Dinar popular de fideuà. Compra el teu tiquet prèviament",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "fideuà",
+            "dinar popular",
+            "tiquet"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Miquel Cubero",
+          "description": "Actuació de rumba amb Miquel Cubero",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "directe",
+            "nit"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Dj Metxes",
+          "description": "Sessió de DJ per tancar la nit",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "música electrònica",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Jocs infantils",
+          "description": "Activitats i jocs per als més petits",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "jocs",
+            "infants",
+            "activitats"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Berenar infantil",
+          "description": "Berenar popular per als infants. Compra el teu tiquet prèviament",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "berenar",
+            "infants",
+            "tiquet"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Micky Clown",
+          "description": "Espectacle de pallasso infantil amb Micky Clown",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "pallasso",
+            "circ",
+            "infants",
+            "espectacle"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Tracks Bar",
+          "description": "Concert de rock amb Tracks Bar",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "directe",
+            "nit"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Dj Metxes",
+          "description": "Sessió de DJ per tancar la nit",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "música electrònica",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "13:00",
+          "title": "Concurs de truites",
+          "description": "Concurs popular de truites de patata",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "concurs",
+            "truita",
+            "gastronomia popular"
+          ]
+        },
+        {
+          "time": "13:30",
+          "title": "Vermut per als socis i sòcies del carrer",
+          "description": "Vermut de cloenda per als socis i sòcies del carrer",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "vermut",
+            "socis",
+            "comunitat"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Grup Shiva",
+          "description": "Actuació del Grup Shiva amb música i dansa bollywood",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "bollywood",
+            "dansa",
+            "espectacle",
+            "música del món"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Dj Metxes",
+          "description": "Sessió de DJ",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "música electrònica",
+            "nit"
+          ]
+        },
+        {
+          "time": "02:30",
+          "title": "Batukada i traca final de Festa Major",
+          "description": "Tancament de la Festa Major amb batukada i traca final",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "batukada",
+            "cloenda",
+            "festa major"
+          ]
+        }
+      ]
+    }
+  }
+}

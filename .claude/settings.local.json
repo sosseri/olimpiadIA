@@ -17,8 +17,6 @@
       "WebFetch(domain:beteve.cat)",
       "WebFetch(domain:en.wikipedia.org)",
       "Bash(curl -s \"https://en.wikipedia.org/wiki/1936_Summer_Olympics\")",
-      "Bash(mkdir -p /Users/ktzj534/Documents/others/OlimpiadaIA/assets/images)",
-      "Bash(mkdir -p /Users/ktzj534/Documents/others/OlimpiadaIA/data)",
       "Bash(curl -sL \"https://beteve.cat/va-passar-aqui/olimpiada-popular-cadci-1936/\")",
       "Bash(curl -sL \"https://noubarrisperlarepublica.org/cas/herramientas-republicanas/cultura-cas/la-olimpiada-popular-del-36/\")",
       "Bash(curl -sL \"https://www.wanderer.es/wp-content/uploads/2021/07/cartel_olimpiada.jpg\" -o \"cartel_olimpiada_popular_1936.jpg\" -w \"cartel_olimpiada_popular_1936.jpg: %{http_code}\\\\n\")",
@@ -36,8 +34,10 @@
       "Bash(curl -sL \"https://catalunyapaisdarxius.cat/wp-content/uploads/2025/10/0521-CAT-AHCB-AHCB2-472-4.1_001-thumbnail.jpg\" -o \"programa_olimpiada_popular_barcelona_arxiu.jpg\" -w \"programa_olimpiada_popular_barcelona_arxiu.jpg: %{http_code}\\\\n\")",
       "Bash(sort -k5 -h)",
       "Bash(curl -sL \"https://vscw.ca/es/node/783\")",
-      "Bash(python3 -c \"import json; data=json.load\\(open\\('/Users/ktzj534/Documents/others/OlimpiadaIA/data/images_metadata.json'\\)\\); print\\(f'{len\\(data\\)} entries, all keys present:', all\\('file' in d and 'caption' in d and 'source_url' in d for d in data\\)\\)\")",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(pip show *)",
+      "Bash(streamlit run *)",
+      "Bash(curl -s http://localhost:8502/)",
     ]
   }
 }

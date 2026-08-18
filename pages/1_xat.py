@@ -35,6 +35,9 @@ def _strip_image_tags(text: str) -> str:
 
 st.set_page_config(page_title="Xat amb PapinIA", page_icon="💬", layout="centered")
 
+from lib.decor import add_background
+add_background(count=2)
+
 # --- Session state ---
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -114,32 +117,88 @@ def reset_conversation():
     st.session_state.user_input = ""
     st.rerun()
 
+# --- Load poster image as base64 ---
+import base64 as _b64
+_poster_b64 = ""
+_poster_path = "assets/olimpiada_popular_poster.jpeg"
+if os.path.isfile(_poster_path):
+    with open(_poster_path, "rb") as _f:
+        _poster_b64 = _b64.b64encode(_f.read()).decode()
+
 # --- CSS ---
 st.markdown("""
 <style>
     .chat-header {
-        background: linear-gradient(135deg, #c62828 0%, #d84315 50%, #f9a825 100%);
-        border-radius: 16px; padding: 1.5rem; text-align: center; color: #fff;
-        margin-bottom: 1.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        background: #ffffff;
+        border-radius: 16px;
+        border: 2px solid #e8e8e8;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        margin-bottom: 1.5rem;
+        position: relative; overflow: hidden; min-height: 120px;
+        display: flex; align-items: center;
     }
-    .chat-header h1 { margin: 0; font-size: 1.5rem; }
-    .chat-header p { margin: 0.3rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+    .chat-header-text {
+        position: relative; z-index: 2;
+        padding: 1.5rem 1rem 1.5rem 1.8rem;
+        flex: 1;
+    }
+    .chat-header h1 {
+        margin: 0; font-size: 1.6rem; color: #1a1a1a; font-weight: 800;
+        letter-spacing: -0.5px;
+    }
+    .chat-header p {
+        margin: 0.3rem 0 0; font-size: 0.95rem; color: #555;
+    }
+    .chat-header-accent {
+        display: block; width: 5px; height: 100%;
+        position: absolute; left: 0; top: 0;
+        background: linear-gradient(180deg, #F0281E 0%, #F5CE18 100%);
+        border-radius: 16px 0 0 16px;
+    }
+    .chat-header-poster-wrap {
+        flex-shrink: 0;
+        height: 140px;
+        position: relative;
+        display: flex; align-items: center;
+    }
+    .chat-header-poster-wrap::before {
+        content: '';
+        position: absolute; left: 0; top: 0; bottom: 0; width: 48px;
+        background: linear-gradient(to right, #ffffff, transparent);
+        z-index: 2; pointer-events: none;
+    }
+    .chat-header-poster {
+        height: 140px;
+        display: block;
+        pointer-events: none;
+    }
     .chat-bubble-user {
-        background: #e1f5fe; padding: 0.7rem 1rem; border-radius: 16px;
-        margin: 0.4rem 0; max-width: 85%;
+        background: #fff5f5; color: #1a1a1a; padding: 0.7rem 1rem;
+        border-radius: 16px 16px 4px 16px;
+        margin: 0.4rem 0; max-width: 85%; border-right: 3px solid #F0281E;
         margin-left: auto; text-align: right;
     }
     .chat-bubble-bot {
-        background: #fff3e0; padding: 0.7rem 1rem; border-radius: 16px;
-        margin: 0.4rem 0; max-width: 85%;
+        background: #fff; color: #1a1a1a; padding: 0.7rem 1rem;
+        border-radius: 16px 16px 16px 4px;
+        margin: 0.4rem 0; max-width: 85%; border-left: 3px solid #1a1aaa;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
+_poster_img_tag = (
+    f'<div class="chat-header-poster-wrap"><img class="chat-header-poster" src="data:image/jpeg;base64,{_poster_b64}" alt=""></div>'
+    if _poster_b64 else ""
+)
+st.markdown(f"""
 <div class="chat-header">
-    <h1>💬 Xat amb PapinIA</h1>
-    <p>La Intel·ligència Artificial del Carrer Papin</p>
+    <span class="chat-header-accent"></span>
+    <div class="chat-header-text">
+        <h1>💬 Xat amb PapinIA</h1>
+        <p>La Intel·ligència Artificial del Carrer Papin</p>
+    </div>
+    {_poster_img_tag}
 </div>
 """, unsafe_allow_html=True)
 

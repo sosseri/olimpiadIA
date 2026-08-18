@@ -1,0 +1,387 @@
+{
+  "key": "alcolea_baix",
+  "name": "Carrer d'Alcolea de Baix",
+  "theme": "Disco Festival Sound",
+  "decoration_description": "Música, ball i festa de barri amb ambient de disco festival. El carrer es transforma en una pista de ball a l'aire lliure amb decoració de llums i miralls característics de la discoteca.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "22:00",
+          "title": "Batucada a càrrec de Tokem x Tu",
+          "description": "Actuació de batucada per obrir la nit festiva al carrer.",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "batucada",
+            "percussió",
+            "música en viu"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Disco Festival Sound: La pista s'omple de ritme",
+          "description": "Sessió de música disco per fer ballar tothom i omplir la pista de ritme.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "disco",
+            "ball",
+            "dj",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Esmorzar veïnal",
+          "description": "Esmorzar compartit entre els veïns i veïnes del carrer.",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "esmorzar",
+            "veïnal",
+            "comunitat"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Taller de Sardanes amb Sara Pasqual",
+          "description": "Taller per aprendre a ballar sardanes de la mà de Sara Pasqual.",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "sardanes",
+            "taller",
+            "dansa",
+            "cultura popular"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Sardanes amb la Cobla Nova del Vallès",
+          "description": "Ball de sardanes en directe amb la Cobla Nova del Vallès.",
+          "type": "música",
+          "for_kids": true,
+          "tags": [
+            "sardanes",
+            "cobla",
+            "dansa",
+            "música en viu",
+            "cultura popular"
+          ]
+        },
+        {
+          "time": "20:30",
+          "title": "Havaneres amb La Mar Brava (rom cremat i sardinada)",
+          "description": "Concert d'havaneres amb rom cremat i sardinada popular.",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "havaneres",
+            "rom cremat",
+            "sardinada",
+            "música en viu",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Dj Mitjà perdut: el més salat de la nit!",
+          "description": "Sessió de Dj Mig perdut per tancar la nit amb molta marxa.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "ball",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Activitat per la quitxalla",
+          "description": "Activitats lúdiques i de lleure per als nens i nenes del carrer.",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "infants",
+            "jocs",
+            "activitat"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Acompanya a la Comissió al Lliurament de premis al Parc de l'Espanya Industrial",
+          "description": "Acte de lliurament de premis de la Festa Major al Parc de l'Espanya Industrial.",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "premis",
+            "comissió",
+            "festa major"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar de frankfurt",
+          "description": "Sopar popular de frankfurts per a tots els veïns i veïnes.",
+          "type": "sopar",
+          "for_kids": true,
+          "tags": [
+            "sopar",
+            "frankfurt",
+            "veïnal"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Música amb Dj Eugeni",
+          "description": "Sessió musical a càrrec de Dj Eugeni per tancar la nit.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "ball",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "events": [
+        {
+          "time": "14:00",
+          "title": "Gran paella popular",
+          "description": "Paella popular per a tots els veïns i veïnes del carrer.",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "paella",
+            "dinar",
+            "veïnal",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Classes de Swing amb un mestre dels peus",
+          "description": "Classes de ball de swing per a tots els nivells, impartides per un mestre.",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "swing",
+            "ball",
+            "taller",
+            "dansa"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Ball de Swing amb The Hot Swing Machine",
+          "description": "Ball de swing en directe amb el grup The Hot Swing Machine.",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "swing",
+            "ball",
+            "música en viu",
+            "dansa"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Jocs de ciència, amb l'Alba Sors, Ruben Álvarez i Sergi Rafael",
+          "description": "Activitat de jocs científics per als infants a càrrec d'Alba Sors, Ruben Álvarez i Sergi Rafael.",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "ciència",
+            "jocs",
+            "infants",
+            "educació"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Xocolatada popular",
+          "description": "Xocolatada per a tots els veïns i veïnes, amb xocolata i bunyols.",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "xocolatada",
+            "merienda",
+            "veïnal",
+            "infants"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Contacontes amb Rosa Mas",
+          "description": "Sessió de contacontes per als més petits a càrrec de Rosa Mas.",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "contacontes",
+            "infants",
+            "cultura",
+            "literatura"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Dj Tropical Mystic i percussió amb Marco Sonoro",
+          "description": "Sessió de Dj Tropical Mystic acompanyada de percussió en directe amb Marco Sonoro.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "percussió",
+            "tropical",
+            "música en viu"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Sopar de frankfurt",
+          "description": "Sopar popular de frankfurts per a tots els veïns i veïnes.",
+          "type": "sopar",
+          "for_kids": true,
+          "tags": [
+            "sopar",
+            "frankfurt",
+            "veïnal"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "'Noche Quilombera'",
+          "description": "Festa nocturna 'Noche Quilombera' fins a les 23:00 h.",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "nit",
+            "festa",
+            "quilombera",
+            "música"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "14:00",
+          "title": "Mandonguillada popular",
+          "description": "Dinar popular de mandonguilles per a tots els veïns i veïnes.",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "mandonguilles",
+            "dinar",
+            "veïnal",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Música amb El Sobrino del Diablo",
+          "description": "Actuació musical a càrrec del grup El Sobrino del Diablo.",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "música en viu",
+            "concert",
+            "tarda"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Sopar de frankfurt",
+          "description": "Sopar popular de frankfurts per a tots els veïns i veïnes.",
+          "type": "sopar",
+          "for_kids": true,
+          "tags": [
+            "sopar",
+            "frankfurt",
+            "veïnal"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Disco Festival Sound, per alliberar el cos i donar-ho tot a la pista",
+          "description": "Gran sessió Disco Festival Sound per alliberar el cos i donar-ho tot a la pista de ball.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "disco",
+            "ball",
+            "dj",
+            "nit",
+            "festa"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "14:00",
+          "title": "Concurs de truites",
+          "description": "Concurs popular de truites de patates entre els veïns i veïnes del carrer.",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "truites",
+            "concurs",
+            "gastronomia",
+            "veïnal"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Orquestra Sabor Sabor",
+          "description": "Gran concert de l'Orquestra Sabor Sabor per tancar la Festa Major amb molta marxa.",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "orquestra",
+            "ball",
+            "música en viu",
+            "nit"
+          ]
+        },
+        {
+          "time": "03:00",
+          "title": "Traca de fi de Festa Major",
+          "description": "Traca final que tanca oficialment la Festa Major de Sants 2026.",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "fi de festa",
+            "festa major",
+            "pirotècnia"
+          ]
+        }
+      ]
+    }
+  }
+}

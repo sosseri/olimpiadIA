@@ -4,6 +4,8 @@ import json
 
 st.set_page_config(page_title="Arxiu fotogràfic", page_icon="📸", layout="centered")
 
+from lib.decor import section_accent
+
 st.markdown("""
 <style>
     .arxiu-header {
@@ -61,6 +63,7 @@ SOURCE_URLS = {
 
 # --- Historical images section ---
 if historical_images:
+    section_accent(0)
     st.markdown('<div class="section-title">🏟️ L\'Olimpíada Popular de Barcelona, 1936</div>', unsafe_allow_html=True)
     st.markdown("Imatges històriques relacionades amb l'Olimpíada Popular i el seu context. Fes clic a la font per veure l'article original.")
 
@@ -83,6 +86,7 @@ if historical_images:
                     st.markdown(f"<div class='img-source'>Font: <a href='{source_url}' target='_blank'>{source_label}</a></div>", unsafe_allow_html=True)
 
 # --- Festa Major / Carrer Papin section ---
+section_accent(1)
 st.markdown('<div class="section-title">🎉 Festa Major de Sants — Carrer Papin</div>', unsafe_allow_html=True)
 
 festa_images = []

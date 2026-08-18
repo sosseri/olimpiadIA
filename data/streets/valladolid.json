@@ -1,0 +1,530 @@
+{
+  "key": "valladolid",
+  "name": "Carrer de Valladolid",
+  "theme": "Jules Verne — viatges, aventura i imaginació",
+  "decoration_description": "Homenatge a l'escriptor Jules Verne i els seus viatges extraordinaris. El carrer es vesteix d'aventura amb globus aerostàtics, submarins, màquines del temps i personatges de les seves novel·les.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "20:50",
+          "title": "Traca d'inici de la Festa Major",
+          "description": "Tret de sortida oficial de la Festa Major amb traca",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "inici",
+            "festa major",
+            "traca"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Tabalers de Sants",
+          "description": "Actuació dels Tabalers de Sants",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "tabalers",
+            "música tradicional",
+            "sants"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Alma de pato",
+          "description": "Actuació musical de Alma de pato. Rumbeta de la bona",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "concert",
+            "rumbeta de la bona"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Tribut a Gato Pérez amb todos los gatos",
+          "description": "Concert tribut a Gato Pérez. Rumbeta de la bona",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "tribut",
+            "gato pérez",
+            "rumbeta de la bona"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "Juerga rumbera amb Gipsylvan",
+          "description": "Juerga rumbera amb Gipsylvan. Rumbeta de la bona",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "concert",
+            "rumbeta de la bona"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Bastoneres de Sants",
+          "description": "Actuació de les Bastoneres de Sants. Matí català",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "bastoneres",
+            "cultura popular",
+            "matí català"
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Esbart dansaire Ciutat Comtal amb el grup Folk al Punt",
+          "description": "Actuació de l'Esbart dansaire Ciutat Comtal amb el grup Folk al Punt. Matí català",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "esbart",
+            "dansa",
+            "folk",
+            "matí català"
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Vermut popular a càrrec de Boca Arte",
+          "description": "Vermut popular amenitzat per Boca Arte. Matí català",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "vermut",
+            "gastronomia",
+            "matí català"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Remenada de boles popular",
+          "description": "Remenada de boles popular",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "jocs",
+            "boles",
+            "popular"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Nit de Bruce Springsteen Experience II",
+          "description": "Concert tribut a Bruce Springsteen. I love Rock'N'Roll",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "tribut",
+            "bruce springsteen",
+            "I love Rock'N'Roll"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Trambolicos",
+          "description": "Actuació de Trambolicos. I love Rock'N'Roll",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "concert",
+            "I love Rock'N'Roll"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "18:00",
+          "title": "Jocs de taula a càrrec del Nucli",
+          "description": "Jocs de taula organitzats pel Nucli. Brasil en el cor",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "jocs de taula",
+            "brasil en el cor"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Masterclass amb Ritmos Barcelona",
+          "description": "Masterclass de ritmes amb Ritmos Barcelona. Brasil en el cor",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "masterclass",
+            "ritmos",
+            "brasil en el cor"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Samba de carrer",
+          "description": "Samba de carrer. Brasil en el cor",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "samba",
+            "brasil",
+            "música",
+            "brasil en el cor"
+          ]
+        }
+      ]
+    },
+    "2026-08-25": {
+      "day_label": "Dimarts 25",
+      "events": [
+        {
+          "time": "20:00",
+          "title": "Sopar de germanor",
+          "description": "Sopar de germanor popular del carrer",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "sopar",
+            "germanor",
+            "popular"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "events": [
+        {
+          "time": "19:00",
+          "title": "Santsfarria",
+          "description": "Actuació de Santsfarria. Nit popular",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "nit popular",
+            "sants"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Nit de pinxos",
+          "description": "Nit de pinxos. Nit popular",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "pinxos",
+            "gastronomia",
+            "nit popular"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Havaneres amb cremat amb els Pescadors de l'Escala",
+          "description": "Actuació de havaneres amb cremat a càrrec dels Pescadors de l'Escala. Nit popular",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "havaneres",
+            "cremat",
+            "pescadors de l'escala",
+            "nit popular"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "PD Conxita Sound System",
+          "description": "Sessió de PD Conxita Sound System. Nit popular",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "sound system",
+            "nit popular"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "19:00",
+          "title": "Chacarera Queer",
+          "description": "Chacarera Queer. Argentina és més que un tango",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "chacarera",
+            "queer",
+            "argentina és més que un tango"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Peña Queer de Barcelona",
+          "description": "Peña Queer de Barcelona. Argentina és més que un tango",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "peña",
+            "queer",
+            "argentina és més que un tango"
+          ]
+        },
+        {
+          "time": "20:45",
+          "title": "Poetry is not dead",
+          "description": "Actuació de Poetry is not dead. Argentina és més que un tango",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "poesia",
+            "spoken word",
+            "argentina és més que un tango"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Tango is not dead i Orquestra Tibidabo",
+          "description": "Actuació de Tango is not dead i Orquestra Tibidabo. Argentina és més que un tango",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "tango",
+            "orquestra",
+            "argentina és més que un tango"
+          ]
+        },
+        {
+          "time": "22:15",
+          "title": "La tia Borracha",
+          "description": "Actuació de La tia Borracha. Argentina és més que un tango",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "espectacle",
+            "argentina és més que un tango"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Dj La filosa",
+          "description": "Sessió de Dj La filosa. Argentina és més que un tango",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "argentina és més que un tango"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Contacontes a càrrec de La Ciutat Invisible",
+          "description": "Contacontes a càrrec de La Ciutat Invisible",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "contacontes",
+            "infants",
+            "la ciutat invisible"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Exhibició gimnàstica a càrrec del Club Esportiu Sants Gimnàstic",
+          "description": "Exhibició gimnàstica a càrrec del Club Esportiu Sants Gimnàstic",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "gimnàstica",
+            "esport",
+            "club esportiu sants"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Taller de tapes infantil amb El Taller 24",
+          "description": "Taller de tapes infantil amb El Taller 24",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "tapes",
+            "infantil",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Espectacle de màgia a càrrec de Magician Secret Club de 3 de Trébol",
+          "description": "Espectacle de màgia a càrrec de Magician Secret Club de 3 de Trébol",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "màgia",
+            "espectacle",
+            "infants"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "IV Concurs Internacional de truita de patates",
+          "description": "IV Concurs Internacional de truita de patates",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "concurs",
+            "truita de patates",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "20:45",
+          "title": "Javier Primperan",
+          "description": "Actuació de Javier Primperan. Nit de drags",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "drag",
+            "nit de drags"
+          ]
+        },
+        {
+          "time": "21:45",
+          "title": "Show drag amb Lady Red Velvet i Paprika Demasiado",
+          "description": "Show drag amb Lady Red Velvet i Paprika Demasiado. Nit de drags",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "drag",
+            "show",
+            "nit de drags"
+          ]
+        },
+        {
+          "time": "23:45",
+          "title": "Dj Nilucho Nipoco",
+          "description": "Sessió de Dj Nilucho Nipoco. Nit de drags",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "nit de drags"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "Batalla aquàtica",
+          "description": "Batalla aquàtica popular. Acabem forts",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "batalla aquàtica",
+            "infants",
+            "acabem forts"
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Vermut a càrrec de la Comi amb l'actuació de Two Much",
+          "description": "Vermut popular a càrrec de la Comi amb l'actuació de Two Much. Acabem forts",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "vermut",
+            "gastronomia",
+            "acabem forts"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Festa de l'escuma amb la Cia La Bixicleta",
+          "description": "Festa de l'escuma amb la Cia La Bixicleta. Acabem forts",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "escuma",
+            "infants",
+            "espectacle",
+            "acabem forts"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Xocolatada i berenar popular per als nostres avis i infants a càrrec de Levaduramadre",
+          "description": "Xocolatada i berenar popular per als nostres avis i infants a càrrec de Levaduramadre. Acabem forts",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "xocolatada",
+            "berenar",
+            "infants",
+            "gent gran",
+            "acabem forts"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "El Sobrino del Diablo",
+          "description": "Actuació de El Sobrino del Diablo. El remat final",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "el remat final"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Salsa Punk Orquestra",
+          "description": "Actuació de Salsa Punk Orquestra. El remat final",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "salsa",
+            "punk",
+            "concert",
+            "el remat final"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Dj Pdf",
+          "description": "Sessió de Dj Pdf. El remat final",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "el remat final"
+          ]
+        }
+      ]
+    }
+  }
+}

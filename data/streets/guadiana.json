@@ -1,0 +1,698 @@
+{
+  "key": "guadiana",
+  "name": "Carrer de Guadiana",
+  "theme": "Comencem per les postres",
+  "decoration_description": "Temàtica de postres i dolços amb estètica galàctica. El carrer combina el món dels dolços (pastissos, xocolata, caramels gegants) amb una decoració espacial i colorida.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "21:45",
+          "title": "Traca d'inici de Festa Major",
+          "description": "Tret de sortida oficial de la Festa Major amb traca",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "obertura",
+            "traca",
+            "festa major"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Tabalers de Sants",
+          "description": "Actuació dels Tabalers de Sants",
+          "type": "música",
+          "for_kids": true,
+          "tags": [
+            "tabalers",
+            "percussió",
+            "sants"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Derrumbaos",
+          "description": "Concert de rumba",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "concert",
+            "música en directe"
+          ]
+        },
+        {
+          "time": "00:30",
+          "title": "La Tour de Carol",
+          "description": "Concert de pop i rock",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "pop",
+            "rock",
+            "concert",
+            "música en directe"
+          ]
+        },
+        {
+          "time": "02:00",
+          "title": "Las Supremas de Sants: hits, dives i 'mamarracheo'",
+          "description": "Sessió de Dj amb hits, dives i mamarracheo",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "hits",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23 — Patxaranga",
+      "events": [
+        {
+          "time": "12:00",
+          "title": "Vermut musical amb La Otra Rumba",
+          "description": "Sessió de Dj de vermut amb La Otra Rumba",
+          "type": "música",
+          "for_kids": true,
+          "tags": [
+            "dj",
+            "vermut",
+            "rumba",
+            "migdia"
+          ]
+        },
+        {
+          "time": "14:00",
+          "title": "Paella popular",
+          "description": "Paella popular amb venda de tiquets amb anticipació",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "paella",
+            "sopar popular",
+            "tiquets",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Bingo musical",
+          "description": "Bingo musical en versió èxits d'estiu",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "bingo",
+            "jocs",
+            "música",
+            "èxits estiu"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24 — La recepta del barri",
+      "events": [
+        {
+          "time": "10:30",
+          "title": "Ioga inclusiu",
+          "description": "Ioga inclusiu a càrrec de l'Associació Ioga per a tothom",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "ioga",
+            "inclusiu",
+            "benestar",
+            "matí"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "'Ichi i bambalina' amb El Faro Teatre",
+          "description": "Espectacle de clown que combina màgia, malabars i contacontes a càrrec d'El Faro Teatre",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "clown",
+            "màgia",
+            "malabars",
+            "contacontes",
+            "teatre",
+            "familiar"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Acompanya a la comissió al lliurament de premis",
+          "description": "Acompanya a la comissió al lliurament de premis al parc de l'Espanya Industrial",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "premis",
+            "comissió",
+            "Espanya Industrial"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Havaneres i rom cremat amb Pirats pel Mar",
+          "description": "Havaneres i rom cremat amb el grup Pirats pel Mar. Entrada gratuïta",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "havaneres",
+            "rom cremat",
+            "gratuït",
+            "música en directe"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar de germanor",
+          "description": "Sopar de germanor del carrer",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "sopar popular",
+            "germanor",
+            "veïns"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Cinema a la fresca \"L'heroi de Berlín\" (versió doblada al català)",
+          "description": "Cinema a la fresca amb la pel·lícula \"L'heroi de Berlín\", versió doblada al català",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "cinema",
+            "fresca",
+            "pel·lícula",
+            "català"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26 — Dia jove",
+      "events": [
+        {
+          "time": "11:00",
+          "title": "11a edició de la Batalla Ninja",
+          "description": "Activitat familiar oberta als jardins de Can Mantega, organitzada pels carrers Papin i Guadiana",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "ninja",
+            "familiar",
+            "Can Mantega",
+            "activitat física",
+            "Papin",
+            "dia jove"
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Olimpíades populars santsenques",
+          "description": "Olimpíades populars santsenques als jardins de Can Mantega",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "olimpíades",
+            "popular",
+            "Can Mantega",
+            "jocs",
+            "dia jove"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Tallers de jocs per a joves",
+          "description": "Durant la tarda hi haurà tallers de jocs per a joves",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "jocs",
+            "joves",
+            "dia jove"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Concert del grup Babia",
+          "description": "Concert del grup Babia",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "música en directe",
+            "dia jove"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Concert del grup Whitehole",
+          "description": "Concert del grup Whitehole",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "música en directe",
+            "dia jove"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27 — Guadiana salsera",
+      "events": [
+        {
+          "time": "00:00",
+          "title": "Arnau Raya (Dj)",
+          "description": "Sessió de Dj Arnau Raya. Tancament de la Guadiana Salsera",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "sessió",
+            "guadiana salsera",
+            "nit"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Afroditta (Dj) — Electro Guadiana en femení vol. V",
+          "description": "Sessió de Dj d'Afroditta dins l'Electro Guadiana en femení vol. V",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Electro Guadiana",
+            "femení",
+            "sessió",
+            "nit"
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "Decorem imants amb formes de dolços",
+          "description": "Taller familiar de decoració d'imants amb formes de dolços. Gelats per a tothom",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "familiar",
+            "dolços",
+            "imants",
+            "manualitats"
+          ]
+        },
+        {
+          "time": "17:30",
+          "title": "Taller de fotobrodat — Electro Guadiana en femení vol. V",
+          "description": "Taller per a adults de fotobrodat a càrrec del col·lectiu Batec, acompanyat de la sessió de Dj Robin. Places limitades",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "fotobrodat",
+            "taller",
+            "adults",
+            "Batec",
+            "dj",
+            "Electro Guadiana",
+            "femení",
+            "places limitades"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Sabors del sud: Rebujitos a la barra",
+          "description": "Gaudeix del clàssic rebujito andalús",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "gastronomia",
+            "guadiana salsera"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Taller de salsa amb Ritmos Barcelona",
+          "description": "Classe oberta per ballar salsa amb ambient festiu i comunitari",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "taller",
+            "salsa",
+            "guadiana salsera"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Motmot (Dj) — Electro Guadiana en femení vol. V",
+          "description": "Sessió de Dj de Motmot dins l'Electro Guadiana en femení vol. V",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Electro Guadiana",
+            "femení",
+            "sessió"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Salsona (salsa/ritmes llatins)",
+          "description": "",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "música",
+            "salsa",
+            "guadiana salsera"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Yasmina Karrum (Dj) — Electro Guadiana en femení vol. V",
+          "description": "Sessió de Dj de Yasmina Karrum dins l'Electro Guadiana en femení vol. V",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Electro Guadiana",
+            "femení",
+            "sessió"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "La Porteña y los piratas (electrocúmbia)",
+          "description": "",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "electrocúmbia",
+            "guadiana salsera"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Natalia Lazcano (Dj) — Electro Guadiana en femení vol. V",
+          "description": "Sessió de Dj de Natalia Lazcano dins l'Electro Guadiana en femení vol. V",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "Electro Guadiana",
+            "femení",
+            "sessió"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Gimcana fotogràfica",
+          "description": "Ruta lúdica i col·laborativa pels carrers Papin, Sagunt i Guadiana. Punt d'inici: c. Papin",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "gimcana",
+            "fotografia",
+            "ruta",
+            "Papin",
+            "Sagunt",
+            "familiar"
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "Fem postals creatives",
+          "description": "Taller familiar de postals creatives a càrrec de Begonya Comtal",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "postals",
+            "manualitats",
+            "familiar",
+            "Begonya Comtal"
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Concert i vermut amb SantsFàrria",
+          "description": "Concert i vermut amb música en directe amb la txaranga SantsFàrria",
+          "type": "concert",
+          "for_kids": true,
+          "tags": [
+            "txaranga",
+            "vermut",
+            "concert",
+            "música en directe",
+            "migdia"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "CorreDrags",
+          "description": "Festa itinerant pels carrers Guadiana, Sagunt i Papin amb 3 xous de Ben Alfons, Frida la Ter i Dissident.cia. Places limitades, inscripció a ja.cat/corredragsguadiana",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "drag",
+            "espectacle",
+            "itinerant",
+            "places limitades",
+            "inscripció",
+            "Ben Alfons",
+            "Frida la Ter",
+            "Dissident.cia"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Dj X-Mandana",
+          "description": "Sessió de Dj X-Mandana",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "sessió",
+            "nit"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Bingo musical \"Edició petardeig\" i Sessió petarda amb Dj StrangeLove",
+          "description": "Bingo musical en edició petardeig seguit de sessió petarda amb Dj StrangeLove",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "bingo",
+            "dj",
+            "StrangeLove",
+            "música",
+            "jocs"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "PD Panic (Dj)",
+          "description": "Sessió de Dj PD Panic",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "sessió",
+            "nit"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29 — Guadiana Rocks",
+      "events": [
+        {
+          "time": "01:00",
+          "title": "Jarana Guadiana Dj (grans èxits del rock)",
+          "description": "",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "rock",
+            "guadiana rocks"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Alcer (Dj)",
+          "description": "Sessió de Dj Alcer",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "dj",
+            "sessió",
+            "nit",
+            "Guadiana Rocks"
+          ]
+        },
+        {
+          "time": "03:00",
+          "title": "Traca final de Festa Major",
+          "description": "Traca de clausura oficial de la Festa Major de Sants 2026",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "clausura",
+            "festa major",
+            "final"
+          ]
+        },
+        {
+          "time": "10:00",
+          "title": "Zumba amb Atles Esports",
+          "description": "Sessió de zumba amb Atles Esports",
+          "type": "esport",
+          "for_kids": true,
+          "tags": [
+            "zumba",
+            "esport",
+            "matí",
+            "familiar"
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "Fes-te un davantal",
+          "description": "Taller per a totes les edats: dissenya i personalitza el teu propi davantal amb goma Eva i altres materials, a càrrec de Tallerets",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "taller",
+            "davantal",
+            "manualitats",
+            "goma Eva",
+            "familiar",
+            "Tallerets"
+          ]
+        },
+        {
+          "time": "17:30",
+          "title": "Dolços al carrer",
+          "description": "Concurs popular de dolços amb inscripció prèvia. En finalitzar el concurs, berenar popular amb els dolços participants",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "concurs",
+            "dolços",
+            "berenar popular",
+            "inscripció prèvia",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Cervesa artesana a ritme de rock",
+          "description": "",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "gastronomia",
+            "guadiana rocks"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Trivial llaminer",
+          "description": "El joc més dolç, punky i irreverent. Per a totes les edats",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "trivial",
+            "jocs",
+            "dolços",
+            "familiar"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Engels (hard-rock)",
+          "description": "",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "rock",
+            "guadiana rocks"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Nassos Loops",
+          "description": "Concert de cúmbia psicodèlica",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "cúmbia",
+            "psicodèlica",
+            "concert",
+            "música en directe",
+            "Guadiana Rocks"
+          ]
+        },
+        {
+          "time": "21:45",
+          "title": "Valua (rock en català)",
+          "description": "Concert de rock en català",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "rock",
+            "català",
+            "guadiana rocks"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "El persianas i los influencers muertos",
+          "description": "Concert de rumba en versió popular",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rumba",
+            "versió popular",
+            "concert",
+            "música en directe",
+            "Guadiana Rocks"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Enemigo Público (punk)",
+          "description": "",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "punk",
+            "guadiana rocks"
+          ]
+        }
+      ]
+    }
+  }
+}

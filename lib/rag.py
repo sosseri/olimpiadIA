@@ -72,6 +72,38 @@ def retrieve(query, top_k=3):
     return top
 
 
+def retrieve_with_image(query, top_k=3):
+    """Like retrieve(), but always includes at least one image chunk.
+
+    Takes top (top_k - 1) text chunks with score > 0, then appends the
+    highest-scored image chunk regardless of its score.  If multiple image
+    chunks share the top score, one is chosen at random.
+    """
+    import random
+
+    chunks = _load_chunks()
+    scored = [(c, _score(c, query)) for c in chunks]
+
+    text_scored = [(c, s) for c, s in scored if not c.get("is_image")]
+    image_scored = [(c, s) for c, s in scored if c.get("is_image")]
+
+    text_scored.sort(key=lambda x: x[1], reverse=True)
+    top_texts = [c for c, s in text_scored[: top_k - 1] if s > 0]
+
+    if image_scored:
+        image_scored.sort(key=lambda x: x[1], reverse=True)
+        best_score = image_scored[0][1]
+        top_images = [c for c, s in image_scored if s == best_score]
+        best_image = random.choice(top_images)
+    else:
+        best_image = None
+
+    result = top_texts
+    if best_image is not None:
+        result = result + [best_image]
+    return result
+
+
 def format_context(chunks):
     if not chunks:
         return ""

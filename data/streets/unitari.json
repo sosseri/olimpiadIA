@@ -1,0 +1,745 @@
+{
+  "key": "unitari",
+  "name": "Actes Unitaris i Castellers de Sants",
+  "theme": "Programació compartida per tots els carrers",
+  "decoration_description": "",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "10:30",
+          "title": "Taller d'acompanyament del drac xinès de la bona sort",
+          "description": "La Taula Intercultural del Secretariat d'Entitats de Sants, Hostafracs i la Bordeta i l'Associació Xi Hua proposen als veïns i veïnes del barri un assaig obert per aprendre les coreografies del drac xinès. Activitat gratuïta amb inscripció prèvia a ja.cat/cercaviladrac. Plaça de Bonet i Muixí",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Passejada 'La història de la Festa Major de Sants'",
+          "description": "A càrrec de Memòria en moviment. Activitat gratuïta amb inscripció a www.lleialtat.cat. Punt de trobada: Lleialtat Santsenca (carrer d'Olzinelles, 31)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Cercavila de Festa Major",
+          "description": "Recorregut: concentració al carrer de Sants, davant del Centre Cívic Cotxeres, i rua pel carrer de Sants i el carrer de l'Espanya Industrial fins arribar al parc de l'Espanya Industrial",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Balls i lluïments de les colles de cultura popular",
+          "description": "Espectacle de la Taula intercultural del Secretariat d'Entitats de Sants, Hostafracs i la Bordeta. Hi participen l'Associació Xi Hua, l'Associació Multicultural Ayacucho Perú Barcelona 2020, Colla Nova Gegantera, Tabalers i Diables, Gegants de Sants. El ball es clourà amb un pilar dels Castellers de Sants. Parc de l'Espanya Industrial",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Pilar al pregó",
+          "description": "Pilar dels Castellers de Sants al parc de l'Espanya Industrial",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Pregó de Festa Major",
+          "description": "A càrrec de l'actriu i directora de cinema Leticia Dolera. Parc de l'Espanya Industrial",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "20:15",
+          "title": "Traca d'inici de la Festa Major",
+          "description": "Traca d'inici de la Festa Major dels Castellers de Sants",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "20:30",
+          "title": "Correbous amb la xaranga Banda Patilla",
+          "description": "Correbous amb la xaranga Banda Patilla. Activitat dels Castellers de Sants",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Ball de gralles amb Els Quatrevents i concert amb DJ Trapella",
+          "description": "Ball de gralles amb Els Quatrevents i concert amb DJ Trapella. Activitat dels Castellers de Sants",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Visita guiada al cementiri de Sants",
+          "description": "Activitat gratuïta amb aforament limitat i inscripció prèvia a ja.cat/cementirisants",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "11:30",
+          "title": "Repic manual de campanes",
+          "description": "Església de Santa Maria de Sants (plaça de Bonet i Muixí, 5)",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Ofrena floral a Sant Bartomeu",
+          "description": "Per part de les comissions de festes dels carrers, entitats del barri i veïns i veïnes que ho desitgin. Amb Pilar dels Castellers a l'interior de l'església, cant dels Goigs de Sant Bartomeu a càrrec de la Coral d'Antics Alumnes de la Facultat de Física de la UB i ball en honor a Sant Bartomeu amb l'Associació Cultural Folklòrica Tinkus Tiataco de Bolívia. Església de Santa Maria de Sants (plaça de Bonet i Muixí, 5)",
+          "type": "acte",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Concurs de paelles",
+          "description": "Concurs de paelles dels Castellers de Sants",
+          "type": "gastronomia",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Missa solemne en honor de Sant Bartomeu",
+          "description": "Amb la participació de la Coral d'Antics Alumnes de la Facultat de Física de la UB, que un acabar l'eucaristia, oferirà un petit concert. Església de Santa Maria de Sants (plaça de Bonet i Muixí, 5)",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Campionat de bitlles catalanes",
+          "description": "Campionat de bitlles catalanes dels Castellers de Sants",
+          "type": "esport",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Concert infantil amb Ambauka",
+          "description": "Concert infantil amb Ambauka. Activitat dels Castellers de Sants",
+          "type": "concert",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Concert amb Dj Surda",
+          "description": "Concert amb Dj Surda. Activitat dels Castellers de Sants",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Visita guiada als carrers guarnits per a persones amb autisme o necessitats cognitives",
+          "description": "L'entitat Aprènem realitza una visita inclusiva als carrers guarnits de Sants. Activitat gratuïta amb inscripció prèvia a lleure.aprenem@gmail.com",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Pilar d'ofrena a Sant Bartomeu",
+          "description": "Pilar d'ofrena a Sant Bartomeu dels Castellers de Sants, a l'església de Santa Maria de Sants",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Presentació del padró del pilar caminant",
+          "description": "Presentació del padró del pilar caminant dels Castellers de Sants",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Visita guiada audiodescrita pels carrers guarnits",
+          "description": "Per a persones amb discapacitat visual. Activitat gratuïta amb inscripció prèvia a subtil@subtil.cat o als telèfons 649 005 207 / 620 626 704. Plaça de Bonet i Muixí, davant les escales de l'església",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "17:15",
+          "title": "Ballada de sardanes",
+          "description": "Cobla Ciutat de Terrassa. Parc de l'Espanya Industrial",
+          "type": "música",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Espectacle 'Expressions del món'",
+          "description": "Parc de l'Espanya Industrial",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Lliurament de premis del Concurs de guarniment de carrers",
+          "description": "Parc de l'Espanya Industrial",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Vespre glosat",
+          "description": "Vespre glosat dels Castellers de Sants",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Concerts amb Fades i Llum",
+          "description": "Concerts amb Fades (pop-urban) i Llum (pop-electrònica). Activitat dels Castellers de Sants",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        }
+      ]
+    },
+    "2026-08-25": {
+      "day_label": "Dimarts 25",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Jocs infantils i tradicionals",
+          "description": "Un espai de joc lliure creat amb materials naturals i reciclats: un Jorn al Mas, Natural Kids i jocs gegants tradicionals de fusta! Parc de l'Espanya Industrial (10:00-14:00 i 16:00-18:30)",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "III Concurs de puzles de Sants",
+          "description": "El concurs consisteix a fer, per parelles, un puzle de 500 peces (tothom el mateix) en un màxim de dues hores. Organitza: Secretariat d'Entitats de Sants, Hostafracs i la Bordeta. Inscripcions a ja.cat/puzleSants. Parc de l'Espanya Industrial",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Olimpiades borinotes obertes al barri",
+          "description": "Olimpiades borinotes obertes al barri dels Castellers de Sants",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Actuació de Set de rumba",
+          "description": "Parc de l'Espanya Industrial",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Si les parets parlessin. Visita comentada de la Lleialtat",
+          "description": "Activitat gratuïta amb inscripció prèvia a www.lleialtat.cat. Lleialtat Santsenca (carrer d'Olzinelles, 31)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Actuació infantil 'Reboom!...bori!'",
+          "description": "A càrrec de la Companyia Roger Canals. Parc de l'Espanya Industrial",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Sopar de germanor del veïnat i la Coordinadora d'Entitats de la Lleialtat Santsenca",
+          "description": "Carrer de Dalmau (20:00-01:00)",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Sopar de germanor dels Castellers",
+          "description": "Sopar de germanor dels Castellers de Sants",
+          "type": "sopar",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Nit de concerts amb Juny del 99, Mala Vida i set de PD",
+          "description": "Parc de l'Espanya Industrial",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Concert amb Préssecks (versions Disney)",
+          "description": "Concert amb Préssecks (versions Disney). Activitat dels Castellers de Sants",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "day_label": "Dimecres 26",
+      "events": [
+        {
+          "time": "10:00",
+          "title": "Ofrena floral a Sant Bartomeu i vermut mariner de Festa Major al Mercat de Sants",
+          "description": "Mercat de Sants (carrer de Sant Jordi, 5) (10:00-10:30)",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Ruta històrica per Sants",
+          "description": "Visita guiada a set punts d'importància històrica i patrimonial del barri. Activitat gratuïta amb places limitades a un màxim de 20 persones. Reserva d'espai a ja.cat/passejadaFM26. Lloc de trobada: seu del Districte (carrer de la Creu Coberta, 104) (18:00-19:30)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Taller de castells per a menuts i grans",
+          "description": "Taller de castells per a menuts i grans dels Castellers de Sants",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Assaig casteller al carrer",
+          "description": "Assaig casteller al carrer dels Castellers de Sants",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Concerts amb Miquel del Roig i Dj Coronitas",
+          "description": "Concerts amb Miquel del Roig (cantautor) i Dj Coronitas. Activitat dels Castellers de Sants",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "10:30",
+          "title": "Campionat de Dobles d'escacs",
+          "description": "Activitat gratuïta amb inscripció mitja hora abans del campionat. Organitzen: Secretariat d'Entitats de Sants, Hostafracs i la Bordeta i la Federació Catalana d'Escacs. Cotxeres de Sants (carrer de Sants, 79)",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Ruta històrica per Sants",
+          "description": "Visita guiada a set punts d'importància històrica i patrimonial del barri. Lloc de trobada: seu del Districte (carrer de la Creu Coberta, 104) (18:00-19:30)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Taller infantil de Guspires de Sants",
+          "description": "Parada informativa amb activitats infantils al voltant de la seguretat, la música i l'entreteniment en el món dels diables. Organitza: Guspires de Sants. Placeta de Ramon Tasca Casanova (18:00-20:00)",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Tast de síndria i meló per als més petits",
+          "description": "Tast de síndria i meló per als més petits dels Castellers de Sants",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "El Piano Parla. Concert del Trio Kòrena",
+          "description": "Concert del Trio Kòrena que compta amb violí, clarinet i piano. Accés lliure. Organitza: Orfeó de Sants. Lloc: Lleialtat Santsenca (carrer d'Olzinelles, 31)",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Animació infantil a càrrec de Jaume Barri",
+          "description": "Animació infantil a càrrec de Jaume Barri. Activitat dels Castellers de Sants",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Concerts amb Lasta Sanco i Les que faltaband",
+          "description": "Concerts amb Lasta Sanco (mestissatge) i Les que faltaband (versions). Activitat dels Castellers de Sants",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "17:30",
+          "title": "Taller-demostració de cuina japonesa",
+          "description": "Activitat gratuïta amb inscripció prèvia al punt d'informació del Mercat. Lloc de trobada: aula gastronòmica del Mercat de Sants (carrer de Sant Jordi, 6)",
+          "type": "taller",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "17:30",
+          "title": "Torneig de futbol",
+          "description": "Torneig de futbol dels Castellers de Sants",
+          "type": "esport",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Ruta històrica per Sants",
+          "description": "Visita guiada a set punts d'importància històrica i patrimonial del barri. Lloc de trobada: seu del Districte (carrer de la Creu Coberta, 104) (18:00-19:30)",
+          "type": "cultura",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Assaig casteller al carrer",
+          "description": "Assaig casteller al carrer dels Castellers de Sants",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Concerts amb Bons nois, Al·lèrgiques al pol·len i 2 de Pega",
+          "description": "Concerts amb Bons nois (pop-rock), Al·lèrgiques al pol·len (pop-rock) i 2 de Pega (Dj). Activitat dels Castellers de Sants",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "10:30",
+          "title": "La Lleialtat a la Fresca",
+          "description": "Múltiples activitats a la plaça de Bonet i Muixí: Scrabble gegant en català, Xics del Xurrac, jocs familiars, Exhibició de ball en línia, 14h Paella valenciana, 19h Teatre còmic de carrer Anna Confetti, 20h Barcelona Shag Society, 23h Maybe i Mal Menor, concerts de les bandes dels bucs de la Lleialtat, 00.30h Maambo! Music Sons tropicals. A la Lleialtat Santsenca (carrer d'Olzinelles, 31): 16h Jocs de taula i rol amb Sants Niggurath (10:30-02:30)",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "Campionat de Simultànies d'escacs",
+          "description": "Inscripció gratuïta. Organitzen: Secretariat d'Entitats de Sants, Hostafracs i la Bordeta i la Federació Catalana d'Escacs. CC Cotxeres de Sants",
+          "type": "jocs",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Lliurament dels Premis populars de guarniment de carrers",
+          "description": "Organitza: Sants 3 Ràdio. Carrer del Vallespir de Dalt",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Actuació castellera",
+          "description": "Actuació castellera dels Castellers de Sants a la plaça de Bonet i Muixí",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Correfoc infantil",
+          "description": "Les colles participants són les Guspires de Sants i els Diables de Castelldefels. Inici: jardins de Can Mantega",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "Pilar caminant",
+          "description": "Pilar caminant dels Castellers de Sants des de la plaça de Bonet i Muixí fins al parc de l'Espanya Industrial",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        },
+        {
+          "time": "21:30",
+          "title": "Correfoc adult",
+          "description": "Les colles participants són els Diables de Sants, la seva colla convidada, els Diables de Cornellà, les Guspires de Sants i la seva colla convidada, els Diables de Castelldefels. Recorregut: plaça d'Osca, Riego, Autonomia, Watt, Sants, Gayarre, Ferreria, Guadiana, Rei Martí, Cros, Sant Crist, plaça d'Ibèria i plaça de Bonet i Muixí",
+          "type": "espectacle",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "22:30",
+          "title": "Concerts amb KM.0, SDP509 i PlanB",
+          "description": "Concerts amb KM.0 (mestissatge), SDP509 (pop-rock) i PlanB (Dj). Activitat dels Castellers de Sants",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari",
+            "castellers"
+          ]
+        }
+      ]
+    },
+    "2026-08-30": {
+      "day_label": "Diumenge 30",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "Curses atlètiques de Festa Major",
+          "description": "Recorregut: carrers de Sants i de la Creu Coberta entre Olzinelles i Moianès. Organitza: Unió Esportiva de Sants (08:00-10:00)",
+          "type": "esport",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "10:00",
+          "title": "Curses ciclistes de Festa Major",
+          "description": "Recorregut: carrers de Sants i de la Creu Coberta entre Olzinelles i Moianès. 10-11h 49è Trofeu Quirze Martí (categories cadets), 11:15-12:10h 79è Trofeu Enric Armengol (categories júnior), 12:20-13:10h 4a Cursa Ciclista Femenina Festa Major de Sants, 13:20-14:30h 48è Trofeu Antonio Andrés Sancho (categories elit). Organitza: Volta Ciclista a Catalunya AE (10:00-14:30)",
+          "type": "esport",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Piromusical de cloenda dels actes unitaris de Festa Major",
+          "description": "Organitza: Colla de Diables de Sants i Sants 3 Ràdio. A les grades del Parc de l'Espanya Industrial",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "unitari"
+          ]
+        }
+      ]
+    },
+    "2026-09-05": {
+      "day_label": "Dissabte 5 de setembre",
+      "events": [
+        {
+          "time": "18:30",
+          "title": "Concert de Festa Major amb la Banda Municipal de Barcelona",
+          "description": "Amb la direcció de Ximo Tarín. Parc de l'Espanya Industrial",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        },
+        {
+          "time": "21:00",
+          "title": "Concert de celebració del 125è aniversari de l'Orfeó de Sants",
+          "description": "Amb la direcció de Xavier Garcia Cardona. Glòria i Magnificat de Vivaldi participatius. Cotxeres de Sants (carrer de Sants, 79)",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "unitari"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "key": "finlandia",
+  "name": "Carrer de Finlàndia",
+  "theme": "45è aniversari de la Comissió de Festes",
+  "decoration_description": "Celebració dels 45 anys de la comissió de festes del carrer Finlàndia. El guarnit homenatja la història i la comunitat del carrer amb elements que recorden els 45 anys de festa i veïnatge.",
+  "days": {
+    "2026-08-22": {
+      "day_label": "Dissabte 22",
+      "events": [
+        {
+          "time": "21:00",
+          "title": "Traca d'inici de Festa Major",
+          "description": "Tret de sortida de la Festa Major amb la traca inicial del carrer.",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "inici",
+            "festa major"
+          ]
+        },
+        {
+          "time": "00:00",
+          "title": "Nit de festa amb Piti Vaccari",
+          "description": "Sessió de festa nocturna amb Piti Vaccari.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "festa",
+            "nit",
+            "música"
+          ]
+        }
+      ]
+    },
+    "2026-08-23": {
+      "day_label": "Diumenge 23",
+      "events": [
+        {
+          "time": "17:00",
+          "title": "Festa dels 45 anys: inflables i taller de serigrafia",
+          "description": "Celebració del 45è aniversari de la comissió de festes amb inflables per als més petits i taller de serigrafia.",
+          "type": "taller",
+          "for_kids": true,
+          "tags": [
+            "45 anys",
+            "inflables",
+            "serigrafia",
+            "taller",
+            "aniversari"
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Concert per la festa del 45, amb Diego Ménez",
+          "description": "Concert en commemoració del 45è aniversari de la comissió, a càrrec de Diego Ménez.",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "45 anys",
+            "Diego Ménez",
+            "aniversari"
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Nit de karaoke amb Tàndem",
+          "description": "Nit de karaoke animada per Tàndem.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "karaoke",
+            "nit",
+            "Tàndem"
+          ]
+        }
+      ]
+    },
+    "2026-08-24": {
+      "day_label": "Dilluns 24",
+      "events": [
+        {
+          "time": "17:30",
+          "title": "Tarda de contacontes amb Vivim del Cuentu",
+          "description": "Sessió de contacontes per als infants a càrrec de Vivim del Cuentu.",
+          "type": "cultura",
+          "for_kids": true,
+          "tags": [
+            "contacontes",
+            "infants",
+            "Vivim del Cuentu"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Nit de festa amb PD Pachas & The Mamas",
+          "description": "Sessió de festa nocturna amb PD Pachas & The Mamas.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "festa",
+            "nit",
+            "PD Pachas",
+            "The Mamas"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "day_label": "Dijous 27",
+      "events": [
+        {
+          "time": "11:30",
+          "title": "Patxanga de futbol",
+          "description": "Partidet de futbol popular al carrer.",
+          "type": "esport",
+          "for_kids": false,
+          "tags": [
+            "futbol",
+            "patxanga",
+            "esport"
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Xocolatada infantil",
+          "description": "Xocolatada només per a infants.",
+          "type": "gastronomia",
+          "for_kids": true,
+          "tags": [
+            "xocolatada",
+            "infants",
+            "gastronomia"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Xicana: una gran pallassa",
+          "description": "Espectacle de pallasso amb Xicana, una gran pallassa.",
+          "type": "espectacle",
+          "for_kids": true,
+          "tags": [
+            "pallasso",
+            "Xicana",
+            "espectacle",
+            "infants"
+          ]
+        },
+        {
+          "time": "23:00",
+          "title": "Nit de rock amb La Rockpública",
+          "description": "Nit de rock en viu a càrrec de La Rockpública.",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "rock",
+            "concert",
+            "La Rockpública",
+            "nit"
+          ]
+        },
+        {
+          "time": "01:00",
+          "title": "Concert amb Jester",
+          "description": "Concert de matinada amb Jester.",
+          "type": "concert",
+          "for_kids": false,
+          "tags": [
+            "concert",
+            "Jester",
+            "matinada"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "day_label": "Divendres 28",
+      "events": [
+        {
+          "time": "17:00",
+          "title": "Jocs de fusta tradicionals amb Els Jocs de Ca la Padrina",
+          "description": "Tarda de jocs de fusta tradicionals organitzada per Els Jocs de Ca la Padrina.",
+          "type": "jocs",
+          "for_kids": true,
+          "tags": [
+            "jocs",
+            "fusta",
+            "tradicional",
+            "Els Jocs de Ca la Padrina"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Nit de festa amb Dj Txanga",
+          "description": "Sessió de festa nocturna amb Dj Txanga.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "festa",
+            "nit",
+            "Dj Txanga",
+            "DJ"
+          ]
+        }
+      ]
+    },
+    "2026-08-29": {
+      "day_label": "Dissabte 29",
+      "events": [
+        {
+          "time": "18:00",
+          "title": "Ballada de country amb Xavier Badiella",
+          "description": "Ballada de country animada per Xavier Badiella.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "country",
+            "ball",
+            "Xavier Badiella"
+          ]
+        },
+        {
+          "time": "23:30",
+          "title": "Nit de festa amb PD Renatas",
+          "description": "Sessió de festa nocturna amb PD Renatas.",
+          "type": "música",
+          "for_kids": false,
+          "tags": [
+            "festa",
+            "nit",
+            "PD Renatas"
+          ]
+        },
+        {
+          "time": "03:00",
+          "title": "Traca fi de festa",
+          "description": "Traca de cloenda que marca el final de la Festa Major del carrer Finlàndia.",
+          "type": "acte",
+          "for_kids": false,
+          "tags": [
+            "traca",
+            "fi de festa",
+            "cloenda"
+          ]
+        }
+      ]
+    }
+  }
+}
