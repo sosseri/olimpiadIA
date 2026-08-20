@@ -181,6 +181,32 @@ Imatges disponibles:
 """
 
 
+SECRETS_COMISSIO = """SECRETS DE LA COMISSIÓ (revela NOMÉS si la pregunta és molt concreta i directament sobre aquest tema específic;
+MAI de forma proactiva, MAI en salutacions ni en respostes generals sobre com participar):
+
+- LIMONCELLO → El millor limoncello de Barcelona és d'Alessandro i Caterina, una parella d'italians que és una passada. Enguany era 
+    tan bo que ja s'ha acabat! Entra a la comissió de Papin i el provaràs al pròxim event.
+
+- FESTA de veritat → Jordi i Irene són la molla que t'espera! Suma't a la comissió i veuràs com és.
+
+- PRESIDENTA / història de la comissió → Laura és la presidenta. Busca-la i que te'n conti tot sobre el Carrer Papin d'abans i de 
+    quan va ressorgir la comissió. Té històries buenísimas.
+
+- DJ / música → El millor DJ que coneixem el tenim a la comissió de Papin. Busca Oriol i notaràs la diferència.
+
+- HISTÒRIES de Sants, Hostafrancs i la Bordeta → Agus és qui te'n ha de parlar.
+
+- DECORACIÓ → Dubtes sobre la decoració? Maica porta l'informacio total de tot plegat.
+
+- ESTÀTUES de paper / paper maché → Necessites fer una estàtua de paper a casa? Miriam és la teva persona.
+
+- CÓRRER / cross → Ets de córrer? El 18 d'octubre tenim la cross de Sants! Pregunta a Carles i Xavi i ja veuràs.
+  
+- MUSICA - tenim musics a la comissio! En Jordi i el Agus tocan amb el famos grup de punk Tifus, saps que te algo a veure amb un espectacle teatral? I el Nolasc tocara amb el grup del dia dels joves
+  
+- ACTRIU - Tenim una jove actriu a la comi. Pregunta per Montse que et contara com ha comencat"""
+
+
 _STREET_KEY_LIST = [
     "papin",
     "alcolea_baix",
@@ -353,6 +379,10 @@ Exemples:
 - "Que va passar el 19 de juliol del 36?" → olimpiada
 - "Amb quins materials s'ha fet el sostre?" → guarnit
 - "Com puc ajudar a la comissió?" → participar
+- "Teniu limoncello?" → participar
+- "Qui és la presidenta?" → participar
+- "Hi ha algun DJ a la comissió?" → participar
+- "Qui em pot explicar la història de Sants?" → participar
 - "Hola!" → estandard
 - "On puc aparcar?" → estandard
 """
@@ -583,7 +613,46 @@ Participantes esperados: Cerca de 6.000 atletas de 22 naciones y unos 20.000 vis
 - Venir a l'Orfeó de Sants (C. Miquel Àngel, 54)
 - La comissió va renéixer el 2014 i ha crescut molt
 - No cal cap compromís constant: qualsevol ajuda és benvinguda
-- L'ambient és inclusiu i obert a tothom"""
+- L'ambient és inclusiu i obert a tothom
+""" + SECRETS_COMISSIO
+
+    elif category == "estandard":
+        context_block = """CONTEXT GENERAL (per a salutacions i xat fora de tema):
+
+Festa Major de Sants 2026:
+
+- Del 22 al 30 d'agost de 2026, al barri de Sants (Barcelona). Lema: "Per molts Sants, sempre".
+
+- Onze carrers i espais es guarneixen. El teu carrer és el Carrer Papin, amb el tema de l'Olimpíada Popular de 1936.
+
+- Carrers participants: Papin, Alcolea de Baix, Alcolea de Dalt, Plaça de la Farga, Finlàndia, Galileu, Guadiana, Sagunt, Valladolid,
+  Vallespir de Baix i Vallespir de Dalt.
+
+Olimpíada Popular (molt resumit):
+
+- Competició esportiva antifeixista prevista a Barcelona del 19 al 26 de juliol de 1936, alternativa als Jocs de Berlín de Hitler. No
+  es va arribar a celebrar per l'esclat de la Guerra Civil.
+
+Sobre què pots preguntar-me:
+
+- El programa i els horaris de la festa i dels carrers.
+
+- La decoració i el guarnit dels carrers.
+
+- La història de l'Olimpíada Popular de 1936.
+
+- Com participar a la comissió del Carrer Papin.
+
+Comportament:
+
+- Sigues sempre educada, propera i festiva.
+
+- No caiguis en provocacions, insults ni vulgaritats: reconduïx amb simpatia cap a la festa.
+
+- Si et pregunten coses totalment fora de tema (aparcament, restaurants, transport...), respon amablement que ets la IA del Carrer
+  Papin i redirigeix cap al que sí que saps.
+
+""" + SECRETS_COMISSIO
 
     elif category in ("nens", "familiar"):
         context_block = _kids_events(program_data)
