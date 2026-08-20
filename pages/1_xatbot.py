@@ -147,7 +147,6 @@ def reset_conversation():
     st.session_state["messages"] = []
     st.session_state["processing"] = False
     st.session_state["user_input"] = ""
-    st.rerun()
 
 
 st.set_page_config(
@@ -298,6 +297,7 @@ st.markdown(_sport_strip_html(), unsafe_allow_html=True)
 
 program_data = get_program()
 if st.session_state.get("pending_question"):
+    st.session_state.messages = []
     q = st.session_state.pop("pending_question")
     process_message(q)
 

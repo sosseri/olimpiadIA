@@ -32,16 +32,6 @@ st.markdown("""
         font-weight: 700;
     }
     .hub-cta { margin: 1rem 0 1.25rem; }
-    .hub-cta .stButton > button { 
-        font-size: 1.8rem !important; 
-        padding: 1.5rem 2.5rem !important; 
-        height: auto !important;
-        font-weight: 900 !important;
-        border: 4px solid #1E3FD0 !important;
-        background: linear-gradient(135deg, #F0281E, #F5CE18) !important;
-        color: #fff !important;
-        box-shadow: 0 8px 20px rgba(240, 40, 30, 0.35) !important;
-    }
     .topic-card {
         background: rgba(255,255,255,0.82); border: 1px solid rgba(30,63,208,0.08);
         border-radius: 16px; padding: 1rem; margin: 0.5rem 0; box-shadow: 0 6px 18px rgba(0,0,0,0.05);
@@ -65,16 +55,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("<div class='hub-cta'>", unsafe_allow_html=True)
-st.markdown("""
-<div style="position: relative; margin: 2rem 0;">
-    <div style="position: absolute; inset: -20px; background: radial-gradient(circle at 30% 30%, rgba(245, 206, 24, 0.15), rgba(30, 63, 208, 0.1)); border-radius: 24px; border: 3px dashed #F5CE18; opacity: 0.8; z-index: 0;"></div>
-    <div style="position: relative; z-index: 1;">
-""", unsafe_allow_html=True)
-st.page_link("pages/1_xatbot.py", label="💬 Obrir el xatbot", use_container_width=True)
-st.markdown("""
-    </div>
-</div>
-""", unsafe_allow_html=True)
+def _open_xatbot():
+    st.session_state["_switch_to_xatbot"] = True
+st.button("💬 Obrir el xatbot", on_click=_open_xatbot, key="hub_cta", use_container_width=True)
 st.markdown("</div>", unsafe_allow_html=True)
 
 cards = [
@@ -95,7 +78,7 @@ for i, (title, page, seed, description) in enumerate(cards):
             def _make_callback(seed_value=seed):
                 def _cb():
                     st.session_state["pending_question"] = seed_value
-                    st.switch_page("pages/1_xatbot.py")
+                    st.session_state["_switch_to_xatbot"] = True
                 return _cb
             st.button("💬 Pregunta-ho", on_click=_make_callback(), key=f"hub_{i}", use_container_width=True)
 
@@ -110,5 +93,7 @@ st.markdown("""
   </p>
 </div>
 """, unsafe_allow_html=True)
-
+if st.session_state.get("_switch_to_xatbot"):
+    st.session_state["_switch_to_xatbot"] = False
+    st.switch_page("pages/1_xatbot.py")
 

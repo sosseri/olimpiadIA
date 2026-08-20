@@ -8,6 +8,7 @@ st.set_page_config(
 )
 
 from lib.decor import add_background, section_accent, nav_bar
+import os
 
 add_background(count=2)
 nav_bar()
@@ -56,6 +57,29 @@ st.markdown("""
 ![🍻](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f37b/72.png) <b>Nota:</b> Parla amb la comissió a la barra del carrer Papin durant la festa.
 </div>
 """, unsafe_allow_html=True)
+
+section_accent(2)
+st.markdown('<div class="section-title">Algunes fotos</div>', unsafe_allow_html=True)
+
+PARTICIPAR_PHOTOS = [
+    ("assets/comissio/IMG-20260820-WA0023.jpg", "La comissió del Carrer Papin")
+]
+
+cols_per_row = 2
+for i in range(0, len(PARTICIPAR_PHOTOS), cols_per_row):
+    cols = st.columns(cols_per_row)
+    for j, col in enumerate(cols):
+        idx = i + j
+        if idx < len(PARTICIPAR_PHOTOS):
+            fpath, caption = PARTICIPAR_PHOTOS[idx]
+            with col:
+                if os.path.isfile(fpath):
+                    st.image(fpath, use_container_width=True)
+                st.markdown(
+                    f"<div style='text-align:center;color:#555;font-size:0.82rem;"
+                    f"font-style:italic;padding:0.2rem 0 0.8rem'>{caption}</div>",
+                    unsafe_allow_html=True,
+                )
 
 st.markdown("### Tens dubtes? Pregunta-ho a la PapinIA")
 
