@@ -92,14 +92,14 @@ def nav_bar():
     import streamlit as st
 
     links = [
-        ("strlt_app.py", "![🏠](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3e0/72.png) Inici"),
-        ("pages/1_xatbot.py", "![💬](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4ac/72.png) Xatbot"),
-        ("pages/2_programa.py", "![📅](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4c5/72.png) Programa"),
-        ("pages/3_olimpiada.py", "![🏟️](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3df_fe0f/72.png)  Olimpíada"),
-        ("pages/5_guarnit_papin.py", "![🎨](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3a8/72.png) Guarnit"),
-        ("pages/4_arxiu.py", "![📸](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4f8/72.png) Arxiu"),
-        ("pages/6_festa_major.py", "![🎭](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3ad/72.png) Festa Major"),
-        ("pages/7_participar.py", "![🙋](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f64b/72.png) Participar"),
+        ("strlt_app.py", "🏠 Inici"),
+        ("pages/1_xatbot.py", "💬 Xatbot"),
+        ("pages/2_programa.py", "📅 Programa"),
+        ("pages/3_olimpiada.py", "🏟️ Olimpíada"),
+        ("pages/5_guarnit_papin.py", "🎨 Guarnit"),
+        ("pages/4_arxiu.py", "📸 Arxiu"),
+        ("pages/6_festa_major.py", "🎭 Festa Major"),
+        ("pages/7_participar.py", "🙋 Participar"),
     ]
 
     cols = st.columns(2)

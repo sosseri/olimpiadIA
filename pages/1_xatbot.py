@@ -152,7 +152,7 @@ def reset_conversation():
 
 st.set_page_config(
     page_title="Xat amb PapinIA",
-    page_icon="![💬](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4ac/72.png)",
+    page_icon="💬",
     layout="centered",
     initial_sidebar_state="expanded",
 )

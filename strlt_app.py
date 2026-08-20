@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="PapinIA — Festa Major de Sants",
-    page_icon="![🏟️](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3df_fe0f/72.png)",
+    page_icon="🏟️",
     layout="centered",
     initial_sidebar_state="expanded",
 )
@@ -55,30 +55,30 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("<div class='hub-cta'>", unsafe_allow_html=True)
-st.page_link("pages/1_xatbot.py", label="![💬](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4ac/72.png) Obrir el xatbot", use_container_width=True)
+st.page_link("pages/1_xatbot.py", label="💬 Obrir el xatbot", use_container_width=True)
 st.markdown("</div>", unsafe_allow_html=True)
 
 cards = [
-    ("![🏟️](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3df_fe0f/72.png) L'Olimpíada Popular de 1936", "pages/3_olimpiada.py", "Què va ser l'Olimpíada Popular de 1936?", "Recupera la història i el context de l’Olimpíada Popular de 1936."),
-    ("![📅](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4c5/72.png) Programa d'activitats", "pages/2_programa.py", "Què hi ha avui al carrer Papin?", "Consulta les activitats del carrer Papin i de la festa."),
-    ("![🎨](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3a8/72.png) El guarnit del Papin", "pages/5_guarnit_papin.py", "Com està fet el guarnit d'aquest any?", "Descobreix el tema, els materials i la idea del guarnit."),
-    ("![🏠](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3e0/72.png) Els carrers de la festa", "pages/6_festa_major.py", "Quins carrers participen a la festa?", "Coneix els carrers, les comissions i la tradició festiva del barri."),
-    ("![📸](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4f8/72.png) Arxiu de fotos", "pages/4_arxiu.py", None, "Explora imatges històriques i material visual del barri i la festa."),
-    ("![🙋](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f64b/72.png) Participar a la comissió", "pages/7_participar.py", "Com puc participar a la comissió?", "Troba com sumar-te a la comissió de festes del carrer Papin."),
+    ("🏟️ L'Olimpíada Popular de 1936", "pages/3_olimpiada.py", "Què va ser l'Olimpíada Popular de 1936?", "Recupera la història i el context de l'Olimpíada Popular de 1936."),
+    ("📅 Programa d'activitats", "pages/2_programa.py", "Què hi ha avui al carrer Papin?", "Consulta les activitats del carrer Papin i de la festa."),
+    ("🎨 El guarnit del Papin", "pages/5_guarnit_papin.py", "Com està fet el guarnit d'aquest any?", "Descobreix el tema, els materials i la idea del guarnit."),
+    ("🏠 Els carrers de la festa", "pages/6_festa_major.py", "Quins carrers participen a la festa?", "Coneix els carrers, les comissions i la tradició festiva del barri."),
+    ("📸 Arxiu de fotos", "pages/4_arxiu.py", None, "Explora imatges històriques i material visual del barri i la festa."),
+    ("🙋 Participar a la comissió", "pages/7_participar.py", "Com puc participar a la comissió?", "Troba com sumar-te a la comissió de festes del carrer Papin."),
 ]
 
 cols = st.columns(2)
 for i, (title, page, seed, description) in enumerate(cards):
     with cols[i % 2]:
         st.markdown(f"<div class='topic-card'><h3>{title}</h3><p>{description}</p></div>", unsafe_allow_html=True)
-        st.page_link(page, label="![📖](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4d6/72.png) Llegir més", use_container_width=True)
+        st.page_link(page, label="📖 Llegir més", use_container_width=True)
         if seed:
             def _make_callback(seed_value=seed):
                 def _cb():
                     st.session_state["pending_question"] = seed_value
                     st.switch_page("pages/1_xatbot.py")
                 return _cb
-            st.button("![💬](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4ac/72.png) Pregunta-ho", on_click=_make_callback(), key=f"hub_{i}", use_container_width=True)
+            st.button("💬 Pregunta-ho", on_click=_make_callback(), key=f"hub_{i}", use_container_width=True)
 
 st.markdown("""
 <div class="disclaimer-card">
