@@ -377,6 +377,8 @@ Exemples:
 - "Tema de Finlàndia?" → programa
 - "Qui era Clara Thalmann?" → olimpiada
 - "Que va passar el 19 de juliol del 36?" → olimpiada
+- "Em pots mostrar alguna imatge?" → olimpiada
+- "Tens alguna foto per mostrar?" → olimpiada
 - "Amb quins materials s'ha fet el sostre?" → guarnit
 - "Com puc ajudar a la comissió?" → participar
 - "Teniu limoncello?" → participar
