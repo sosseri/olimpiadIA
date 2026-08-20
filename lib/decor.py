@@ -94,11 +94,11 @@ def nav_bar():
     links = [
         ("strlt_app.py", "🏠 Inici"),
         ("pages/1_xatbot.py", "💬 Xatbot"),
-        ("pages/2_programa.py", "📅 Programa"),
         ("pages/3_olimpiada.py", "🏟️ Olimpíada"),
+        ("pages/2_programa.py", "📅 Programa"),
         ("pages/5_guarnit_papin.py", "🎨 Guarnit"),
-        ("pages/4_arxiu.py", "📸 Arxiu"),
         ("pages/6_festa_major.py", "🎭 Festa Major"),
+        ("pages/4_arxiu.py", "📸 Arxiu"),
         ("pages/7_participar.py", "🙋 Participar"),
     ]
 
