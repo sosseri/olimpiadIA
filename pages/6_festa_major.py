@@ -1,9 +1,11 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Festa Major de Sants", page_icon="🎭", layout="centered")
+st.set_page_config(page_title="Festa Major de Sants", page_icon="🎭", layout="centered", initial_sidebar_state="expanded")
 
-from lib.decor import section_accent
+from lib.decor import section_accent, nav_bar
+
+nav_bar()
 
 MAP_EMBED_URL = "https://www.google.com/maps/d/embed?mid=1Mm-g7z6ukfmLSi5zEH3uvXwQ2secCTER&ll=41.3766953765755%2C2.134091757378447&z=15"
 

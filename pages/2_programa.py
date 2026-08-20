@@ -5,9 +5,11 @@ import html as html_lib
 
 MAP_EMBED_URL = "https://www.google.com/maps/d/embed?mid=1Mm-g7z6ukfmLSi5zEH3uvXwQ2secCTER&ll=41.3766953765755%2C2.134091757378447&z=15"
 
-st.set_page_config(page_title="Programa — Festa Major de Sants 2026", page_icon="📅", layout="centered")
+st.set_page_config(page_title="Programa — Festa Major de Sants 2026", page_icon="📅", layout="centered", initial_sidebar_state="expanded")
 
-from lib.decor import section_accent
+from lib.decor import section_accent, nav_bar
+
+nav_bar()
 
 @st.cache_data
 def load_program():

@@ -3,7 +3,8 @@ import os
 
 import streamlit as st
 
-ESPORTS_DIR = "assets/esports"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ESPORTS_DIR = os.path.join(ROOT_DIR, "assets", "esports")
 # Sport illustration -> corner it decorates. Each appears once, low-opacity,
 # fixed to the viewport so it reads as a light background accent.
 _SPORTS = ["Ciclisme.png", "Natacio.png", "Boxa.png", "Gimnastica.png", "Escacs.png"]
@@ -81,3 +82,28 @@ def section_accent(index, opacity=0.10, size="130px"):
         </div>""",
         unsafe_allow_html=True,
     )
+
+
+def nav_bar():
+    """Mobile-first in-body navigation: a 2-column grid of full-width page links.
+
+    Call at the top of every page so users don't depend on the sidebar '>>' toggle.
+    """
+    import streamlit as st
+
+    links = [
+        ("strlt_app.py", "![🏠](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3e0/72.png) Inici"),
+        ("pages/1_xatbot.py", "![💬](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4ac/72.png) Xatbot"),
+        ("pages/2_programa.py", "![📅](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4c5/72.png) Programa"),
+        ("pages/3_olimpiada.py", "![🏟️](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3df_fe0f/72.png)  Olimpíada"),
+        ("pages/5_guarnit_papin.py", "![🎨](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3a8/72.png) Guarnit"),
+        ("pages/4_arxiu.py", "![📸](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4f8/72.png) Arxiu"),
+        ("pages/6_festa_major.py", "![🎭](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f3ad/72.png) Festa Major"),
+        ("pages/7_participar.py", "![🙋](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f64b/72.png) Participar"),
+    ]
+
+    cols = st.columns(2)
+    for i, (target, label) in enumerate(links):
+        with cols[i % 2]:
+            st.page_link(target, label=label, use_container_width=True)
+    st.markdown("<hr style='margin:0.6rem 0 1rem; opacity:0.25;'>", unsafe_allow_html=True)

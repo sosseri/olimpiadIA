@@ -3,9 +3,11 @@ import os
 import json
 import requests
 
-st.set_page_config(page_title="Arxiu fotogràfic", page_icon="📸", layout="centered")
+st.set_page_config(page_title="Arxiu fotogràfic", page_icon="📸", layout="centered", initial_sidebar_state="expanded")
 
-from lib.decor import section_accent
+from lib.decor import section_accent, nav_bar
+
+nav_bar()
 
 st.markdown("""
 <style>
