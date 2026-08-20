@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Participar",
-    page_icon="![🙋](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f64b/72.png)",
+    page_icon="🙋",
     layout="centered",
     initial_sidebar_state="expanded",
 )
@@ -34,7 +34,7 @@ st.markdown("""
 
 st.markdown("""
 <div class="participar-header">
-    <h1>![🙋](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f64b/72.png) Suma't a la Comissió del Carrer Papin</h1>
+    <h1>🙋 Suma't a la Comissió del Carrer Papin</h1>
     <p>La festa la fem entre totes — vine a donar-nos un cop de mà!</p>
 </div>
 """, unsafe_allow_html=True)
@@ -47,14 +47,14 @@ st.markdown("""
 La **Comissió de Festes del Carrer Papin** va renéixer el **2014** gràcies a un grup de
 veïnes que volien recuperar la tradició, i des d'aleshores no ha parat de créixer.
 L'ambient és **inclusiu i obert a tothom**, i **no cal cap compromís constant**:
-qualsevol ajuda és benvinguda, tant si pots venir sempre com de tant en tant. ![🎉](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f389/72.png)
+qualsevol ajuda és benvinguda, tant si pots venir sempre com de tant en tant. 🎉
 """)
 
 st.markdown("""
 <div class="info-box">
-![📸](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4f8/72.png) <b>Instagram:</b> <a href="https://instagram.com/comissiopapin" target="_blank">@comissiopapin</a><br>
-![📍](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4cd/72.png) <b>Punt de trobada / adreça:</b> Orfeó de Sants, C. Miquel Àngel, 54<br>
-![🍻](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f37b/72.png) <b>Nota:</b> Parla amb la comissió a la barra del carrer Papin durant la festa.
+📸 <b>Instagram:</b> <a href="https://instagram.com/comissiopapin" target="_blank">@comissiopapin</a><br>
+📍 <b>Punt de trobada / adreça:</b> Orfeó de Sants, C. Miquel Àngel, 54<br>
+🍻 <b>Nota:</b> Parla amb la comissió a la barra del carrer Papin durant la festa.
 </div>
 """, unsafe_allow_html=True)
 
@@ -89,4 +89,4 @@ def _ask_participar():
     st.switch_page("pages/1_xatbot.py")
 
 
-st.button("![💬](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4ac/72.png) Pregunta-ho al xatbot", on_click=_ask_participar, use_container_width=True)
+st.button("💬 Pregunta-ho al xatbot", on_click=_ask_participar, use_container_width=True)
