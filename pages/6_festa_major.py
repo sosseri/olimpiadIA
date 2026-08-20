@@ -1,9 +1,11 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Festa Major de Sants", page_icon="🎭", layout="centered")
+st.set_page_config(page_title="Festa Major de Sants", page_icon="🎭", layout="centered", initial_sidebar_state="expanded")
 
-from lib.decor import section_accent
+from lib.decor import section_accent, nav_bar
+
+nav_bar()
 
 MAP_EMBED_URL = "https://www.google.com/maps/d/embed?mid=1Mm-g7z6ukfmLSi5zEH3uvXwQ2secCTER&ll=41.3766953765755%2C2.134091757378447&z=15"
 
@@ -65,13 +67,6 @@ són els ingredients principals!
 
 section_accent(2)
 st.markdown("""
-## La Festa Major Alternativa
-
-Paral·lelament, al **Parc de l'Espanya Industrial**, l'assemblea del barri organitza la **Festa Major Alternativa**, amb tallers, concerts, xerrades i activitats de caràcter reivindicatiu i comunitari.
-""")
-
-section_accent(3)
-st.markdown("""
 ## Carrers participants 2026
 
 L'any 2026 participen **11 carrers i places** a la Festa Major de Sants, cadascun amb el seu propi tema de guarniment:
@@ -79,18 +74,25 @@ L'any 2026 participen **11 carrers i places** a la Festa Major de Sants, cadascu
 | Carrer / Plaça | Tema 2026 |
 |---|---|
 | **Carrer Papin** | L'Olimpíada Popular de Barcelona de 1936 |
-| **Carrer d'Alcolea de Baix** | Disco Festival Sound — música, ball i festa de barri |
-| **Carrer d'Alcolea de Dalt** | Circ Alcolea — espectacle i arts circenses |
-| **Plaça de la Farga** | Artesania farguera i cultura del barri |
-| **Carrer de Finlàndia** | 45è aniversari de la Comissió de Festes |
-| **Carrer de Galileu** | Remember '70 '80 '90 — música i nostàlgia |
-| **Carrer de Guadiana** | Comencem per les postres — dolços, salsa i festa galàctica |
-| **Carrer de Sagunt** | Sagunt connectat — metro, música i comunitat |
-| **Carrer de Valladolid** | Jules Verne — viatges, aventura i imaginació |
-| **Carrer de Vallespir de Baix** | Versions i música en directe — cultura popular urbana |
-| **Carrer de Vallespir de Dalt** | Nits de versions, rock i tradicions |
+| **Carrer d'Alcolea de Baix** | El misteri dels mitjons perduts |
+| **Carrer d'Alcolea de Dalt** | El rugit de l'històric Circuit de Montjuïc |
+| **Plaça de la Farga** | Sostenibilitat de pel·lícula amb 'Lorax' |
+| **Carrer de Finlàndia** | Un laboratori boig (45 anys de comissió) |
+| **Carrer de Galileu** | Catifa vermella i esperit de Hollywood |
+| **Carrer de Guadiana** | Com més sucre, més dolç |
+| **Carrer de Sagunt** | "Sagunt i punt": l'art de la geometria abstracta |
+| **Carrer de Valladolid** | Un viatge màgic per la Ruta de la Seda |
+| **Carrer de Vallespir de Baix** | Orgull d'escola pública i compromís social |
+| **Carrer de Vallespir de Dalt** | Alta cuina parisenca amb Ratatouille |
 
 A més, els **Castellers de Sants** també organitzen activitats durant la festa.
+""")
+
+section_accent(3)
+st.markdown("""
+## La Festa Major Alternativa
+
+Paral·lelament, al **Parc de l'Espanya Industrial**, l'assemblea del barri organitza la **Festa Major Alternativa**, amb tallers, concerts, xerrades i activitats de caràcter reivindicatiu i comunitari.
 """)
 
 st.markdown("## Mapa dels carrers guarnits")

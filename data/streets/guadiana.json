@@ -1,8 +1,8 @@
 {
   "key": "guadiana",
   "name": "Carrer de Guadiana",
-  "theme": "Comencem per les postres",
-  "decoration_description": "Temàtica de postres i dolços amb estètica galàctica. El carrer combina el món dels dolços (pastissos, xocolata, caramels gegants) amb una decoració espacial i colorida.",
+  "theme": "Com més sucre, més dolç",
+  "decoration_description": "El carrer Guadiana es converteix en un obrador màgic ple de delícies de pastisseria: bombons, pastissos, croissants gegants i alguna sorpresa esbojarrada. Unes mànegues pastisseres al sostre empastifaran de sucre veïns i visitants durant el trajecte pel carrer.",
   "days": {
     "2026-08-22": {
       "day_label": "Dissabte 22",

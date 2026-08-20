@@ -3,7 +3,8 @@ import os
 
 import streamlit as st
 
-ESPORTS_DIR = "assets/esports"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ESPORTS_DIR = os.path.join(ROOT_DIR, "assets", "esports")
 # Sport illustration -> corner it decorates. Each appears once, low-opacity,
 # fixed to the viewport so it reads as a light background accent.
 _SPORTS = ["Ciclisme.png", "Natacio.png", "Boxa.png", "Gimnastica.png", "Escacs.png"]
@@ -81,3 +82,28 @@ def section_accent(index, opacity=0.10, size="130px"):
         </div>""",
         unsafe_allow_html=True,
     )
+
+
+def nav_bar():
+    """Mobile-first in-body navigation: a 2-column grid of full-width page links.
+
+    Call at the top of every page so users don't depend on the sidebar '>>' toggle.
+    """
+    import streamlit as st
+
+    links = [
+        ("strlt_app.py", "🏠 Inici"),
+        ("pages/2_programa.py", "📅 Programa"),
+        ("pages/1_xatbot.py", "💬 Xatbot"),
+        ("pages/3_olimpiada.py", "🏟️ Olimpíada"),
+        ("pages/5_guarnit_papin.py", "🎨 Guarnit"),
+        ("pages/4_arxiu.py", "📸 Arxiu"),
+        ("pages/6_festa_major.py", "🎭 Festa Major"),
+        ("pages/7_participar.py", "🙋 Participar"),
+    ]
+
+    cols = st.columns(2)
+    for i, (target, label) in enumerate(links):
+        with cols[i % 2]:
+            st.page_link(target, label=label, use_container_width=True)
+    st.markdown("<hr style='margin:0.6rem 0 1rem; opacity:0.25;'>", unsafe_allow_html=True)
