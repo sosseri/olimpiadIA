@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import json
 import html as html_lib
+import os
 
 MAP_EMBED_URL = "https://www.google.com/maps/d/embed?mid=1Mm-g7z6ukfmLSi5zEH3uvXwQ2secCTER&ll=41.3766953765755%2C2.134091757378447&z=15"
 
@@ -12,11 +13,11 @@ from lib.decor import section_accent, nav_bar
 nav_bar()
 
 @st.cache_data
-def load_program():
+def load_program(program_mtime):
     with open("data/programa.json", "r", encoding="utf-8") as f:
         return json.load(f)
 
-program = load_program()
+program = load_program(os.path.getmtime("data/programa.json"))
 festa = program["festa"]
 streets = program["streets"]
 
